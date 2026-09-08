@@ -1,9 +1,4 @@
-* Lab 1 -- sweep PMOS/NMOS width ratio K, measure tpHL/tpLH between out2 and out3
-* Technology: PTM 22nm HP, BSIM4 (level=54), nominal VDD = 0.8V
-* HSPICE port of sweep_k.cir. The ngspice version needed a hand-rolled
-* .control dowhile loop (alterparam + reset + tran) because ngspice-47 has no
-* .step. HSPICE supports .step/.measure natively -- this does the same sweep
-* in two top-level cards, and writes the per-K results to sweep_k.mt0 for you.
+* Lab2 
 .include "inv.sub"
 
 .param nom_vdd=0.8
@@ -38,16 +33,17 @@ X18 out17 out18 vdd vss INV K=k
 X19 out18 out19 vdd vss INV K=k
 X20 out19 in0 vdd vss INV K=k
 
+.ic v(out0)=0.8
 
 .option post=2
 .probe tran v(in0) 
 
-.tran 0.01p 3n * SWEEP gnd_vss LIN 41 0 4.0
+.tran 0.01p 3n 
 
 * tpLH: out2 falling @0.4V -> out3 rising @0.4V
-.measure tran tplh trig v(out2) val=0.4 fall=1 targ v(out3) val=0.4 rise=1
+.measure tran tplh trig v(out0) val=0.4 fall=10 targ v(out1) val=0.4 rise=10
 * tpHL: out2 rising @0.4V -> out3 falling @0.4V
-.measure tran tphl trig v(out2) val=0.4 rise=1 targ v(out3) val=0.4 fall=1
+.measure tran tphl trig v(out0) val=0.4 rise=10 targ v(out1) val=0.4 fall=10
 
 .measure tran T trig v(in0) val=0.4 rise=10 targ v(in0) val=0.4 rise=11
 
