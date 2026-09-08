@@ -1,128 +1,128 @@
 $DATA1 SOURCE='PrimeSim HSPICE' VERSION='W-2024.09 linux64' PARAM_COUNT=1
-.TITLE '* lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3'
+.TITLE '* lab2'
  gnd_vss          tplh             tphl             t               
                   f                tphl_42          tplh_42         
                   temper           alter#          
-    0.0              failed           failed           failed       
+    0.0            3.181e-12        3.134e-12        1.315e-10      
+                   7.603e+09        1.316e-10        1.336e-10      
+                    25.0000        1               
+  1.000e-02        3.181e-12        3.258e-12        1.350e-10      
+                   7.405e+09        1.368e-10        1.336e-10      
+                    25.0000        1               
+  2.000e-02        3.144e-12        3.448e-12        1.386e-10      
+                   7.213e+09        1.448e-10        1.321e-10      
+                    25.0000        1               
+  3.000e-02        3.235e-12        3.596e-12        1.427e-10      
+                   7.005e+09        1.510e-10        1.359e-10      
+                    25.0000        1               
+  4.000e-02        3.194e-12        3.771e-12        1.469e-10      
+                   6.806e+09        1.584e-10        1.342e-10      
+                    25.0000        1               
+  5.000e-02        3.253e-12        3.984e-12        1.515e-10      
+                   6.601e+09        1.673e-10        1.366e-10      
+                    25.0000        1               
+  6.000e-02        3.254e-12        4.113e-12        1.565e-10      
+                   6.392e+09        1.727e-10        1.367e-10      
+                    25.0000        1               
+  7.000e-02        3.328e-12        4.398e-12        1.616e-10      
+                   6.187e+09        1.847e-10        1.398e-10      
+                    25.0000        1               
+  8.000e-02        3.304e-12        4.621e-12        1.675e-10      
+                   5.970e+09        1.941e-10        1.388e-10      
+                    25.0000        1               
+  9.000e-02        3.387e-12        4.949e-12        1.738e-10      
+                   5.752e+09        2.078e-10        1.422e-10      
+                    25.0000        1               
+    0.1000         3.383e-12        5.195e-12        1.806e-10      
+                   5.537e+09        2.182e-10        1.421e-10      
+                    25.0000        1               
+    0.1100         3.383e-12        5.516e-12        1.879e-10      
+                   5.321e+09        2.317e-10        1.421e-10      
+                    25.0000        1               
+    0.1200         3.524e-12        5.815e-12        1.955e-10      
+                   5.116e+09        2.443e-10        1.480e-10      
+                    25.0000        1               
+    0.1300         3.560e-12        6.212e-12        2.043e-10      
+                   4.894e+09        2.609e-10        1.495e-10      
+                    25.0000        1               
+    0.1400         3.541e-12        6.645e-12        2.142e-10      
+                   4.669e+09        2.791e-10        1.487e-10      
+                    25.0000        1               
+    0.1500         3.652e-12        7.110e-12        2.252e-10      
+                   4.440e+09        2.986e-10        1.534e-10      
+                    25.0000        1               
+    0.1600         3.610e-12        7.575e-12        2.372e-10      
+                   4.216e+09        3.181e-10        1.516e-10      
+                    25.0000        1               
+    0.1700         3.839e-12        8.172e-12        2.503e-10      
+                   3.995e+09        3.432e-10        1.613e-10      
+                    25.0000        1               
+    0.1800         3.739e-12        8.734e-12        2.650e-10      
+                   3.774e+09        3.668e-10        1.570e-10      
+                    25.0000        1               
+    0.1900         3.840e-12        9.567e-12          failed       
+                     failed         4.018e-10        1.613e-10      
+                    25.0000        1               
+    0.2000         3.838e-12        1.042e-11          failed       
+                     failed         4.378e-10        1.612e-10      
+                    25.0000        1               
+    0.2100         4.020e-12          failed           failed       
+                     failed           failed         1.688e-10      
+                    25.0000        1               
+    0.2200           failed           failed           failed       
                      failed           failed           failed       
                     25.0000        1               
-    0.1000           failed           failed           failed       
+    0.2300           failed           failed           failed       
                      failed           failed           failed       
                     25.0000        1               
-    0.2000         3.008e-10        1.045e-11          failed       
-                     failed         4.389e-10        1.263e-08      
+    0.2400           failed           failed           failed       
+                     failed           failed           failed       
                     25.0000        1               
-    0.3000         3.114e-12       -7.113e-10          failed       
-                     failed        -2.987e-08        1.308e-10      
+    0.2500           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.2600           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.2700           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.2800           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.2900           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.3000           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.3100           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.3200           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.3300           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.3400           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.3500           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.3600           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.3700           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.3800           failed           failed           failed       
+                     failed           failed           failed       
+                    25.0000        1               
+    0.3900           failed           failed           failed       
+                     failed           failed           failed       
                     25.0000        1               
     0.4000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    0.5000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    0.6000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    0.7000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    0.8000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    0.9000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    1.0000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    1.1000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    1.2000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    1.3000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    1.4000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    1.5000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    1.6000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    1.7000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    1.8000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    1.9000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    2.0000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    2.1000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    2.2000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    2.3000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    2.4000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    2.5000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    2.6000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    2.7000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    2.8000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    2.9000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    3.0000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    3.1000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    3.2000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    3.3000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    3.4000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    3.5000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    3.6000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    3.7000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    3.8000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    3.9000           failed           failed           failed       
-                     failed           failed           failed       
-                    25.0000        1               
-    4.0000           failed           failed           failed       
                      failed           failed           failed       
                     25.0000        1               

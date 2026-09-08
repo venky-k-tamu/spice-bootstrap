@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "W-2024.09 linux64"
 * "format" "HSP"
-* "rundate" "18:27:55 09/08/2026 "
+* "rundate" "18:49:41 09/08/2026 "
 * "netlist" "ring_3.sp "
 * "runtitle" "* lab2"
 * time =    0.            

@@ -7,11 +7,11 @@
   this software is strictly prohibited.
   Input File: ring_3.sp                                                         
   Command line options: /opt/coe/synopsys/hspice/W-2024.09/hspice/linux64/hspice -i ring_3.sp -o results_3/results
-  Start time: Tue Sep  8 18:27:55 2026
+  Start time: Tue Sep  8 18:49:41 2026
  lic:  
  lic: FLEXlm: SDK_14.2 
  lic: USER:   venky.k              HOSTNAME: n02-hera.olympus.ece.tamu.edu 
- lic: HOSTID: ffffffffa8c00c02     PID:      313568 
+ lic: HOSTID: ffffffffa8c00c02     PID:      326510 
  lic: Using FLEXlm license file: 
  lic: 27070@coe-vtls3.engr.tamu.edu 
  lic: Checkout 1 hspice 
@@ -577,15 +577,8 @@
  file=results_3/results.pa0
 
  **info** dc convergence successful at Newton-Raphson method 
- ******  
- * lab2
 
- ****** operating point information tnom=  25.000 temp=  25.000 ******
- ****** operating point status is voltage   simulation time is     0.     
-    node    =voltage      node    =voltage      node    =voltage
-
- +0:in0     = 799.9636m 0:out0    = 799.9995m 0:out1    =  32.4276u
- +0:vdd     = 800.0000m 0:vss     =   0.     
+   *** parameter gnd_vss =    0.000E+00 ***
 
  ******
  * lab2
@@ -597,6 +590,648 @@
  f=  56.4549g
  tphl_6=  17.1060p
  tplh_6=  18.2378p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.0662p  targ= 168.9079p   trig= 165.8417p
+ tphl=   3.0117p  targ= 177.9914p   trig= 174.9797p
+ t=  18.2270p  targ= 199.2659p   trig= 181.0389p
+ f=  54.8637g
+ tphl_6=  18.0701p
+ tplh_6=  18.3975p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.1134p  targ= 173.5137p   trig= 170.4003p
+ tphl=   3.1656p  targ= 182.8813p   trig= 179.7157p
+ t=  18.7670p  targ= 204.7326p   trig= 185.9656p
+ f=  53.2850g
+ tphl_6=  18.9936p
+ tplh_6=  18.6804p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.0605p  targ= 178.6308p   trig= 175.5703p
+ tphl=   3.3335p  targ= 188.4019p   trig= 185.0684p
+ t=  19.3519p  targ= 210.8405p   trig= 191.4886p
+ f=  51.6744g
+ tphl_6=  20.0012p
+ tplh_6=  18.3630p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    4.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.1060p  targ= 183.8952p   trig= 180.7891p
+ tphl=   3.5311p  targ= 194.0820p   trig= 190.5509p
+ t=  19.8994p  targ= 217.1156p   trig= 197.2162p
+ f=  50.2527g
+ tphl_6=  21.1865p
+ tplh_6=  18.6362p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    5.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.1281p  targ= 189.8049p   trig= 186.6768p
+ tphl=   3.7204p  targ= 200.3907p   trig= 196.6703p
+ t=  20.5281p  targ= 224.0752p   trig= 203.5471p
+ f=  48.7137g
+ tphl_6=  22.3224p
+ tplh_6=  18.7686p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    6.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.1397p  targ= 195.8964p   trig= 192.7567p
+ tphl=   3.9210p  targ= 206.8326p   trig= 202.9116p
+ t=  21.2051p  targ= 231.2166p   trig= 210.0115p
+ f=  47.1585g
+ tphl_6=  23.5260p
+ tplh_6=  18.8384p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    7.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.1841p  targ= 202.7695p   trig= 199.5854p
+ tphl=   4.1451p  targ= 214.2199p   trig= 210.0747p
+ t=  21.9787p  targ= 239.3984p   trig= 217.4197p
+ f=  45.4987g
+ tphl_6=  24.8708p
+ tplh_6=  19.1045p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    8.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.1560p  targ= 209.8311p   trig= 206.6751p
+ tphl=   4.4129p  targ= 221.8382p   trig= 217.4253p
+ t=  22.7246p  targ= 247.7127p   trig= 224.9881p
+ f=  44.0052g
+ tphl_6=  26.4772p
+ tplh_6=  18.9359p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    9.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.1662p  targ= 217.6653p   trig= 214.4991p
+ tphl=   4.6804p  targ= 230.2342p   trig= 225.5538p
+ t=  23.6024p  targ= 256.9876p   trig= 233.3852p
+ f=  42.3685g
+ tphl_6=  28.0823p
+ tplh_6=  18.9969p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.000E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.1936p  targ= 225.9405p   trig= 222.7468p
+ tphl=   4.9513p  targ= 239.0872p   trig= 234.1360p
+ t=  24.5130p  targ= 266.7886p   trig= 242.2755p
+ f=  40.7946g
+ tphl_6=  29.7077p
+ tplh_6=  19.1619p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.100E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.2697p  targ= 235.1825p   trig= 231.9128p
+ tphl=   5.2563p  targ= 248.9562p   trig= 243.6999p
+ t=  25.5304p  targ= 277.7479p   trig= 252.2175p
+ f=  39.1690g
+ tphl_6=  31.5377p
+ tplh_6=  19.6180p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.200E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.3054p  targ= 245.2873p   trig= 241.9819p
+ tphl=   5.5751p  targ= 259.7260p   trig= 254.1509p
+ t=  26.6319p  targ= 289.7041p   trig= 263.0723p
+ f=  37.5490g
+ tphl_6=  33.4505p
+ tplh_6=  19.8326p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.300E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.3645p  targ= 256.3662p   trig= 253.0017p
+ tphl=   5.9470p  targ= 271.5949p   trig= 265.6480p
+ t=  27.7933p  targ= 302.7271p   trig= 274.9339p
+ f=  35.9799g
+ tphl_6=  35.6818p
+ tplh_6=  20.1871p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.400E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.3243p  targ= 268.6262p   trig= 265.3019p
+ tphl=   6.3261p  targ= 284.6793p   trig= 278.3532p
+ t=  29.1943p  targ= 317.2821p   trig= 288.0878p
+ f=  34.2533g
+ tphl_6=  37.9566p
+ tplh_6=  19.9459p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.500E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.3631p  targ= 281.7274p   trig= 278.3644p
+ tphl=   6.7575p  targ= 298.6630p   trig= 291.9055p
+ t=  30.6900p  targ= 332.8024p   trig= 302.1124p
+ f=  32.5839g
+ tphl_6=  40.5449p
+ tplh_6=  20.1784p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.600E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.5236p  targ= 296.6151p   trig= 293.0915p
+ tphl=   7.2897p  targ= 314.6052p   trig= 307.3156p
+ t=  32.2517p  targ= 350.3616p   trig= 318.1099p
+ f=  31.0061g
+ tphl_6=  43.7381p
+ tplh_6=  21.1415p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.700E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.5482p  targ= 312.9471p   trig= 309.3989p
+ tphl=   7.8541p  targ= 332.0823p   trig= 324.2282p
+ t=  34.0486p  targ= 369.6087p   trig= 335.5601p
+ f=  29.3698g
+ tphl_6=  47.1248p
+ tplh_6=  21.2893p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.800E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.6265p  targ= 331.7098p   trig= 328.0833p
+ tphl=   8.4515p  targ= 352.1337p   trig= 343.6822p
+ t=  36.0728p  targ= 391.7919p   trig= 355.7192p
+ f=  27.7217g
+ tphl_6=  50.7092p
+ tplh_6=  21.7589p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.900E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.6273p  targ= 352.5502p   trig= 348.9229p
+ tphl=   9.1380p  targ= 374.4612p   trig= 365.3233p
+ t=  38.3120p  targ= 416.4418p   trig= 378.1298p
+ f=  26.1015g
+ tphl_6=  54.8277p
+ tplh_6=  21.7637p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.000E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.6160p  targ= 375.4793p   trig= 371.8633p
+ tphl=   9.9143p  targ= 399.0370p   trig= 389.1227p
+ t=  40.8960p  targ= 443.6320p   trig= 402.7360p
+ f=  24.4523g
+ tphl_6=  59.4860p
+ tplh_6=  21.6962p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.100E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.7395p  targ= 402.2574p   trig= 398.5179p
+ tphl=  10.8500p  targ= 427.6607p   trig= 416.8108p
+ t=  43.6627p  targ= 475.0716p   trig= 431.4089p
+ f=  22.9028g
+ tphl_6=  65.0998p
+ tplh_6=  22.4367p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.200E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.7633p  targ= 431.2559p   trig= 427.4926p
+ tphl=  11.8738p  targ= 458.7934p   trig= 446.9196p
+ t=  46.9383p  targ= 509.4981p   trig= 462.5598p
+ f=  21.3046g
+ tphl_6=  71.2426p
+ tplh_6=  22.5797p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.300E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.7182p  targ= 465.0052p   trig= 461.2870p
+ tphl=  13.1392p  targ= 495.0077p   trig= 481.8685p
+ t=  50.6085p  targ= 549.3778p   trig= 498.7692p
+ f=  19.7595g
+ tphl_6=  78.8355p
+ tplh_6=  22.3095p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.400E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.8443p  targ= 504.5637p   trig= 500.7195p
+ tphl=  14.4668p  targ= 537.4190p   trig= 522.9522p
+ t=  54.8976p  targ= 596.1434p   trig= 541.2458p
+ f=  18.2157g
+ tphl_6=  86.8007p
+ tplh_6=  23.0655p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.500E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.7289p  targ= 549.1483p   trig= 545.4194p
+ tphl=  16.2305p  targ= 585.3479p   trig= 569.1174p
+ t=  59.9731p  targ= 648.9762p   trig= 589.0031p
+ f=  16.6741g
+ tphl_6=  97.3828p
+ tplh_6=  22.3732p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.600E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.7014p  targ= 602.0407p   trig= 598.3392p
+ tphl=  18.1146p  targ= 642.1209p   trig= 624.0063p
+ t=  65.7395p  targ= 711.6402p   trig= 645.9007p
+ f=  15.2116g
+ tphl_6= 108.6874p
+ tplh_6=  22.2085p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.700E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.6437p  targ= 663.2006p   trig= 659.5568p
+ tphl=  20.3980p  targ= 707.7316p   trig= 687.3336p
+ t=  72.4312p  targ= 783.8076p   trig= 711.3764p
+ f=  13.8062g
+ tphl_6= 122.3880p
+ tplh_6=  21.8625p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.800E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.4470p  targ= 733.5582p   trig= 730.1112p
+ tphl=  23.1616p  targ= 783.4553p   trig= 760.2937p
+ t=  80.1160p  targ= 867.0292p   trig= 786.9132p
+ f=  12.4819g
+ tphl_6= 138.9695p
+ tplh_6=  20.6823p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.900E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.2119p  targ= 818.0568p   trig= 814.8449p
+ tphl=  26.4777p  targ= 874.2421p   trig= 847.7643p
+ t=  89.2992p  targ= 966.8507p   trig= 877.5514p
+ f=  11.1983g
+ tphl_6= 158.8665p
+ tplh_6=  19.2712p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.000E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   2.8744p  targ= 917.2997p   trig= 914.4253p
+ tphl=  30.8626p  targ= 981.5503p   trig= 950.6877p
+ t= 100.1747p  targ=   1.0845n   trig= 984.3243p
+ f=   9.9826g
+ tphl_6= 185.1756p
+ tplh_6=  17.2464p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.100E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   2.2704p  targ=   1.0362n   trig=   1.0339n
+ tphl=  35.4489p  targ=   1.1095n   trig=   1.0741n
+ t= 113.5264p  targ=   1.2253n   trig=   1.1118n
+ f=   8.8085g
+ tphl_6= 212.6936p
+ tplh_6=  13.6227p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.200E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   1.4600p  targ=   1.1799n   trig=   1.1785n
+ tphl=  41.4922p  targ=   1.2645n   trig=   1.2230n
+ t= 129.1063p  targ=   1.3951n   trig=   1.2660n
+ f=   7.7456g
+ tphl_6= 248.9532p
+ tplh_6=   8.7602p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.300E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh= 358.3973f  targ=   1.3531n   trig=   1.3527n
+ tphl=  49.4193p  targ=   1.4516n   trig=   1.4022n
+ t= 148.4743p  targ=   1.6000n   trig=   1.4515n
+ f=   6.7352g
+ tphl_6= 296.5157p
+ tplh_6=   2.1504p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.400E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=  -1.7498p  targ=   1.5611n   trig=   1.5628n
+ tphl=  58.3781p  targ=   1.6765n   trig=   1.6181n
+ t= 171.1349p  targ=   1.8459n   trig=   1.6748n
+ f=   5.8433g
+ tphl_6= 350.2685p
+ tplh_6= -10.4989p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.500E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=  -4.6196p  targ=   1.8113n   trig=   1.8159n
+ tphl=  71.1443p  targ=   1.9484n   trig=   1.8773n
+ t= 198.2532p  targ=   2.1416n   trig=   1.9434n
+ f=   5.0441g
+ tphl_6= 426.8660p
+ tplh_6= -27.7173p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.600E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=  -9.1051p  targ=   2.1188n   trig=   2.1279n
+ tphl=  86.5139p  targ=   2.2828n   trig=   2.1962n
+ t= 232.2286p  targ=   2.5059n   trig=   2.2737n
+ f=   4.3061g
+ tphl_6= 519.0835p
+ tplh_6= -54.6307p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.700E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh= -17.6152p  targ=   2.5068n   trig=   2.5244n
+ tphl= 109.9062p  targ=   2.7088n   trig=   2.5989n
+ t= 276.3662p  targ=   2.9676n   trig=   2.6912n
+ f=   3.6184g
+ tphl_6= 659.4370p
+ tplh_6=-105.6914p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.800E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh= -26.5413p  targ=   2.9663n   trig=   2.9928n
+  **warning** (ring_3.sp:28) .MEASURE tphl never reached the trigger value, Measurement failed! 
+  **warning** (ring_3.sp:28) .MEASURE tphl never reached the target value, Measurement failed! 
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_6=   failed
+ tplh_6=-159.2478p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.900E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_6=   failed
+ tplh_6=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    4.000E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_6=   failed
+ tplh_6=   failed
 
           ***** job concluded
  ******  
@@ -613,7 +1248,7 @@
  OS:
  Linux version 4.18.0-553.153.1.el8_10.x86_64 (mockbuild@x86-64-03.build.eng.rdu2.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)) #1 SMP Tue Aug 4 21:00:26 EDT 2026
 
- System loadavg : 0.22 0.32 0.26 1/1329 313571
+ System loadavg : 1.46 1.14 0.75 1/1213 326522
 
 
   ******  PrimeSim HSPICE Threads Information  ******
@@ -638,20 +1273,20 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.14           1           4
-  transient          0.22      300001        8365        2950 rev=         1
-  readin             0.31
+  op point           0.16           1         304
+  transient          3.28    12300041      178573       63234 rev=         2
+  readin             0.32
   errchk             0.00
-  setup              0.11
+  setup              0.12
   output             0.00
 
 
-           peak memory used        522.64 megabytes
-           total cpu time            0.76 seconds
-           total elapsed time        1.25 seconds
-           job started at     18:27:55 09/08/2026
-           job ended   at     18:27:56 09/08/2026
-           job total runtime         1.25 seconds
+           peak memory used        522.77 megabytes
+           total cpu time            3.92 seconds
+           total elapsed time        4.40 seconds
+           job started at     18:49:41 09/08/2026
+           job ended   at     18:49:46 09/08/2026
+           job total runtime         4.40 seconds
 
 
  lic: Release hspice token(s) 

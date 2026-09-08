@@ -7,6 +7,7 @@ HSPICE simulation for 21 inverter ring oscillator, 3 inverter ring oscillator an
 
 ## Lab 2.0 
 ### 
+N = 2\*number fo inverters
 
 | Metric              | 21 inverters | 3 inverters |
 |---------------------|-------------:|------------:|

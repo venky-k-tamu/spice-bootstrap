@@ -7,11 +7,11 @@
   this software is strictly prohibited.
   Input File: ring.sp                                                           
   Command line options: /opt/coe/synopsys/hspice/W-2024.09/hspice/linux64/hspice -i ring.sp -o results_21/results
-  Start time: Tue Sep  8 17:38:40 2026
+  Start time: Tue Sep  8 18:49:59 2026
  lic:  
  lic: FLEXlm: SDK_14.2 
  lic: USER:   venky.k              HOSTNAME: n02-hera.olympus.ece.tamu.edu 
- lic: HOSTID: ffffffffa8c00c02     PID:      296984 
+ lic: HOSTID: ffffffffa8c00c02     PID:      326591 
  lic: Using FLEXlm license file: 
  lic: 27070@coe-vtls3.engr.tamu.edu 
  lic: Checkout 1 hspice 
@@ -20,7 +20,7 @@
  lic:   
 1****** PrimeSim HSPICE -- W-2024.09 linux64 (Aug 27 2024 9174816) ******
  ******  
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+ * lab2
 
  ****** circuit name directory
  circuit number to circuit name directory
@@ -48,7 +48,7 @@
        20 x19.                            inv                1.00 
        21 x20.                            inv                1.00 
  ******  
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+ * lab2
 
  ****** mos   model parameters tnom=  25.000 temp=  25.000 ******
  Model file: ../22nm_HP.pm
@@ -599,17 +599,159 @@
    *** parameter gnd_vss =    0.000E+00 ***
 
  ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+ * lab2
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
-  **warning** (ring.sp:48) .MEASURE tplh never reached the trigger value, Measurement failed! 
-  **warning** (ring.sp:48) .MEASURE tplh never reached the target value, Measurement failed! 
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
+ tplh=   3.1812p  targ=   1.1880n   trig=   1.1848n
+ tphl=   3.1341p  targ=   1.2537n   trig=   1.2506n
+ t= 131.5328p  targ=   1.4447n   trig=   1.3132n
+ f=   7.6027g
+ tphl_42= 131.6317p
+ tplh_42= 133.6099p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.1806p  targ=   1.2196n   trig=   1.2164n
+ tphl=   3.2578p  targ=   1.2871n   trig=   1.2838n
+ t= 135.0478p  targ=   1.4831n   trig=   1.3481n
+ f=   7.4048g
+ tphl_42= 136.8264p
+ tplh_42= 133.5832p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.1443p  targ=   1.2519n   trig=   1.2488n
+ tphl=   3.4483p  targ=   1.3213n   trig=   1.3179n
+ t= 138.6417p  targ=   1.5225n   trig=   1.3838n
+ f=   7.2128g
+ tphl_42= 144.8304p
+ tplh_42= 132.0625p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.2348p  targ=   1.2887n   trig=   1.2855n
+ tphl=   3.5961p  targ=   1.3602n   trig=   1.3566n
+ t= 142.7462p  targ=   1.5673n   trig=   1.4246n
+ f=   7.0054g
+ tphl_42= 151.0356p
+ tplh_42= 135.8627p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    4.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.1943p  targ=   1.3277n   trig=   1.3245n
+ tphl=   3.7712p  targ=   1.4015n   trig=   1.3977n
+ t= 146.9246p  targ=   1.6146n   trig=   1.4677n
+ f=   6.8062g
+ tphl_42= 158.3897p
+ tplh_42= 134.1623p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    5.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.2534p  targ=   1.3685n   trig=   1.3653n
+ tphl=   3.9835p  targ=   1.4447n   trig=   1.4407n
+ t= 151.4837p  targ=   1.6644n   trig=   1.5129n
+ f=   6.6014g
+ tphl_42= 167.3083p
+ tplh_42= 136.6437p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    6.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.2537p  targ=   1.4122n   trig=   1.4090n
+ tphl=   4.1130p  targ=   1.4909n   trig=   1.4868n
+ t= 156.4568p  targ=   1.7177n   trig=   1.5612n
+ f=   6.3915g
+ tphl_42= 172.7461p
+ tplh_42= 136.6568p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    7.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.3279p  targ=   1.4602n   trig=   1.4569n
+ tphl=   4.3984p  targ=   1.5416n   trig=   1.5372n
+ t= 161.6341p  targ=   1.7759n   trig=   1.6142n
+ f=   6.1868g
+ tphl_42= 184.7316p
+ tplh_42= 139.7708p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    8.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.3042p  targ=   1.5124n   trig=   1.5091n
+ tphl=   4.6212p  targ=   1.5969n   trig=   1.5922n
+ t= 167.5048p  targ=   1.8396n   trig=   1.6721n
+ f=   5.9700g
+ tphl_42= 194.0899p
+ tplh_42= 138.7752p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    9.000E-02 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.3867p  targ=   1.5695n   trig=   1.5661n
+ tphl=   4.9486p  targ=   1.6572n   trig=   1.6522n
+ t= 173.8434p  targ=   1.9089n   trig=   1.7350n
+ f=   5.7523g
+ tphl_42= 207.8408p
+ tplh_42= 142.2425p
 
           ***** job concluded
  **info** dc convergence successful at Newton-Raphson method 
@@ -617,15 +759,160 @@
    *** parameter gnd_vss =    1.000E-01 ***
 
  ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+ * lab2
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
+ tplh=   3.3827p  targ=   1.6313n   trig=   1.6279n
+ tphl=   5.1950p  targ=   1.7225n   trig=   1.7173n
+ t= 180.6102p  targ=   1.9840n   trig=   1.8034n
+ f=   5.5368g
+ tphl_42= 218.1888p
+ tplh_42= 142.0737p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.100E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.3834p  targ=   1.6958n   trig=   1.6924n
+ tphl=   5.5164p  targ=   1.7906n   trig=   1.7851n
+ t= 187.9200p  targ=   2.0623n   trig=   1.8744n
+ f=   5.3214g
+ tphl_42= 231.6901p
+ tplh_42= 142.1031p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.200E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.5241p  targ=   1.7657n   trig=   1.7622n
+ tphl=   5.8155p  targ=   1.8646n   trig=   1.8588n
+ t= 195.4598p  targ=   2.1474n   trig=   1.9520n
+ f=   5.1161g
+ tphl_42= 244.2503p
+ tplh_42= 148.0123p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.300E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.5598p  targ=   1.8461n   trig=   1.8425n
+ tphl=   6.2124p  targ=   1.9496n   trig=   1.9434n
+ t= 204.3433p  targ=   2.2452n   trig=   2.0408n
+ f=   4.8937g
+ tphl_42= 260.9190p
+ tplh_42= 149.5113p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.400E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.5411p  targ=   1.9335n   trig=   1.9300n
+ tphl=   6.6453p  targ=   2.0422n   trig=   2.0356n
+ t= 214.1558p  targ=   2.3517n   trig=   2.1375n
+ f=   4.6695g
+ tphl_42= 279.1019p
+ tplh_42= 148.7276p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.500E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.6521p  targ=   2.0332n   trig=   2.0296n
+ tphl=   7.1102p  targ=   2.1476n   trig=   2.1405n
+ t= 225.2078p  targ=   2.4730n   trig=   2.2478n
+ f=   4.4403g
+ tphl_42= 298.6289p
+ tplh_42= 153.3866p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.600E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.6101p  targ=   2.1404n   trig=   2.1368n
+ tphl=   7.5746p  targ=   2.2606n   trig=   2.2531n
+ t= 237.2039p  targ=   2.6034n   trig=   2.3662n
+ f=   4.2158g
+ tphl_42= 318.1333p
+ tplh_42= 151.6223p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.700E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.8394p  targ=   2.2590n   trig=   2.2552n
+ tphl=   8.1722p  targ=   2.3862n   trig=   2.3780n
+ t= 250.3204p  targ=   2.7474n   trig=   2.4971n
+ f=   3.9949g
+ tphl_42= 343.2336p
+ tplh_42= 161.2543p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.800E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.7385p  targ=   2.3928n   trig=   2.3891n
+ tphl=   8.7339p  targ=   2.5279n   trig=   2.5192n
+ t= 264.9950p  targ=   2.9105n   trig=   2.6455n
+ f=   3.7737g
+ tphl_42= 366.8249p
+ tplh_42= 157.0171p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    1.900E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   3.8397p  targ=   2.5437n   trig=   2.5398n
+ tphl=   9.5671p  targ=   2.6873n   trig=   2.6777n
+  **warning** (ring.sp:48) .MEASURE t never reached the target value, Measurement failed! 
+   t= failed       targ= not found    trig=    2.8121n
  f=   failed
- tphl_42=   failed
- tplh_42=   failed
+ tphl_42= 401.8170p
+ tplh_42= 161.2661p
 
           ***** job concluded
  **info** dc convergence successful at Newton-Raphson method 
@@ -633,615 +920,328 @@
    *** parameter gnd_vss =    2.000E-01 ***
 
  ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+ * lab2
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tplh= 300.7833p  targ=   1.5612n   trig=   1.2604n
- tphl=  10.4508p  targ=   1.4143n   trig=   1.4038n
-   t= failed                          trig= not found
+ tplh=   3.8378p  targ=   2.7106n   trig=   2.7067n
+ tphl=  10.4247p  targ=   2.8641n   trig=   2.8537n
+   t= failed       targ= not found    trig=    2.9968n
  f=   failed
- tphl_42= 438.9356p
- tplh_42=  12.6329n
+ tphl_42= 437.8386p
+ tplh_42= 161.1857p
 
           ***** job concluded
  **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.100E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tplh=   4.0196p  targ=   2.9028n   trig=   2.8987n
+  **warning** (ring.sp:46) .MEASURE tphl never reached the trigger value, Measurement failed! 
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42= 168.8212p
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.200E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.300E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.400E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.500E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    2.600E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at GMINDC ramping method 
+
+   *** parameter gnd_vss =    2.700E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at GMINDC ramping method 
+
+   *** parameter gnd_vss =    2.800E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at GMINDC ramping method 
+
+   *** parameter gnd_vss =    2.900E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at GMINDC ramping method 
 
    *** parameter gnd_vss =    3.000E-01 ***
 
  ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+ * lab2
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tplh=   3.1141p  targ=   1.4642n   trig=   1.4611n
- tphl=-711.2517p  targ=   1.1112n   trig=   1.8225n
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
    t= failed                          trig= not found
  f=   failed
- tphl_42= -29.8726n
- tplh_42= 130.7904p
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at GMINDC ramping method 
+
+   *** parameter gnd_vss =    3.100E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
 
           ***** job concluded
  **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.200E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at GMINDC ramping method 
+
+   *** parameter gnd_vss =    3.300E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at GMINDC ramping method 
+
+   *** parameter gnd_vss =    3.400E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.500E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.600E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.700E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.800E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter gnd_vss =    3.900E-01 ***
+
+ ******
+ * lab2
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+   tplh= failed                          trig= not found
+   tphl= failed                          trig= not found
+   t= failed                          trig= not found
+ f=   failed
+ tphl_42=   failed
+ tplh_42=   failed
+
+          ***** job concluded
+ **info** dc convergence successful at GMINDC ramping method 
 
    *** parameter gnd_vss =    4.000E-01 ***
 
  ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    5.000E-01 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    6.000E-01 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    7.000E-01 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    8.000E-01 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    9.000E-01 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    1.000E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    1.100E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    1.200E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    1.300E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    1.400E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    1.500E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    1.600E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    1.700E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    1.800E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    1.900E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    2.000E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    2.100E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    2.200E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    2.300E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    2.400E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    2.500E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    2.600E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    2.700E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    2.800E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    2.900E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    3.000E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    3.100E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    3.200E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    3.300E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    3.400E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    3.500E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    3.600E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    3.700E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    3.800E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    3.900E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
-
- ****** transient analysis tnom=  25.000 temp=  25.000 ******
-   tplh= failed                          trig= not found
-   tphl= failed                          trig= not found
-   t= failed                          trig= not found
- f=   failed
- tphl_42=   failed
- tplh_42=   failed
-
-          ***** job concluded
- **info** dc convergence successful at Newton-Raphson method 
-
-   *** parameter gnd_vss =    4.000E+00 ***
-
- ******
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+ * lab2
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
    tplh= failed                          trig= not found
@@ -1253,7 +1253,7 @@
 
           ***** job concluded
  ******  
- * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+ * lab2
 
  ****** job statistics summary tnom=  25.000 temp=  25.000 ******
   
@@ -1266,7 +1266,7 @@
  OS:
  Linux version 4.18.0-553.153.1.el8_10.x86_64 (mockbuild@x86-64-03.build.eng.rdu2.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)) #1 SMP Tue Aug 4 21:00:26 EDT 2026
 
- System loadavg : 0.29 0.30 0.41 1/1284 296987
+ System loadavg : 1.60 1.19 0.78 1/1227 326695
 
 
   ******  PrimeSim HSPICE Threads Information  ******
@@ -1291,21 +1291,21 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.17           1         408
-  transient          0.35    12300041        6021        2415 rev=         1
+  op point           0.33           1        2154
+  transient          9.54    12300041      175785       62467 rev=         3
   readin             0.31
   errchk             0.00
-  setup              0.07
+  setup              0.12
   output             0.00
 
 
-           peak memory used        523.55 megabytes
-           total cpu time            0.90 seconds
-           total elapsed time        1.41 seconds
-           job started at     17:38:40 09/08/2026
-           job ended   at     17:38:41 09/08/2026
-           job total runtime         1.41 seconds
+           peak memory used        523.54 megabytes
+           total cpu time           10.34 seconds
+           total elapsed time       10.79 seconds
+           job started at     18:49:59 09/08/2026
+           job ended   at     18:50:10 09/08/2026
+           job total runtime        10.79 seconds
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.49(s)
+ lic: total license checkout elapse time:        0.43(s)

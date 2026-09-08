@@ -1,36 +1,36 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "W-2024.09 linux64"
 * "format" "HSP"
-* "rundate" "17:38:40 09/08/2026 "
+* "rundate" "18:49:59 09/08/2026 "
 * "netlist" "ring.sp "
-* "runtitle" "* lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3"
+* "runtitle" "* lab2"
 * time =    0.            
 * temperature =   25.0000        
 *** BEGIN: Saved Operating Point ***                     
 .option 
 + gmindc=   1.0000p       
 .nodeset
-+ in0 = 396.1145m       
-+ out0 = 396.1145m       
-+ out1 = 396.1145m       
-+ out10 = 396.1145m       
-+ out11 = 396.1143m       
-+ out12 = 396.1152m       
-+ out13 = 396.1118m       
-+ out14 = 396.1156m       
-+ out15 = 396.1145m       
-+ out16 = 396.1145m       
-+ out17 = 396.1145m       
-+ out18 = 396.1145m       
-+ out19 = 396.1145m       
-+ out2 = 396.1145m       
-+ out3 = 396.1145m       
-+ out4 = 396.1145m       
-+ out5 = 396.1145m       
-+ out6 = 396.1145m       
-+ out7 = 396.1145m       
-+ out8 = 396.1145m       
-+ out9 = 396.1144m       
++ in0 = 799.9636m       
++ out0 = 799.9995m       
++ out1 =  32.4276u       
++ out10 = 799.9636m       
++ out11 =  32.4591u       
++ out12 = 799.9636m       
++ out13 =  32.4591u       
++ out14 = 799.9636m       
++ out15 =  32.4591u       
++ out16 = 799.9636m       
++ out17 =  32.4591u       
++ out18 = 799.9636m       
++ out19 =  32.4591u       
++ out2 = 799.9636m       
++ out3 =  32.4591u       
++ out4 = 799.9636m       
++ out5 =  32.4591u       
++ out6 = 799.9636m       
++ out7 =  32.4591u       
++ out8 = 799.9636m       
++ out9 =  32.4591u       
 + vdd = 800.0000m       
 + vss =   0.            
 ***   END: Saved Operating Point ***                     
