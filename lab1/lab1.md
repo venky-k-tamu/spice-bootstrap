@@ -1,9 +1,13 @@
 # Inverter Chain K-Sweep Results
 
 Technology: 22nm PTM-HP (BSIM4, level=54), V<sub>DD</sub> = 0.8 V, W<sub>N</sub> = 44n (fixed), W<sub>P</sub> = K·W<sub>N</sub>.
-Deck: `deck_7_inv.sp` (HSPICE), sweeping K from 0.5 to 4.0 in steps of 0.1 (36 points), probing the out2 -> out3 stage of the 7-inverter chain. Source data: `results_10p/results.mt0`; tabulated as `results_10p/k_sweep_results.csv`.
+7-stage inverter chain, HSPICE, sweeping K from 0.5 to 4.0 in steps of 0.1 (36 points), probing the out2 -> out3 stage. Two parts below differ only in the input pulse rise/fall time `X`.
 
-## 1. Propagation delay: tpHL, tpLH
+## Part A — X = 10p
+
+Deck: `deck_7_inv.sp`. Source data: `results_10p/results.mt0`; tabulated as `results_10p/k_sweep_results.csv`.
+
+### A.1 Propagation delay: tpHL, tpLH
 
 tpHL / tpLH measured at the 0.4 V (50%) logic threshold.
 
@@ -46,7 +50,7 @@ tpHL / tpLH measured at the 0.4 V (50%) logic threshold.
 | 3.90 | 5.500 | 3.124 |
 | 4.00 | 5.591 | 3.130 |
 
-## 2. Rise / fall time: tr, tf
+### A.2 Rise / fall time: tr, tf
 
 tr / tf measured at out3, 10%-90% (rise) and 90%-10% (fall) of V<sub>DD</sub> (0.08 V <-> 0.72 V).
 
@@ -89,10 +93,108 @@ tr / tf measured at out3, 10%-90% (rise) and 90%-10% (fall) of V<sub>DD</sub> (0
 | 3.90 | 6.109 | 9.392 |
 | 4.00 | 6.143 | 9.557 |
 
-## 3. tpHL / tpLH vs. K
+### A.3 tpHL / tpLH vs. K
 
-![tpHL and tpLH vs K](results_10p/tphl_tplh_vs_k.png)
+![tpHL and tpLH vs K, X=10p](results_10p/tphl_tplh_vs_k.png)
 
-## 4. tr / tf vs. K
+### A.4 tr / tf vs. K
 
-![tr and tf vs K](results_10p/tr_tf_vs_k.png)
+![tr and tf vs K, X=10p](results_10p/tr_tf_vs_k.png)
+
+## Part B — X = 5.65p
+
+Deck: `1b_deck_7_inv.sp` — same as Part A's `deck_7_inv.sp`, but with the input pulse rise/fall time `X` changed from 10p to **5.65p**. Source data: `results_1b/results.mt0`; tabulated as `results_1b/k_sweep_results.csv`.
+
+### B.1 Propagation delay: tpHL, tpLH
+
+tpHL / tpLH measured at the 0.4 V (50%) logic threshold.
+
+| K | tpHL (ps) | tpLH (ps) |
+|---|---|---|
+| 0.50 | 2.602 | 4.325 |
+| 0.60 | 2.717 | 4.258 |
+| 0.70 | 2.713 | 3.983 |
+| 0.80 | 2.746 | 3.766 |
+| 0.90 | 2.791 | 3.531 |
+| 1.00 | 2.871 | 3.395 |
+| 1.10 | 2.984 | 3.269 |
+| 1.20 | 2.996 | 3.215 |
+| 1.30 | 3.101 | 3.135 |
+| 1.40 | 3.202 | 3.100 |
+| 1.50 | 3.271 | 3.062 |
+| 1.60 | 3.347 | 3.023 |
+| 1.70 | 3.431 | 3.010 |
+| 1.80 | 3.518 | 2.990 |
+| 1.90 | 3.606 | 2.964 |
+| 2.00 | 3.696 | 2.980 |
+| 2.10 | 3.787 | 3.015 |
+| 2.20 | 3.878 | 3.031 |
+| 2.30 | 3.969 | 3.018 |
+| 2.40 | 4.061 | 2.980 |
+| 2.50 | 4.153 | 3.024 |
+| 2.60 | 4.245 | 3.017 |
+| 2.70 | 4.338 | 3.001 |
+| 2.80 | 4.432 | 3.004 |
+| 2.90 | 4.523 | 3.008 |
+| 3.00 | 4.607 | 3.015 |
+| 3.10 | 4.691 | 3.020 |
+| 3.20 | 4.777 | 3.061 |
+| 3.30 | 4.863 | 3.074 |
+| 3.40 | 4.949 | 3.089 |
+| 3.50 | 5.044 | 3.102 |
+| 3.60 | 5.162 | 3.115 |
+| 3.70 | 5.308 | 3.130 |
+| 3.80 | 5.400 | 3.089 |
+| 3.90 | 5.493 | 3.127 |
+| 4.00 | 5.590 | 3.157 |
+
+### B.2 Rise / fall time: tr, tf
+
+tr / tf measured at out3, 10%-90% (rise) and 90%-10% (fall) of V<sub>DD</sub> (0.08 V <-> 0.72 V).
+
+| K | tr (ps) | tf (ps) |
+|---|---|---|
+| 0.50 | 9.166 | 4.406 |
+| 0.60 | 8.997 | 4.455 |
+| 0.70 | 8.426 | 4.517 |
+| 0.80 | 7.726 | 4.437 |
+| 0.90 | 7.174 | 4.440 |
+| 1.00 | 6.780 | 4.487 |
+| 1.10 | 6.497 | 4.644 |
+| 1.20 | 6.213 | 4.573 |
+| 1.30 | 6.086 | 4.719 |
+| 1.40 | 5.992 | 5.013 |
+| 1.50 | 5.922 | 5.151 |
+| 1.60 | 5.839 | 5.295 |
+| 1.70 | 5.793 | 5.442 |
+| 1.80 | 5.761 | 5.589 |
+| 1.90 | 5.741 | 5.738 |
+| 2.00 | 5.743 | 5.887 |
+| 2.10 | 5.749 | 6.034 |
+| 2.20 | 5.724 | 6.187 |
+| 2.30 | 5.673 | 6.395 |
+| 2.40 | 5.761 | 6.599 |
+| 2.50 | 5.749 | 6.797 |
+| 2.60 | 5.694 | 6.991 |
+| 2.70 | 5.635 | 7.181 |
+| 2.80 | 5.672 | 7.368 |
+| 2.90 | 5.706 | 7.552 |
+| 3.00 | 5.736 | 7.711 |
+| 3.10 | 5.760 | 7.889 |
+| 3.20 | 5.837 | 8.074 |
+| 3.30 | 5.949 | 8.261 |
+| 3.40 | 6.032 | 8.449 |
+| 3.50 | 6.094 | 8.625 |
+| 3.60 | 6.138 | 8.798 |
+| 3.70 | 6.214 | 9.029 |
+| 3.80 | 6.037 | 9.195 |
+| 3.90 | 6.115 | 9.352 |
+| 4.00 | 6.335 | 9.505 |
+
+### B.3 tpHL / tpLH vs. K
+
+![tpHL and tpLH vs K, X=5.65p](results_1b/tphl_tplh_vs_k.png)
+
+### B.4 tr / tf vs. K
+
+![tr and tf vs K, X=5.65p](results_1b/tr_tf_vs_k.png)
