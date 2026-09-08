@@ -1,12 +1,12 @@
 # Inverter Chain K-Sweep Results
 
-Technology: 22nm PTM-HP 
-Nominal VDD = 0.8 V
-WN = 44nm, WP = K·WN
-L = 22nm for both PMOS and NMOS
-7-stage inverter chain
-HSPICE simulation sweeping K from 0.5 to 4.0 in steps of 0.1 (36 points), probing the out2 -> out3 stage. 
-Two parts below differ only in the input pulse rise/fall time `X`.
+Technology: 22nm PTM-HP\ 
+Nominal VDD = 0.8 V\
+WN = 44nm, WP = K·WN\
+L = 22nm for both PMOS and NMOS\
+7-stage inverter chain\
+HSPICE simulation sweeping K from 0.5 to 4.0 in steps of 0.1 (36 points), probing the out2 -> out3 stage. \
+Two parts below differ only in the input pulse rise/fall time `X`.\
 
 ## Part A — X = 10p
 
