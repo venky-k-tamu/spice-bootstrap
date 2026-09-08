@@ -10,8 +10,8 @@ Two parts below differ only in the input pulse rise/fall time `X`.
 
 ## Part A — X = 10p
 
-Deck: `deck_7_inv.sp`. Source data: `results_10p/results.mt0`; tabulated as `results_10p/k_sweep_results.csv`.
-K at which tpHL == tpLH is 1.3
+Deck: `deck_7_inv.sp`. Source data: `results_10p/results.mt0`; tabulated as `results_10p/k_sweep_results.csv`.\
+K at which tpHL == tpLH is 1.3\
 K at which tr == tf is 1.9
 
 ### A.1 Propagation delay
@@ -110,8 +110,8 @@ tr and tf measured at out3, 10%-90% (rise) and 90%-10% (fall) of VDD (0.08 V <->
 
 ## Part B — X = 5.65p
 
-Deck: `1b_deck_7_inv.sp` — same as Part A's `deck_7_inv.sp`, but with the input pulse rise/fall time `X` changed from 10p to **5.65p**. Source data: `results_1b/results.mt0`; tabulated as `results_1b/k_sweep_results.csv`.
-K at which tpHL == tpLH is 1.33
+Deck: `1b_deck_7_inv.sp` — same as Part A's `deck_7_inv.sp`, but with the input pulse rise/fall time `X` changed from 10p to **5.65p**. Source data: `results_1b/results.mt0`; tabulated as `results_1b/k_sweep_results.csv`.\
+K at which tpHL == tpLH is 1.33\
 K at which tr == tf is 1.9
 
 ### B.1 Propagation delay: tpHL, tpLH

@@ -2,7 +2,7 @@
 
 Technology: 22nm PTM-HP\ 
 Nominal VDD = 0.8 V\
-k is selected as 1.4 based on Lab1 (K is ratio of PMOS Width to NMOS Width within the inverter subcircuit \
+k is selected as 1.3 based on Lab1 (K is ratio of PMOS Width to NMOS Width within the inverter subcircuit \
 HSPICE simulation for 21 inverter ring oscillator, 3 inverter ring oscillator and 1 inverter ring
 
 ## Lab 2.0 
