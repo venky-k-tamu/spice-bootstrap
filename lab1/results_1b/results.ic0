@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "W-2024.09 linux64"
 * "format" "HSP"
-* "rundate" "16:29:27 09/08/2026 "
+* "rundate" "16:50:18 09/08/2026 "
 * "netlist" "1b_deck_7_inv.sp "
 * "runtitle" "* lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3"
 * time =    0.            

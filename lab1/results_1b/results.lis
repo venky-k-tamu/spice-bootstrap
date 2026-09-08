@@ -6,12 +6,12 @@
   Synopsys, Inc. All other use, reproduction, or distribution of
   this software is strictly prohibited.
   Input File: 1b_deck_7_inv.sp                                                  
-  Command line options: /opt/coe/synopsys/hspice/W-2024.09/hspice/linux64/hspice -i 1b_deck_7_inv.sp -o result_1b/results
-  Start time: Tue Sep  8 16:29:27 2026
+  Command line options: /opt/coe/synopsys/hspice/W-2024.09/hspice/linux64/hspice -i 1b_deck_7_inv.sp -o results_1b/results
+  Start time: Tue Sep  8 16:50:18 2026
  lic:  
  lic: FLEXlm: SDK_14.2 
  lic: USER:   venky.k              HOSTNAME: n02-hera.olympus.ece.tamu.edu 
- lic: HOSTID: ffffffffa8c00c02     PID:      258872 
+ lic: HOSTID: ffffffffa8c00c02     PID:      272197 
  lic: Using FLEXlm license file: 
  lic: 27070@coe-vtls3.engr.tamu.edu 
  lic: Checkout 1 hspice 
@@ -578,7 +578,7 @@
  ******
  runlvl  = 3         bypass  = 2.0000    
   Opening plot unit= 15
- file=result_1b/results.pa0
+ file=results_1b/results.pa0
 
  **info** dc convergence successful at Newton-Raphson method 
 
@@ -588,8 +588,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   4.3245p  targ=   2.0210n   trig=   2.0166n
- tplh=   2.6020p  targ=   1.0166n   trig=   1.0140n
+ tplh=   4.3245p  targ=   2.0210n   trig=   2.0166n
+ tphl=   2.6020p  targ=   1.0166n   trig=   1.0140n
  tr=   9.1656p  targ=   2.0275n   trig=   2.0183n
  tf=   4.4065p  targ=   1.0189n   trig=   1.0145n
 
@@ -602,8 +602,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   4.2581p  targ=   2.0211n   trig=   2.0168n
- tplh=   2.7174p  targ=   1.0167n   trig=   1.0139n
+ tplh=   4.2581p  targ=   2.0211n   trig=   2.0168n
+ tphl=   2.7174p  targ=   1.0167n   trig=   1.0139n
  tr=   8.9973p  targ=   2.0274n   trig=   2.0184n
  tf=   4.4553p  targ=   1.0190n   trig=   1.0146n
 
@@ -616,8 +616,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.9827p  targ=   2.0211n   trig=   2.0171n
- tplh=   2.7131p  targ=   1.0162n   trig=   1.0135n
+ tplh=   3.9827p  targ=   2.0211n   trig=   2.0171n
+ tphl=   2.7131p  targ=   1.0162n   trig=   1.0135n
  tr=   8.4262p  targ=   2.0269n   trig=   2.0185n
  tf=   4.5170p  targ=   1.0187n   trig=   1.0142n
 
@@ -630,8 +630,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.7657p  targ=   2.0207n   trig=   2.0169n
- tplh=   2.7460p  targ=   1.0157n   trig=   1.0130n
+ tplh=   3.7657p  targ=   2.0207n   trig=   2.0169n
+ tphl=   2.7460p  targ=   1.0157n   trig=   1.0130n
  tr=   7.7263p  targ=   2.0260n   trig=   2.0183n
  tf=   4.4374p  targ=   1.0181n   trig=   1.0137n
 
@@ -644,8 +644,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.5314p  targ=   2.0202n   trig=   2.0166n
- tplh=   2.7912p  targ=   1.0154n   trig=   1.0126n
+ tplh=   3.5314p  targ=   2.0202n   trig=   2.0166n
+ tphl=   2.7912p  targ=   1.0154n   trig=   1.0126n
  tr=   7.1741p  targ=   2.0250n   trig=   2.0179n
  tf=   4.4395p  targ=   1.0179n   trig=   1.0134n
 
@@ -658,8 +658,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.3948p  targ=   2.0202n   trig=   2.0168n
- tplh=   2.8712p  targ=   1.0152n   trig=   1.0124n
+ tplh=   3.3948p  targ=   2.0202n   trig=   2.0168n
+ tphl=   2.8712p  targ=   1.0152n   trig=   1.0124n
  tr=   6.7797p  targ=   2.0248n   trig=   2.0180n
  tf=   4.4870p  targ=   1.0178n   trig=   1.0133n
 
@@ -672,8 +672,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.2689p  targ=   2.0200n   trig=   2.0168n
- tplh=   2.9841p  targ=   1.0151n   trig=   1.0122n
+ tplh=   3.2689p  targ=   2.0200n   trig=   2.0168n
+ tphl=   2.9841p  targ=   1.0151n   trig=   1.0122n
  tr=   6.4967p  targ=   2.0244n   trig=   2.0179n
  tf=   4.6438p  targ=   1.0178n   trig=   1.0131n
 
@@ -686,8 +686,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.2146p  targ=   2.0202n   trig=   2.0170n
- tplh=   2.9960p  targ=   1.0151n   trig=   1.0121n
+ tplh=   3.2146p  targ=   2.0202n   trig=   2.0170n
+ tphl=   2.9960p  targ=   1.0151n   trig=   1.0121n
  tr=   6.2134p  targ=   2.0243n   trig=   2.0181n
  tf=   4.5729p  targ=   1.0177n   trig=   1.0131n
 
@@ -700,8 +700,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.1351p  targ=   2.0201n   trig=   2.0170n
- tplh=   3.1007p  targ=   1.0151n   trig=   1.0120n
+ tplh=   3.1351p  targ=   2.0201n   trig=   2.0170n
+ tphl=   3.1007p  targ=   1.0151n   trig=   1.0120n
  tr=   6.0859p  targ=   2.0241n   trig=   2.0180n
  tf=   4.7188p  targ=   1.0178n   trig=   1.0131n
 
@@ -714,8 +714,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.1000p  targ=   2.0203n   trig=   2.0172n
- tplh=   3.2015p  targ=   1.0152n   trig=   1.0120n
+ tplh=   3.1000p  targ=   2.0203n   trig=   2.0172n
+ tphl=   3.2015p  targ=   1.0152n   trig=   1.0120n
  tr=   5.9920p  targ=   2.0242n   trig=   2.0182n
  tf=   5.0131p  targ=   1.0181n   trig=   1.0131n
 
@@ -728,8 +728,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0618p  targ=   2.0205n   trig=   2.0174n
- tplh=   3.2713p  targ=   1.0152n   trig=   1.0119n
+ tplh=   3.0618p  targ=   2.0205n   trig=   2.0174n
+ tphl=   3.2713p  targ=   1.0152n   trig=   1.0119n
  tr=   5.9220p  targ=   2.0243n   trig=   2.0183n
  tf=   5.1514p  targ=   1.0183n   trig=   1.0131n
 
@@ -742,8 +742,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0230p  targ=   2.0205n   trig=   2.0175n
- tplh=   3.3473p  targ=   1.0153n   trig=   1.0119n
+ tplh=   3.0230p  targ=   2.0205n   trig=   2.0175n
+ tphl=   3.3473p  targ=   1.0153n   trig=   1.0119n
  tr=   5.8389p  targ=   2.0242n   trig=   2.0184n
  tf=   5.2951p  targ=   1.0185n   trig=   1.0132n
 
@@ -756,8 +756,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0100p  targ=   2.0207n   trig=   2.0177n
- tplh=   3.4307p  targ=   1.0154n   trig=   1.0120n
+ tplh=   3.0100p  targ=   2.0207n   trig=   2.0177n
+ tphl=   3.4307p  targ=   1.0154n   trig=   1.0120n
  tr=   5.7931p  targ=   2.0244n   trig=   2.0186n
  tf=   5.4415p  targ=   1.0187n   trig=   1.0132n
 
@@ -770,8 +770,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   2.9903p  targ=   2.0209n   trig=   2.0179n
- tplh=   3.5178p  targ=   1.0155n   trig=   1.0120n
+ tplh=   2.9903p  targ=   2.0209n   trig=   2.0179n
+ tphl=   3.5178p  targ=   1.0155n   trig=   1.0120n
  tr=   5.7607p  targ=   2.0245n   trig=   2.0187n
  tf=   5.5891p  targ=   1.0189n   trig=   1.0133n
 
@@ -784,8 +784,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   2.9638p  targ=   2.0211n   trig=   2.0181n
- tplh=   3.6063p  targ=   1.0156n   trig=   1.0120n
+ tplh=   2.9638p  targ=   2.0211n   trig=   2.0181n
+ tphl=   3.6063p  targ=   1.0156n   trig=   1.0120n
  tr=   5.7411p  targ=   2.0246n   trig=   2.0189n
  tf=   5.7375p  targ=   1.0191n   trig=   1.0134n
 
@@ -798,8 +798,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   2.9802p  targ=   2.0212n   trig=   2.0183n
- tplh=   3.6956p  targ=   1.0158n   trig=   1.0121n
+ tplh=   2.9802p  targ=   2.0212n   trig=   2.0183n
+ tphl=   3.6956p  targ=   1.0158n   trig=   1.0121n
  tr=   5.7433p  targ=   2.0247n   trig=   2.0190n
  tf=   5.8870p  targ=   1.0194n   trig=   1.0135n
 
@@ -812,8 +812,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0152p  targ=   2.0214n   trig=   2.0184n
- tplh=   3.7865p  targ=   1.0159n   trig=   1.0121n
+ tplh=   3.0152p  targ=   2.0214n   trig=   2.0184n
+ tphl=   3.7865p  targ=   1.0159n   trig=   1.0121n
  tr=   5.7485p  targ=   2.0249n   trig=   2.0191n
  tf=   6.0341p  targ=   1.0196n   trig=   1.0136n
 
@@ -826,8 +826,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0310p  targ=   2.0216n   trig=   2.0186n
- tplh=   3.8781p  targ=   1.0160n   trig=   1.0122n
+ tplh=   3.0310p  targ=   2.0216n   trig=   2.0186n
+ tphl=   3.8781p  targ=   1.0160n   trig=   1.0122n
  tr=   5.7238p  targ=   2.0250n   trig=   2.0193n
  tf=   6.1867p  targ=   1.0198n   trig=   1.0137n
 
@@ -840,8 +840,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0180p  targ=   2.0218n   trig=   2.0188n
- tplh=   3.9689p  targ=   1.0162n   trig=   1.0122n
+ tplh=   3.0180p  targ=   2.0218n   trig=   2.0188n
+ tphl=   3.9689p  targ=   1.0162n   trig=   1.0122n
  tr=   5.6726p  targ=   2.0252n   trig=   2.0195n
  tf=   6.3947p  targ=   1.0202n   trig=   1.0138n
 
@@ -854,8 +854,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   2.9796p  targ=   2.0219n   trig=   2.0189n
- tplh=   4.0607p  targ=   1.0163n   trig=   1.0123n
+ tplh=   2.9796p  targ=   2.0219n   trig=   2.0189n
+ tphl=   4.0607p  targ=   1.0163n   trig=   1.0123n
  tr=   5.7612p  targ=   2.0253n   trig=   2.0196n
  tf=   6.5988p  targ=   1.0205n   trig=   1.0139n
 
@@ -868,8 +868,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0243p  targ=   2.0221n   trig=   2.0191n
- tplh=   4.1527p  targ=   1.0165n   trig=   1.0123n
+ tplh=   3.0243p  targ=   2.0221n   trig=   2.0191n
+ tphl=   4.1527p  targ=   1.0165n   trig=   1.0123n
  tr=   5.7495p  targ=   2.0255n   trig=   2.0197n
  tf=   6.7974p  targ=   1.0208n   trig=   1.0140n
 
@@ -882,8 +882,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0171p  targ=   2.0223n   trig=   2.0193n
- tplh=   4.2452p  targ=   1.0167n   trig=   1.0124n
+ tplh=   3.0171p  targ=   2.0223n   trig=   2.0193n
+ tphl=   4.2452p  targ=   1.0167n   trig=   1.0124n
  tr=   5.6945p  targ=   2.0256n   trig=   2.0199n
  tf=   6.9914p  targ=   1.0211n   trig=   1.0141n
 
@@ -896,8 +896,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0005p  targ=   2.0224n   trig=   2.0194n
- tplh=   4.3380p  targ=   1.0168n   trig=   1.0125n
+ tplh=   3.0005p  targ=   2.0224n   trig=   2.0194n
+ tphl=   4.3380p  targ=   1.0168n   trig=   1.0125n
  tr=   5.6347p  targ=   2.0257n   trig=   2.0201n
  tf=   7.1814p  targ=   1.0214n   trig=   1.0142n
 
@@ -910,8 +910,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0038p  targ=   2.0226n   trig=   2.0196n
- tplh=   4.4316p  targ=   1.0170n   trig=   1.0126n
+ tplh=   3.0038p  targ=   2.0226n   trig=   2.0196n
+ tphl=   4.4316p  targ=   1.0170n   trig=   1.0126n
  tr=   5.6722p  targ=   2.0259n   trig=   2.0202n
  tf=   7.3680p  targ=   1.0217n   trig=   1.0143n
 
@@ -924,8 +924,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0079p  targ=   2.0228n   trig=   2.0198n
- tplh=   4.5233p  targ=   1.0172n   trig=   1.0126n
+ tplh=   3.0079p  targ=   2.0228n   trig=   2.0198n
+ tphl=   4.5233p  targ=   1.0172n   trig=   1.0126n
  tr=   5.7059p  targ=   2.0261n   trig=   2.0204n
  tf=   7.5517p  targ=   1.0220n   trig=   1.0144n
 
@@ -938,8 +938,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0146p  targ=   2.0230n   trig=   2.0200n
- tplh=   4.6068p  targ=   1.0173n   trig=   1.0127n
+ tplh=   3.0146p  targ=   2.0230n   trig=   2.0200n
+ tphl=   4.6068p  targ=   1.0173n   trig=   1.0127n
  tr=   5.7357p  targ=   2.0263n   trig=   2.0206n
  tf=   7.7113p  targ=   1.0223n   trig=   1.0146n
 
@@ -952,8 +952,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0203p  targ=   2.0232n   trig=   2.0202n
- tplh=   4.6913p  targ=   1.0175n   trig=   1.0128n
+ tplh=   3.0203p  targ=   2.0232n   trig=   2.0202n
+ tphl=   4.6913p  targ=   1.0175n   trig=   1.0128n
  tr=   5.7602p  targ=   2.0265n   trig=   2.0208n
  tf=   7.8892p  targ=   1.0226n   trig=   1.0147n
 
@@ -966,8 +966,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0611p  targ=   2.0236n   trig=   2.0206n
- tplh=   4.7767p  targ=   1.0176n   trig=   1.0128n
+ tplh=   3.0611p  targ=   2.0236n   trig=   2.0206n
+ tphl=   4.7767p  targ=   1.0176n   trig=   1.0128n
  tr=   5.8373p  targ=   2.0270n   trig=   2.0212n
  tf=   8.0735p  targ=   1.0229n   trig=   1.0148n
 
@@ -980,8 +980,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0740p  targ=   2.0238n   trig=   2.0208n
- tplh=   4.8627p  targ=   1.0178n   trig=   1.0129n
+ tplh=   3.0740p  targ=   2.0238n   trig=   2.0208n
+ tphl=   4.8627p  targ=   1.0178n   trig=   1.0129n
  tr=   5.9488p  targ=   2.0272n   trig=   2.0213n
  tf=   8.2607p  targ=   1.0232n   trig=   1.0150n
 
@@ -994,8 +994,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0885p  targ=   2.0240n   trig=   2.0209n
- tplh=   4.9493p  targ=   1.0179n   trig=   1.0130n
+ tplh=   3.0885p  targ=   2.0240n   trig=   2.0209n
+ tphl=   4.9493p  targ=   1.0179n   trig=   1.0130n
  tr=   6.0315p  targ=   2.0275n   trig=   2.0214n
  tf=   8.4491p  targ=   1.0235n   trig=   1.0151n
 
@@ -1008,8 +1008,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.1024p  targ=   2.0242n   trig=   2.0211n
- tplh=   5.0437p  targ=   1.0181n   trig=   1.0131n
+ tplh=   3.1024p  targ=   2.0242n   trig=   2.0211n
+ tphl=   5.0437p  targ=   1.0181n   trig=   1.0131n
  tr=   6.0941p  targ=   2.0277n   trig=   2.0216n
  tf=   8.6253p  targ=   1.0238n   trig=   1.0152n
 
@@ -1022,8 +1022,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.1147p  targ=   2.0244n   trig=   2.0213n
- tplh=   5.1621p  targ=   1.0183n   trig=   1.0132n
+ tplh=   3.1147p  targ=   2.0244n   trig=   2.0213n
+ tphl=   5.1621p  targ=   1.0183n   trig=   1.0132n
  tr=   6.1379p  targ=   2.0279n   trig=   2.0218n
  tf=   8.7985p  targ=   1.0241n   trig=   1.0153n
 
@@ -1036,8 +1036,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.1298p  targ=   2.0246n   trig=   2.0215n
- tplh=   5.3084p  targ=   1.0185n   trig=   1.0132n
+ tplh=   3.1298p  targ=   2.0246n   trig=   2.0215n
+ tphl=   5.3084p  targ=   1.0185n   trig=   1.0132n
  tr=   6.2137p  targ=   2.0281n   trig=   2.0219n
  tf=   9.0289p  targ=   1.0245n   trig=   1.0155n
 
@@ -1050,8 +1050,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.0888p  targ=   2.0246n   trig=   2.0215n
- tplh=   5.3996p  targ=   1.0187n   trig=   1.0133n
+ tplh=   3.0888p  targ=   2.0246n   trig=   2.0215n
+ tphl=   5.3996p  targ=   1.0187n   trig=   1.0133n
  tr=   6.0371p  targ=   2.0280n   trig=   2.0220n
  tf=   9.1953p  targ=   1.0248n   trig=   1.0156n
 
@@ -1064,8 +1064,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.1272p  targ=   2.0250n   trig=   2.0219n
- tplh=   5.4934p  targ=   1.0189n   trig=   1.0134n
+ tplh=   3.1272p  targ=   2.0250n   trig=   2.0219n
+ tphl=   5.4934p  targ=   1.0189n   trig=   1.0134n
  tr=   6.1154p  targ=   2.0285n   trig=   2.0224n
  tf=   9.3525p  targ=   1.0251n   trig=   1.0158n
 
@@ -1078,8 +1078,8 @@
  * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- tphl=   3.1572p  targ=   2.0252n   trig=   2.0221n
- tplh=   5.5902p  targ=   1.0191n   trig=   1.0135n
+ tplh=   3.1572p  targ=   2.0252n   trig=   2.0221n
+ tphl=   5.5902p  targ=   1.0191n   trig=   1.0135n
  tr=   6.3354p  targ=   2.0288n   trig=   2.0225n
  tf=   9.5049p  targ=   1.0254n   trig=   1.0159n
 
@@ -1098,7 +1098,7 @@
  OS:
  Linux version 4.18.0-553.153.1.el8_10.x86_64 (mockbuild@x86-64-03.build.eng.rdu2.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)) #1 SMP Tue Aug 4 21:00:26 EDT 2026
 
- System loadavg : 1.89 1.61 1.27 1/1613 258927
+ System loadavg : 0.57 0.53 0.72 2/1562 272202
 
 
   ******  PrimeSim HSPICE Threads Information  ******
@@ -1123,20 +1123,20 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.15           1         166
-  transient          0.31    10800036        8910        3497 rev=        87
-  readin             0.32
+  op point           0.16           1         166
+  transient          0.28    10800036        8910        3497 rev=        87
+  readin             0.30
   errchk             0.00
-  setup              0.07
+  setup              0.11
   output             0.00
 
 
            peak memory used        522.89 megabytes
            total cpu time            0.84 seconds
-           total elapsed time        1.35 seconds
-           job started at     16:29:27 09/08/2026
-           job ended   at     16:29:28 09/08/2026
-           job total runtime         1.35 seconds
+           total elapsed time        1.34 seconds
+           job started at     16:50:18 09/08/2026
+           job ended   at     16:50:19 09/08/2026
+           job total runtime         1.34 seconds
 
 
  lic: Release hspice token(s) 
