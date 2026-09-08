@@ -42,14 +42,14 @@ X20 out19 in0 vdd vss INV K=k
 .option post=2
 .probe tran v(in0) 
 
-.tran 0.01p 3n SWEEP gnd_vss LIN 41 0 4.0
+.tran 0.01p 3n * SWEEP gnd_vss LIN 41 0 4.0
 
 * tpLH: out2 falling @0.4V -> out3 rising @0.4V
 .measure tran tplh trig v(out2) val=0.4 fall=1 targ v(out3) val=0.4 rise=1
 * tpHL: out2 rising @0.4V -> out3 falling @0.4V
 .measure tran tphl trig v(out2) val=0.4 rise=1 targ v(out3) val=0.4 fall=1
 
-.measure tran T trig v(in0) val=0.4 rise=100 targ v(in0) val=0.4 rise=101
+.measure tran T trig v(in0) val=0.4 rise=10 targ v(in0) val=0.4 rise=11
 
 .measure tran f param='1/T'
 .measure tran tphl_42 param='tphl*42' 
