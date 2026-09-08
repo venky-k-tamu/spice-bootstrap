@@ -30,10 +30,10 @@ V1 in0 vss dc 0.8 PULSE (0.8 0 1n X X 1n 2n)
 
 .tran 0.01p 3n SWEEP k LIN 36 0.5 4.0
 
-* tpHL: out2 falling @0.4V -> out3 rising @0.4V
-.measure tran tphl trig v(out2) val=0.4 fall=1 targ v(out3) val=0.4 rise=1
-* tpLH: out2 rising @0.4V -> out3 falling @0.4V
-.measure tran tplh trig v(out2) val=0.4 rise=1 targ v(out3) val=0.4 fall=1
+* tpLH: out2 falling @0.4V -> out3 rising @0.4V
+.measure tran tplh trig v(out2) val=0.4 fall=1 targ v(out3) val=0.4 rise=1
+* tpHL: out2 rising @0.4V -> out3 falling @0.4V
+.measure tran tphl trig v(out2) val=0.4 rise=1 targ v(out3) val=0.4 fall=1
 
 * rise time 10% of VDD -> 90% of VDD
 * fall time 90% of VDD -> 10% of VDD
