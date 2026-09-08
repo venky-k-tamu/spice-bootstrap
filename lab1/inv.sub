@@ -2,7 +2,7 @@
 .include "../22nm_HP.pm"
 
 .subckt INV in out vdd vss params: K=2 WN=44n LNCH=22n LPCH=22n
-.param WP = {K*WN}
-MP out in vdd vdd pmos L={LPCH} W={WP}
-MN out in vss vss nmos L={LNCH} W={WN}
+.param WP = 'K*WN'
+MP out in vdd vdd pmos L=LPCH W=WP
+MN out in vss vss nmos L=LNCH W=WN
 .ends INV
