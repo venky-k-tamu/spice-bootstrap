@@ -1,0 +1,18 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "W-2024.09 linux64"
+* "format" "HSP"
+* "rundate" "18:22:28 09/08/2026 "
+* "netlist" "ring_3.sp "
+* "runtitle" "* lab2"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in0 = 799.9636m       
++ out0 = 799.9995m       
++ out1 =  32.4276u       
++ vdd = 800.0000m       
++ vss =   0.            
+***   END: Saved Operating Point ***                     

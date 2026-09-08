@@ -1,0 +1,6 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='W-2024.09 linux64' PARAM_COUNT=0
+.TITLE '* lab2'
+ tplh             tphl             t                f               
+ tphl_42          tplh_42          temper           alter#          
+  3.040e-12        2.851e-12        1.771e-11        5.645e+10      
+  1.197e-10        1.277e-10         25.0000        1               
