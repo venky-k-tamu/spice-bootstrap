@@ -1,15 +1,22 @@
 # Inverter Chain K-Sweep Results
 
-Technology: 22nm PTM-HP (BSIM4, level=54), V<sub>DD</sub> = 0.8 V, W<sub>N</sub> = 44n (fixed), W<sub>P</sub> = K·W<sub>N</sub>.
-7-stage inverter chain, HSPICE, sweeping K from 0.5 to 4.0 in steps of 0.1 (36 points), probing the out2 -> out3 stage. Two parts below differ only in the input pulse rise/fall time `X`.
+Technology: 22nm PTM-HP 
+Nominal VDD = 0.8 V
+WN = 44nm, WP = K·WN
+L = 22nm for both PMOS and NMOS
+7-stage inverter chain
+HSPICE simulation sweeping K from 0.5 to 4.0 in steps of 0.1 (36 points), probing the out2 -> out3 stage. 
+Two parts below differ only in the input pulse rise/fall time `X`.
 
 ## Part A — X = 10p
 
 Deck: `deck_7_inv.sp`. Source data: `results_10p/results.mt0`; tabulated as `results_10p/k_sweep_results.csv`.
+K at which tpHL == tpLH is 1.3
+K at which tr == tf is 1.9
 
-### A.1 Propagation delay: tpHL, tpLH
+### A.1 Propagation delay
 
-tpHL / tpLH measured at the 0.4 V (50%) logic threshold.
+tpHL and tpLH measured at the 0.4 V (50% of VDD)
 
 | K | tpHL (ps) | tpLH (ps) |
 |---|---|---|
@@ -50,9 +57,9 @@ tpHL / tpLH measured at the 0.4 V (50%) logic threshold.
 | 3.90 | 5.500 | 3.124 |
 | 4.00 | 5.591 | 3.130 |
 
-### A.2 Rise / fall time: tr, tf
+### A.2 Rise and fall time: tr, tf
 
-tr / tf measured at out3, 10%-90% (rise) and 90%-10% (fall) of V<sub>DD</sub> (0.08 V <-> 0.72 V).
+tr and tf measured at out3, 10%-90% (rise) and 90%-10% (fall) of VDD (0.08 V <-> 0.72 V).
 
 | K | tr (ps) | tf (ps) |
 |---|---|---|
@@ -104,10 +111,13 @@ tr / tf measured at out3, 10%-90% (rise) and 90%-10% (fall) of V<sub>DD</sub> (0
 ## Part B — X = 5.65p
 
 Deck: `1b_deck_7_inv.sp` — same as Part A's `deck_7_inv.sp`, but with the input pulse rise/fall time `X` changed from 10p to **5.65p**. Source data: `results_1b/results.mt0`; tabulated as `results_1b/k_sweep_results.csv`.
+K at which tpHL == tpLH is 1.33
+K at which tr == tf is 1.9
 
 ### B.1 Propagation delay: tpHL, tpLH
 
-tpHL / tpLH measured at the 0.4 V (50%) logic threshold.
+tpHL and tpLH measured at the 0.4 V (50% of VDD)
+
 
 | K | tpHL (ps) | tpLH (ps) |
 |---|---|---|
@@ -150,7 +160,7 @@ tpHL / tpLH measured at the 0.4 V (50%) logic threshold.
 
 ### B.2 Rise / fall time: tr, tf
 
-tr / tf measured at out3, 10%-90% (rise) and 90%-10% (fall) of V<sub>DD</sub> (0.08 V <-> 0.72 V).
+tr and tf measured at out3, 10%-90% (rise) and 90%-10% (fall) of VDD (0.08 V <-> 0.72 V).
 
 | K | tr (ps) | tf (ps) |
 |---|---|---|
