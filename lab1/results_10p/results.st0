@@ -3,7 +3,7 @@ Input File: deck_7_inv.sp
 lic:
 lic: FLEXlm: SDK_14.2
 lic: USER:   venky.k              HOSTNAME: n02-hera.olympus.ece.tamu.edu
-lic: HOSTID: ffffffffa8c00c02     PID:      211945
+lic: HOSTID: ffffffffa8c00c02     PID:      252571
 lic: Using FLEXlm license file:
 lic: 27070@coe-vtls3.engr.tamu.edu
 lic: Checkout 1 hspice
@@ -11,7 +11,7 @@ lic: License/Maintenance for hspice will expire on 12-jan-2027/2025.06
 lic: 1(in_use)/100(total) FLOATING license(s) on SERVER 27070@coe-vtls3.engr.tamu.edu
 lic:
 
- init: begin read circuit files, cpu clock= 6.92E-01
+ init: begin read circuit files, cpu clock= 8.04E-01
        option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/ad
        option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/behave
        option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/bjt
@@ -26,553 +26,553 @@ lic:
        option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/tline
        option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/xilinx
        option post =     2.00
- init: end read circuit files, cpu clock= 6.94E-01 peak memory=     521 mb
- init: begin check errors, cpu clock= 6.94E-01
- init: end check errors, cpu clock= 6.96E-01 peak memory=     521 mb
- init: begin setup matrix, pivot=     0 cpu clock= 6.96E-01
-       establish matrix -- done, cpu clock= 6.96E-01 peak memory=     521 mb
-       re-order matrix -- done, cpu clock= 6.96E-01 peak memory=     521 mb
- init: end setup matrix, cpu clock= 7.62E-01 peak memory=     521 mb
+ init: end read circuit files, cpu clock= 8.06E-01 peak memory=     521 mb
+ init: begin check errors, cpu clock= 8.06E-01
+ init: end check errors, cpu clock= 8.08E-01 peak memory=     521 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 8.08E-01
+       establish matrix -- done, cpu clock= 8.09E-01 peak memory=     521 mb
+       re-order matrix -- done, cpu clock= 8.09E-01 peak memory=     521 mb
+ init: end setup matrix, cpu clock= 9.26E-01 peak memory=     521 mb
  sweep: parameter       parameter1       begin, #sweeps =  36
  parameter: k               =    5.00E-01
- dcop: begin dcop, cpu clock= 7.62E-01
- dcop: end dcop, cpu clock= 8.19E-01 peak memory=     521 mb tot_iter=       4
- output: results.mt0
- sweep: tran tran1    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 8.34E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 8.35E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 8.35E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 8.35E-01
- tran: time= 1.3167E-09 tot_iter=     124 conv_iter=      49 cpu clock= 8.38E-01
- tran: time= 1.6167E-09 tot_iter=     128 conv_iter=      51 cpu clock= 8.38E-01
- tran: time= 1.9167E-09 tot_iter=     132 conv_iter=      53 cpu clock= 8.38E-01
- tran: time= 2.1296E-09 tot_iter=     236 conv_iter=      90 cpu clock= 8.41E-01
- tran: time= 2.4749E-09 tot_iter=     242 conv_iter=      93 cpu clock= 8.41E-01
- tran: time= 2.7749E-09 tot_iter=     246 conv_iter=      95 cpu clock= 8.41E-01
- tran: time= 3.0000E-09 tot_iter=     250 conv_iter=      97 cpu clock= 8.41E-01
- sweep: tran tran1    end, cpu clock= 8.41E-01 peak memory=     521 mb
- parameter: k               =    6.00E-01
- dcop: begin dcop, cpu clock= 8.59E-01
- dcop: end dcop, cpu clock= 8.60E-01 peak memory=     521 mb tot_iter=       8
- output: results.tr0
- sweep: tran tran2    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 8.60E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 8.60E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 8.60E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 8.60E-01
- tran: time= 1.2346E-09 tot_iter=     121 conv_iter=      48 cpu clock= 8.63E-01
- tran: time= 1.5346E-09 tot_iter=     125 conv_iter=      50 cpu clock= 8.63E-01
- tran: time= 1.8346E-09 tot_iter=     129 conv_iter=      52 cpu clock= 8.63E-01
- tran: time= 2.1280E-09 tot_iter=     237 conv_iter=      90 cpu clock= 8.66E-01
- tran: time= 2.5017E-09 tot_iter=     243 conv_iter=      93 cpu clock= 8.66E-01
- tran: time= 2.8017E-09 tot_iter=     247 conv_iter=      95 cpu clock= 8.66E-01
- tran: time= 3.0000E-09 tot_iter=     251 conv_iter=      97 cpu clock= 8.66E-01
- sweep: tran tran2    end, cpu clock= 8.66E-01 peak memory=     521 mb
- parameter: k               =    7.00E-01
- dcop: begin dcop, cpu clock= 8.66E-01
- dcop: end dcop, cpu clock= 8.67E-01 peak memory=     521 mb tot_iter=      12
- output: results.tr0
- sweep: tran tran3    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 8.67E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 8.67E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 8.67E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 8.67E-01
- tran: time= 1.2017E-09 tot_iter=     118 conv_iter=      47 cpu clock= 8.70E-01
- tran: time= 1.5017E-09 tot_iter=     122 conv_iter=      49 cpu clock= 8.70E-01
- tran: time= 1.8017E-09 tot_iter=     126 conv_iter=      51 cpu clock= 8.70E-01
- tran: time= 2.1177E-09 tot_iter=     224 conv_iter=      87 cpu clock= 8.73E-01
- tran: time= 2.4501E-09 tot_iter=     230 conv_iter=      90 cpu clock= 8.73E-01
- tran: time= 2.7501E-09 tot_iter=     234 conv_iter=      92 cpu clock= 8.73E-01
- tran: time= 3.0000E-09 tot_iter=     238 conv_iter=      94 cpu clock= 8.73E-01
- sweep: tran tran3    end, cpu clock= 8.73E-01 peak memory=     521 mb
- parameter: k               =    8.00E-01
- dcop: begin dcop, cpu clock= 8.73E-01
- dcop: end dcop, cpu clock= 8.74E-01 peak memory=     521 mb tot_iter=      16
- output: results.tr0
- sweep: tran tran4    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 8.74E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 8.74E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 8.74E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 8.74E-01
- tran: time= 1.3292E-09 tot_iter=     123 conv_iter=      48 cpu clock= 8.77E-01
- tran: time= 1.6292E-09 tot_iter=     127 conv_iter=      50 cpu clock= 8.77E-01
- tran: time= 1.9292E-09 tot_iter=     131 conv_iter=      52 cpu clock= 8.77E-01
- tran: time= 2.1003E-09 tot_iter=     228 conv_iter=      87 cpu clock= 8.80E-01
- tran: time= 2.4755E-09 tot_iter=     234 conv_iter=      90 cpu clock= 8.80E-01
- tran: time= 2.7755E-09 tot_iter=     238 conv_iter=      92 cpu clock= 8.80E-01
- tran: time= 3.0000E-09 tot_iter=     242 conv_iter=      94 cpu clock= 8.80E-01
- sweep: tran tran4    end, cpu clock= 8.80E-01 peak memory=     521 mb
- parameter: k               =    9.00E-01
- dcop: begin dcop, cpu clock= 8.80E-01
- dcop: end dcop, cpu clock= 8.81E-01 peak memory=     521 mb tot_iter=      20
- output: results.tr0
- sweep: tran tran5    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 8.81E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 8.81E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 8.81E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 8.81E-01
- tran: time= 1.2132E-09 tot_iter=     118 conv_iter=      46 cpu clock= 8.97E-01
- tran: time= 1.5132E-09 tot_iter=     122 conv_iter=      48 cpu clock= 8.97E-01
- tran: time= 1.8132E-09 tot_iter=     126 conv_iter=      50 cpu clock= 8.97E-01
- tran: time= 2.1162E-09 tot_iter=     225 conv_iter=      86 cpu clock= 9.00E-01
- tran: time= 2.4914E-09 tot_iter=     231 conv_iter=      89 cpu clock= 9.00E-01
- tran: time= 2.7914E-09 tot_iter=     235 conv_iter=      91 cpu clock= 9.00E-01
- tran: time= 3.0000E-09 tot_iter=     239 conv_iter=      93 cpu clock= 9.00E-01
- sweep: tran tran5    end, cpu clock= 9.00E-01 peak memory=     521 mb
- parameter: k               =    1.00E+00
- dcop: begin dcop, cpu clock= 9.00E-01
- dcop: end dcop, cpu clock= 9.00E-01 peak memory=     521 mb tot_iter=      24
- output: results.tr0
- sweep: tran tran6    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 9.00E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 9.01E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 9.01E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 9.01E-01
- tran: time= 1.2567E-09 tot_iter=     120 conv_iter=      46 cpu clock= 9.04E-01
- tran: time= 1.5567E-09 tot_iter=     124 conv_iter=      48 cpu clock= 9.04E-01
- tran: time= 1.8567E-09 tot_iter=     128 conv_iter=      50 cpu clock= 9.04E-01
- tran: time= 2.1269E-09 tot_iter=     226 conv_iter=      85 cpu clock= 9.06E-01
- tran: time= 2.5402E-09 tot_iter=     232 conv_iter=      88 cpu clock= 9.07E-01
- tran: time= 2.8402E-09 tot_iter=     236 conv_iter=      90 cpu clock= 9.07E-01
- tran: time= 3.0000E-09 tot_iter=     238 conv_iter=      91 cpu clock= 9.07E-01
- sweep: tran tran6    end, cpu clock= 9.07E-01 peak memory=     521 mb
- parameter: k               =    1.10E+00
- dcop: begin dcop, cpu clock= 9.07E-01
- dcop: end dcop, cpu clock= 9.07E-01 peak memory=     521 mb tot_iter=      28
- output: results.tr0
- sweep: tran tran7    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 9.07E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 9.07E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 9.07E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 9.07E-01
- tran: time= 1.2934E-09 tot_iter=     119 conv_iter=      46 cpu clock= 9.19E-01
- tran: time= 1.5934E-09 tot_iter=     123 conv_iter=      48 cpu clock= 9.19E-01
- tran: time= 1.8934E-09 tot_iter=     127 conv_iter=      50 cpu clock= 9.19E-01
- tran: time= 2.1354E-09 tot_iter=     224 conv_iter=      85 cpu clock= 9.22E-01
- tran: time= 2.4139E-09 tot_iter=     228 conv_iter=      87 cpu clock= 9.22E-01
- tran: time= 2.7139E-09 tot_iter=     232 conv_iter=      89 cpu clock= 9.22E-01
- tran: time= 3.0000E-09 tot_iter=     236 conv_iter=      91 cpu clock= 9.22E-01
- sweep: tran tran7    end, cpu clock= 9.22E-01 peak memory=     521 mb
- parameter: k               =    1.20E+00
- dcop: begin dcop, cpu clock= 9.23E-01
- dcop: end dcop, cpu clock= 9.23E-01 peak memory=     521 mb tot_iter=      32
- output: results.tr0
- sweep: tran tran8    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 9.23E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 9.23E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 9.23E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 9.23E-01
- tran: time= 1.2318E-09 tot_iter=     119 conv_iter=      46 cpu clock= 9.26E-01
- tran: time= 1.5318E-09 tot_iter=     123 conv_iter=      48 cpu clock= 9.26E-01
- tran: time= 1.8318E-09 tot_iter=     127 conv_iter=      50 cpu clock= 9.26E-01
- tran: time= 2.1438E-09 tot_iter=     228 conv_iter=      86 cpu clock= 9.29E-01
- tran: time= 2.4438E-09 tot_iter=     232 conv_iter=      88 cpu clock= 9.29E-01
- tran: time= 2.7438E-09 tot_iter=     236 conv_iter=      90 cpu clock= 9.29E-01
- tran: time= 3.0000E-09 tot_iter=     240 conv_iter=      92 cpu clock= 9.29E-01
- sweep: tran tran8    end, cpu clock= 9.29E-01 peak memory=     521 mb
- parameter: k               =    1.30E+00
- dcop: begin dcop, cpu clock= 9.29E-01
- dcop: end dcop, cpu clock= 9.30E-01 peak memory=     521 mb tot_iter=      36
- output: results.tr0
- sweep: tran tran9    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 9.30E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 9.30E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 9.30E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 9.30E-01
- tran: time= 1.3285E-09 tot_iter=     119 conv_iter=      46 cpu clock= 9.46E-01
- tran: time= 1.6285E-09 tot_iter=     123 conv_iter=      48 cpu clock= 9.46E-01
- tran: time= 1.9285E-09 tot_iter=     127 conv_iter=      50 cpu clock= 9.46E-01
- tran: time= 2.1085E-09 tot_iter=     223 conv_iter=      84 cpu clock= 9.49E-01
- tran: time= 2.4822E-09 tot_iter=     229 conv_iter=      87 cpu clock= 9.49E-01
- tran: time= 2.7822E-09 tot_iter=     233 conv_iter=      89 cpu clock= 9.49E-01
- tran: time= 3.0000E-09 tot_iter=     237 conv_iter=      91 cpu clock= 9.49E-01
- sweep: tran tran9    end, cpu clock= 9.49E-01 peak memory=     521 mb
- parameter: k               =    1.40E+00
- dcop: begin dcop, cpu clock= 9.49E-01
- dcop: end dcop, cpu clock= 9.49E-01 peak memory=     521 mb tot_iter=      40
- output: results.tr0
- sweep: tran tran10   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 9.49E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 9.50E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 9.50E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 9.50E-01
- tran: time= 1.3320E-09 tot_iter=     119 conv_iter=      46 cpu clock= 9.53E-01
- tran: time= 1.6320E-09 tot_iter=     123 conv_iter=      48 cpu clock= 9.53E-01
- tran: time= 1.9320E-09 tot_iter=     127 conv_iter=      50 cpu clock= 9.53E-01
- tran: time= 2.1081E-09 tot_iter=     221 conv_iter=      84 cpu clock= 9.55E-01
- tran: time= 2.4815E-09 tot_iter=     227 conv_iter=      87 cpu clock= 9.55E-01
- tran: time= 2.7815E-09 tot_iter=     231 conv_iter=      89 cpu clock= 9.55E-01
- tran: time= 3.0000E-09 tot_iter=     235 conv_iter=      91 cpu clock= 9.56E-01
- sweep: tran tran10   end, cpu clock= 9.56E-01 peak memory=     521 mb
- parameter: k               =    1.50E+00
- dcop: begin dcop, cpu clock= 9.56E-01
- dcop: end dcop, cpu clock= 9.56E-01 peak memory=     521 mb tot_iter=      44
- output: results.tr0
- sweep: tran tran11   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 9.56E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 9.56E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 9.56E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 9.56E-01
- tran: time= 1.3355E-09 tot_iter=     119 conv_iter=      46 cpu clock= 9.72E-01
- tran: time= 1.6355E-09 tot_iter=     123 conv_iter=      48 cpu clock= 9.72E-01
- tran: time= 1.9355E-09 tot_iter=     127 conv_iter=      50 cpu clock= 9.72E-01
- tran: time= 2.1077E-09 tot_iter=     222 conv_iter=      84 cpu clock= 9.75E-01
- tran: time= 2.4812E-09 tot_iter=     228 conv_iter=      87 cpu clock= 9.75E-01
- tran: time= 2.7812E-09 tot_iter=     232 conv_iter=      89 cpu clock= 9.75E-01
- tran: time= 3.0000E-09 tot_iter=     236 conv_iter=      91 cpu clock= 9.75E-01
- sweep: tran tran11   end, cpu clock= 9.75E-01 peak memory=     521 mb
- parameter: k               =    1.60E+00
- dcop: begin dcop, cpu clock= 9.75E-01
- dcop: end dcop, cpu clock= 9.76E-01 peak memory=     521 mb tot_iter=      48
- output: results.tr0
- sweep: tran tran12   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 9.76E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 9.76E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 9.76E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 9.76E-01
- tran: time= 1.3078E-09 tot_iter=     118 conv_iter=      46 cpu clock= 9.79E-01
- tran: time= 1.6078E-09 tot_iter=     122 conv_iter=      48 cpu clock= 9.79E-01
- tran: time= 1.9078E-09 tot_iter=     126 conv_iter=      50 cpu clock= 9.79E-01
- tran: time= 2.1042E-09 tot_iter=     221 conv_iter=      84 cpu clock= 9.81E-01
- tran: time= 2.4750E-09 tot_iter=     227 conv_iter=      87 cpu clock= 9.82E-01
- tran: time= 2.7750E-09 tot_iter=     231 conv_iter=      89 cpu clock= 9.82E-01
- tran: time= 3.0000E-09 tot_iter=     235 conv_iter=      91 cpu clock= 9.82E-01
- sweep: tran tran12   end, cpu clock= 9.82E-01 peak memory=     521 mb
- parameter: k               =    1.70E+00
- dcop: begin dcop, cpu clock= 9.82E-01
- dcop: end dcop, cpu clock= 9.82E-01 peak memory=     521 mb tot_iter=      52
- output: results.tr0
- sweep: tran tran13   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 9.82E-01
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 9.82E-01
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 9.82E-01
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 9.82E-01
- tran: time= 1.3491E-09 tot_iter=     118 conv_iter=      46 cpu clock= 9.98E-01
- tran: time= 1.6491E-09 tot_iter=     122 conv_iter=      48 cpu clock= 9.98E-01
- tran: time= 1.9491E-09 tot_iter=     126 conv_iter=      50 cpu clock= 9.98E-01
- tran: time= 2.1081E-09 tot_iter=     220 conv_iter=      84 cpu clock= 1.00E+00
- tran: time= 2.4863E-09 tot_iter=     226 conv_iter=      87 cpu clock= 1.00E+00
- tran: time= 2.7863E-09 tot_iter=     230 conv_iter=      89 cpu clock= 1.00E+00
- tran: time= 3.0000E-09 tot_iter=     234 conv_iter=      91 cpu clock= 1.00E+00
- sweep: tran tran13   end, cpu clock= 1.00E+00 peak memory=     521 mb
- parameter: k               =    1.80E+00
- dcop: begin dcop, cpu clock= 1.00E+00
- dcop: end dcop, cpu clock= 1.00E+00 peak memory=     521 mb tot_iter=      56
- output: results.tr0
- sweep: tran tran14   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.00E+00
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.00E+00
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.00E+00
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.00E+00
- tran: time= 1.3441E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.00E+00
- tran: time= 1.6441E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.00E+00
- tran: time= 1.9441E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.01E+00
- tran: time= 2.1176E-09 tot_iter=     219 conv_iter=      84 cpu clock= 1.01E+00
- tran: time= 2.5081E-09 tot_iter=     225 conv_iter=      87 cpu clock= 1.01E+00
- tran: time= 2.8081E-09 tot_iter=     229 conv_iter=      89 cpu clock= 1.01E+00
- tran: time= 3.0000E-09 tot_iter=     233 conv_iter=      91 cpu clock= 1.01E+00
- sweep: tran tran14   end, cpu clock= 1.01E+00 peak memory=     521 mb
- parameter: k               =    1.90E+00
- dcop: begin dcop, cpu clock= 1.01E+00
- dcop: end dcop, cpu clock= 1.01E+00 peak memory=     521 mb tot_iter=      61
- output: results.tr0
- sweep: tran tran15   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.01E+00
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.01E+00
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.01E+00
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.01E+00
- tran: time= 1.3478E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.02E+00
- tran: time= 1.6478E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.02E+00
- tran: time= 1.9478E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.02E+00
- tran: time= 2.1415E-09 tot_iter=     222 conv_iter=      85 cpu clock= 1.03E+00
- tran: time= 2.4366E-09 tot_iter=     226 conv_iter=      87 cpu clock= 1.03E+00
- tran: time= 2.7366E-09 tot_iter=     230 conv_iter=      89 cpu clock= 1.03E+00
- tran: time= 3.0000E-09 tot_iter=     234 conv_iter=      91 cpu clock= 1.03E+00
- sweep: tran tran15   end, cpu clock= 1.03E+00 peak memory=     521 mb
- parameter: k               =    2.00E+00
- dcop: begin dcop, cpu clock= 1.03E+00
- dcop: end dcop, cpu clock= 1.03E+00 peak memory=     521 mb tot_iter=      66
- output: results.tr0
- sweep: tran tran16   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.03E+00
+ dcop: begin dcop, cpu clock= 9.26E-01
+ dcop: end dcop, cpu clock= 9.97E-01 peak memory=     521 mb tot_iter=       4
+ output: results_10p/results.mt0
+ sweep: tran tran1    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.03E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.03E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.03E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.03E+00
- tran: time= 1.3409E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.04E+00
- tran: time= 1.6409E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.04E+00
- tran: time= 1.9409E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.04E+00
- tran: time= 2.1430E-09 tot_iter=     222 conv_iter=      85 cpu clock= 1.05E+00
- tran: time= 2.4378E-09 tot_iter=     226 conv_iter=      87 cpu clock= 1.05E+00
- tran: time= 2.7378E-09 tot_iter=     230 conv_iter=      89 cpu clock= 1.05E+00
- tran: time= 3.0000E-09 tot_iter=     234 conv_iter=      91 cpu clock= 1.05E+00
- sweep: tran tran16   end, cpu clock= 1.05E+00 peak memory=     521 mb
- parameter: k               =    2.10E+00
- dcop: begin dcop, cpu clock= 1.05E+00
- dcop: end dcop, cpu clock= 1.05E+00 peak memory=     521 mb tot_iter=      71
- output: results.tr0
- sweep: tran tran17   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.05E+00
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.05E+00
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.05E+00
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.05E+00
- tran: time= 1.3402E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.05E+00
- tran: time= 1.6402E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.05E+00
- tran: time= 1.9402E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.05E+00
- tran: time= 2.1512E-09 tot_iter=     222 conv_iter=      85 cpu clock= 1.05E+00
- tran: time= 2.4485E-09 tot_iter=     226 conv_iter=      87 cpu clock= 1.05E+00
- tran: time= 2.7485E-09 tot_iter=     230 conv_iter=      89 cpu clock= 1.05E+00
- tran: time= 3.0000E-09 tot_iter=     234 conv_iter=      91 cpu clock= 1.05E+00
- sweep: tran tran17   end, cpu clock= 1.05E+00 peak memory=     521 mb
- parameter: k               =    2.20E+00
- dcop: begin dcop, cpu clock= 1.05E+00
- dcop: end dcop, cpu clock= 1.05E+00 peak memory=     521 mb tot_iter=      76
- output: results.tr0
- sweep: tran tran18   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.05E+00
- tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.05E+00
- tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.05E+00
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.05E+00
- tran: time= 1.3401E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.07E+00
- tran: time= 1.6401E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.07E+00
- tran: time= 1.9401E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.07E+00
- tran: time= 2.1460E-09 tot_iter=     222 conv_iter=      85 cpu clock= 1.07E+00
- tran: time= 2.4276E-09 tot_iter=     226 conv_iter=      87 cpu clock= 1.07E+00
- tran: time= 2.7276E-09 tot_iter=     230 conv_iter=      89 cpu clock= 1.07E+00
- tran: time= 3.0000E-09 tot_iter=     234 conv_iter=      91 cpu clock= 1.07E+00
- sweep: tran tran18   end, cpu clock= 1.07E+00 peak memory=     521 mb
- parameter: k               =    2.30E+00
+ tran: time= 1.3167E-09 tot_iter=     124 conv_iter=      49 cpu clock= 1.03E+00
+ tran: time= 1.6167E-09 tot_iter=     128 conv_iter=      51 cpu clock= 1.03E+00
+ tran: time= 1.9167E-09 tot_iter=     132 conv_iter=      53 cpu clock= 1.03E+00
+ tran: time= 2.1296E-09 tot_iter=     236 conv_iter=      90 cpu clock= 1.04E+00
+ tran: time= 2.4749E-09 tot_iter=     242 conv_iter=      93 cpu clock= 1.04E+00
+ tran: time= 2.7749E-09 tot_iter=     246 conv_iter=      95 cpu clock= 1.04E+00
+ tran: time= 3.0000E-09 tot_iter=     250 conv_iter=      97 cpu clock= 1.04E+00
+ sweep: tran tran1    end, cpu clock= 1.04E+00 peak memory=     522 mb
+ parameter: k               =    6.00E-01
  dcop: begin dcop, cpu clock= 1.07E+00
- dcop: end dcop, cpu clock= 1.07E+00 peak memory=     521 mb tot_iter=      81
- output: results.tr0
- sweep: tran tran19   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.07E+00
+ dcop: end dcop, cpu clock= 1.07E+00 peak memory=     522 mb tot_iter=       8
+ output: results_10p/results.tr0
+ sweep: tran tran2    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.07E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.07E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.07E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.07E+00
- tran: time= 1.3314E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.08E+00
- tran: time= 1.6314E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.08E+00
- tran: time= 1.9314E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.08E+00
- tran: time= 2.1213E-09 tot_iter=     222 conv_iter=      85 cpu clock= 1.08E+00
- tran: time= 2.5112E-09 tot_iter=     228 conv_iter=      88 cpu clock= 1.08E+00
- tran: time= 2.8112E-09 tot_iter=     232 conv_iter=      90 cpu clock= 1.08E+00
- tran: time= 3.0000E-09 tot_iter=     236 conv_iter=      92 cpu clock= 1.08E+00
- sweep: tran tran19   end, cpu clock= 1.08E+00 peak memory=     521 mb
- parameter: k               =    2.40E+00
+ tran: time= 1.2346E-09 tot_iter=     121 conv_iter=      48 cpu clock= 1.08E+00
+ tran: time= 1.5346E-09 tot_iter=     125 conv_iter=      50 cpu clock= 1.08E+00
+ tran: time= 1.8346E-09 tot_iter=     129 conv_iter=      52 cpu clock= 1.08E+00
+ tran: time= 2.1280E-09 tot_iter=     237 conv_iter=      90 cpu clock= 1.08E+00
+ tran: time= 2.5017E-09 tot_iter=     243 conv_iter=      93 cpu clock= 1.08E+00
+ tran: time= 2.8017E-09 tot_iter=     247 conv_iter=      95 cpu clock= 1.08E+00
+ tran: time= 3.0000E-09 tot_iter=     251 conv_iter=      97 cpu clock= 1.08E+00
+ sweep: tran tran2    end, cpu clock= 1.08E+00 peak memory=     522 mb
+ parameter: k               =    7.00E-01
  dcop: begin dcop, cpu clock= 1.08E+00
- dcop: end dcop, cpu clock= 1.08E+00 peak memory=     521 mb tot_iter=      86
- output: results.tr0
- sweep: tran tran20   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.08E+00
+ dcop: end dcop, cpu clock= 1.08E+00 peak memory=     522 mb tot_iter=      12
+ output: results_10p/results.tr0
+ sweep: tran tran3    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.08E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.08E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.08E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.08E+00
- tran: time= 1.3006E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.10E+00
- tran: time= 1.6006E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.10E+00
- tran: time= 1.9006E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.10E+00
- tran: time= 2.1149E-09 tot_iter=     223 conv_iter=      85 cpu clock= 1.10E+00
- tran: time= 2.4934E-09 tot_iter=     229 conv_iter=      88 cpu clock= 1.10E+00
- tran: time= 2.7934E-09 tot_iter=     233 conv_iter=      90 cpu clock= 1.10E+00
- tran: time= 3.0000E-09 tot_iter=     237 conv_iter=      92 cpu clock= 1.10E+00
- sweep: tran tran20   end, cpu clock= 1.10E+00 peak memory=     521 mb
- parameter: k               =    2.50E+00
+ tran: time= 1.2017E-09 tot_iter=     118 conv_iter=      47 cpu clock= 1.08E+00
+ tran: time= 1.5017E-09 tot_iter=     122 conv_iter=      49 cpu clock= 1.08E+00
+ tran: time= 1.8017E-09 tot_iter=     126 conv_iter=      51 cpu clock= 1.08E+00
+ tran: time= 2.1177E-09 tot_iter=     224 conv_iter=      87 cpu clock= 1.09E+00
+ tran: time= 2.4501E-09 tot_iter=     230 conv_iter=      90 cpu clock= 1.09E+00
+ tran: time= 2.7501E-09 tot_iter=     234 conv_iter=      92 cpu clock= 1.09E+00
+ tran: time= 3.0000E-09 tot_iter=     238 conv_iter=      94 cpu clock= 1.09E+00
+ sweep: tran tran3    end, cpu clock= 1.09E+00 peak memory=     522 mb
+ parameter: k               =    8.00E-01
+ dcop: begin dcop, cpu clock= 1.09E+00
+ dcop: end dcop, cpu clock= 1.09E+00 peak memory=     522 mb tot_iter=      16
+ output: results_10p/results.tr0
+ sweep: tran tran4    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.09E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.09E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.09E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.09E+00
+ tran: time= 1.3292E-09 tot_iter=     123 conv_iter=      48 cpu clock= 1.09E+00
+ tran: time= 1.6292E-09 tot_iter=     127 conv_iter=      50 cpu clock= 1.09E+00
+ tran: time= 1.9292E-09 tot_iter=     131 conv_iter=      52 cpu clock= 1.09E+00
+ tran: time= 2.1003E-09 tot_iter=     228 conv_iter=      87 cpu clock= 1.09E+00
+ tran: time= 2.4755E-09 tot_iter=     234 conv_iter=      90 cpu clock= 1.09E+00
+ tran: time= 2.7755E-09 tot_iter=     238 conv_iter=      92 cpu clock= 1.09E+00
+ tran: time= 3.0000E-09 tot_iter=     242 conv_iter=      94 cpu clock= 1.09E+00
+ sweep: tran tran4    end, cpu clock= 1.09E+00 peak memory=     522 mb
+ parameter: k               =    9.00E-01
+ dcop: begin dcop, cpu clock= 1.09E+00
+ dcop: end dcop, cpu clock= 1.09E+00 peak memory=     522 mb tot_iter=      20
+ output: results_10p/results.tr0
+ sweep: tran tran5    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.09E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.09E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.10E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.10E+00
+ tran: time= 1.2132E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.10E+00
+ tran: time= 1.5132E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.10E+00
+ tran: time= 1.8132E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.10E+00
+ tran: time= 2.1162E-09 tot_iter=     225 conv_iter=      86 cpu clock= 1.10E+00
+ tran: time= 2.4914E-09 tot_iter=     231 conv_iter=      89 cpu clock= 1.10E+00
+ tran: time= 2.7914E-09 tot_iter=     235 conv_iter=      91 cpu clock= 1.10E+00
+ tran: time= 3.0000E-09 tot_iter=     239 conv_iter=      93 cpu clock= 1.10E+00
+ sweep: tran tran5    end, cpu clock= 1.10E+00 peak memory=     522 mb
+ parameter: k               =    1.00E+00
  dcop: begin dcop, cpu clock= 1.10E+00
- dcop: end dcop, cpu clock= 1.10E+00 peak memory=     521 mb tot_iter=      91
- output: results.tr0
- sweep: tran tran21   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.10E+00
+ dcop: end dcop, cpu clock= 1.10E+00 peak memory=     522 mb tot_iter=      24
+ output: results_10p/results.tr0
+ sweep: tran tran6    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.10E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.10E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.10E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.10E+00
- tran: time= 1.3470E-09 tot_iter=     119 conv_iter=      46 cpu clock= 1.10E+00
- tran: time= 1.6470E-09 tot_iter=     123 conv_iter=      48 cpu clock= 1.10E+00
- tran: time= 1.9470E-09 tot_iter=     127 conv_iter=      50 cpu clock= 1.10E+00
- tran: time= 2.1265E-09 tot_iter=     223 conv_iter=      85 cpu clock= 1.11E+00
- tran: time= 2.5262E-09 tot_iter=     229 conv_iter=      88 cpu clock= 1.11E+00
- tran: time= 2.8262E-09 tot_iter=     233 conv_iter=      90 cpu clock= 1.11E+00
- tran: time= 3.0000E-09 tot_iter=     237 conv_iter=      92 cpu clock= 1.11E+00
- sweep: tran tran21   end, cpu clock= 1.11E+00 peak memory=     521 mb
- parameter: k               =    2.60E+00
- dcop: begin dcop, cpu clock= 1.12E+00
- dcop: end dcop, cpu clock= 1.12E+00 peak memory=     521 mb tot_iter=      96
- output: results.tr0
- sweep: tran tran22   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.12E+00
+ tran: time= 1.2567E-09 tot_iter=     120 conv_iter=      46 cpu clock= 1.10E+00
+ tran: time= 1.5567E-09 tot_iter=     124 conv_iter=      48 cpu clock= 1.10E+00
+ tran: time= 1.8567E-09 tot_iter=     128 conv_iter=      50 cpu clock= 1.10E+00
+ tran: time= 2.1269E-09 tot_iter=     226 conv_iter=      85 cpu clock= 1.11E+00
+ tran: time= 2.5402E-09 tot_iter=     232 conv_iter=      88 cpu clock= 1.11E+00
+ tran: time= 2.8402E-09 tot_iter=     236 conv_iter=      90 cpu clock= 1.11E+00
+ tran: time= 3.0000E-09 tot_iter=     238 conv_iter=      91 cpu clock= 1.11E+00
+ sweep: tran tran6    end, cpu clock= 1.11E+00 peak memory=     522 mb
+ parameter: k               =    1.10E+00
+ dcop: begin dcop, cpu clock= 1.11E+00
+ dcop: end dcop, cpu clock= 1.11E+00 peak memory=     522 mb tot_iter=      28
+ output: results_10p/results.tr0
+ sweep: tran tran7    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.11E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.11E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.11E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.11E+00
+ tran: time= 1.2934E-09 tot_iter=     119 conv_iter=      46 cpu clock= 1.11E+00
+ tran: time= 1.5934E-09 tot_iter=     123 conv_iter=      48 cpu clock= 1.11E+00
+ tran: time= 1.8934E-09 tot_iter=     127 conv_iter=      50 cpu clock= 1.11E+00
+ tran: time= 2.1354E-09 tot_iter=     224 conv_iter=      85 cpu clock= 1.11E+00
+ tran: time= 2.4139E-09 tot_iter=     228 conv_iter=      87 cpu clock= 1.11E+00
+ tran: time= 2.7139E-09 tot_iter=     232 conv_iter=      89 cpu clock= 1.11E+00
+ tran: time= 3.0000E-09 tot_iter=     236 conv_iter=      91 cpu clock= 1.11E+00
+ sweep: tran tran7    end, cpu clock= 1.11E+00 peak memory=     522 mb
+ parameter: k               =    1.20E+00
+ dcop: begin dcop, cpu clock= 1.11E+00
+ dcop: end dcop, cpu clock= 1.11E+00 peak memory=     522 mb tot_iter=      32
+ output: results_10p/results.tr0
+ sweep: tran tran8    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.11E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.12E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.12E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.12E+00
- tran: time= 1.3467E-09 tot_iter=     119 conv_iter=      46 cpu clock= 1.12E+00
- tran: time= 1.6467E-09 tot_iter=     123 conv_iter=      48 cpu clock= 1.12E+00
- tran: time= 1.9467E-09 tot_iter=     127 conv_iter=      50 cpu clock= 1.12E+00
- tran: time= 2.1293E-09 tot_iter=     223 conv_iter=      85 cpu clock= 1.13E+00
- tran: time= 2.5120E-09 tot_iter=     229 conv_iter=      88 cpu clock= 1.13E+00
- tran: time= 2.8120E-09 tot_iter=     233 conv_iter=      90 cpu clock= 1.13E+00
- tran: time= 3.0000E-09 tot_iter=     237 conv_iter=      92 cpu clock= 1.13E+00
- sweep: tran tran22   end, cpu clock= 1.13E+00 peak memory=     521 mb
- parameter: k               =    2.70E+00
+ tran: time= 1.2318E-09 tot_iter=     119 conv_iter=      46 cpu clock= 1.12E+00
+ tran: time= 1.5318E-09 tot_iter=     123 conv_iter=      48 cpu clock= 1.12E+00
+ tran: time= 1.8318E-09 tot_iter=     127 conv_iter=      50 cpu clock= 1.12E+00
+ tran: time= 2.1438E-09 tot_iter=     228 conv_iter=      86 cpu clock= 1.12E+00
+ tran: time= 2.4438E-09 tot_iter=     232 conv_iter=      88 cpu clock= 1.12E+00
+ tran: time= 2.7438E-09 tot_iter=     236 conv_iter=      90 cpu clock= 1.12E+00
+ tran: time= 3.0000E-09 tot_iter=     240 conv_iter=      92 cpu clock= 1.12E+00
+ sweep: tran tran8    end, cpu clock= 1.12E+00 peak memory=     522 mb
+ parameter: k               =    1.30E+00
+ dcop: begin dcop, cpu clock= 1.12E+00
+ dcop: end dcop, cpu clock= 1.12E+00 peak memory=     522 mb tot_iter=      36
+ output: results_10p/results.tr0
+ sweep: tran tran9    begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.12E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.12E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.12E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.12E+00
+ tran: time= 1.3285E-09 tot_iter=     119 conv_iter=      46 cpu clock= 1.12E+00
+ tran: time= 1.6285E-09 tot_iter=     123 conv_iter=      48 cpu clock= 1.12E+00
+ tran: time= 1.9285E-09 tot_iter=     127 conv_iter=      50 cpu clock= 1.12E+00
+ tran: time= 2.1085E-09 tot_iter=     223 conv_iter=      84 cpu clock= 1.13E+00
+ tran: time= 2.4822E-09 tot_iter=     229 conv_iter=      87 cpu clock= 1.13E+00
+ tran: time= 2.7822E-09 tot_iter=     233 conv_iter=      89 cpu clock= 1.13E+00
+ tran: time= 3.0000E-09 tot_iter=     237 conv_iter=      91 cpu clock= 1.13E+00
+ sweep: tran tran9    end, cpu clock= 1.13E+00 peak memory=     522 mb
+ parameter: k               =    1.40E+00
  dcop: begin dcop, cpu clock= 1.13E+00
- dcop: end dcop, cpu clock= 1.13E+00 peak memory=     521 mb tot_iter=     101
- output: results.tr0
- sweep: tran tran23   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.13E+00
+ dcop: end dcop, cpu clock= 1.13E+00 peak memory=     522 mb tot_iter=      40
+ output: results_10p/results.tr0
+ sweep: tran tran10   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.13E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.13E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.13E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.13E+00
- tran: time= 1.2303E-09 tot_iter=     119 conv_iter=      46 cpu clock= 1.13E+00
- tran: time= 1.5303E-09 tot_iter=     123 conv_iter=      48 cpu clock= 1.13E+00
- tran: time= 1.8303E-09 tot_iter=     127 conv_iter=      50 cpu clock= 1.13E+00
- tran: time= 2.1088E-09 tot_iter=     225 conv_iter=      86 cpu clock= 1.15E+00
- tran: time= 2.4163E-09 tot_iter=     231 conv_iter=      89 cpu clock= 1.15E+00
- tran: time= 2.7163E-09 tot_iter=     235 conv_iter=      91 cpu clock= 1.15E+00
- tran: time= 3.0000E-09 tot_iter=     239 conv_iter=      93 cpu clock= 1.15E+00
- sweep: tran tran23   end, cpu clock= 1.15E+00 peak memory=     521 mb
- parameter: k               =    2.80E+00
+ tran: time= 1.3320E-09 tot_iter=     119 conv_iter=      46 cpu clock= 1.13E+00
+ tran: time= 1.6320E-09 tot_iter=     123 conv_iter=      48 cpu clock= 1.13E+00
+ tran: time= 1.9320E-09 tot_iter=     127 conv_iter=      50 cpu clock= 1.13E+00
+ tran: time= 2.1081E-09 tot_iter=     221 conv_iter=      84 cpu clock= 1.13E+00
+ tran: time= 2.4815E-09 tot_iter=     227 conv_iter=      87 cpu clock= 1.13E+00
+ tran: time= 2.7815E-09 tot_iter=     231 conv_iter=      89 cpu clock= 1.13E+00
+ tran: time= 3.0000E-09 tot_iter=     235 conv_iter=      91 cpu clock= 1.13E+00
+ sweep: tran tran10   end, cpu clock= 1.13E+00 peak memory=     522 mb
+ parameter: k               =    1.50E+00
+ dcop: begin dcop, cpu clock= 1.13E+00
+ dcop: end dcop, cpu clock= 1.13E+00 peak memory=     522 mb tot_iter=      44
+ output: results_10p/results.tr0
+ sweep: tran tran11   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.13E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.13E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.13E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.13E+00
+ tran: time= 1.3355E-09 tot_iter=     119 conv_iter=      46 cpu clock= 1.14E+00
+ tran: time= 1.6355E-09 tot_iter=     123 conv_iter=      48 cpu clock= 1.14E+00
+ tran: time= 1.9355E-09 tot_iter=     127 conv_iter=      50 cpu clock= 1.14E+00
+ tran: time= 2.1077E-09 tot_iter=     222 conv_iter=      84 cpu clock= 1.14E+00
+ tran: time= 2.4812E-09 tot_iter=     228 conv_iter=      87 cpu clock= 1.14E+00
+ tran: time= 2.7812E-09 tot_iter=     232 conv_iter=      89 cpu clock= 1.14E+00
+ tran: time= 3.0000E-09 tot_iter=     236 conv_iter=      91 cpu clock= 1.14E+00
+ sweep: tran tran11   end, cpu clock= 1.14E+00 peak memory=     522 mb
+ parameter: k               =    1.60E+00
+ dcop: begin dcop, cpu clock= 1.14E+00
+ dcop: end dcop, cpu clock= 1.14E+00 peak memory=     522 mb tot_iter=      48
+ output: results_10p/results.tr0
+ sweep: tran tran12   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.14E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.14E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.14E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.14E+00
+ tran: time= 1.3078E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.14E+00
+ tran: time= 1.6078E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.14E+00
+ tran: time= 1.9078E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.14E+00
+ tran: time= 2.1042E-09 tot_iter=     221 conv_iter=      84 cpu clock= 1.15E+00
+ tran: time= 2.4750E-09 tot_iter=     227 conv_iter=      87 cpu clock= 1.15E+00
+ tran: time= 2.7750E-09 tot_iter=     231 conv_iter=      89 cpu clock= 1.15E+00
+ tran: time= 3.0000E-09 tot_iter=     235 conv_iter=      91 cpu clock= 1.15E+00
+ sweep: tran tran12   end, cpu clock= 1.15E+00 peak memory=     522 mb
+ parameter: k               =    1.70E+00
  dcop: begin dcop, cpu clock= 1.15E+00
- dcop: end dcop, cpu clock= 1.15E+00 peak memory=     521 mb tot_iter=     106
- output: results.tr0
- sweep: tran tran24   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.15E+00
+ dcop: end dcop, cpu clock= 1.15E+00 peak memory=     522 mb tot_iter=      52
+ output: results_10p/results.tr0
+ sweep: tran tran13   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.15E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.15E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.15E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.15E+00
- tran: time= 1.3101E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.15E+00
- tran: time= 1.6101E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.15E+00
- tran: time= 1.9101E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.15E+00
- tran: time= 2.1262E-09 tot_iter=     226 conv_iter=      86 cpu clock= 1.15E+00
- tran: time= 2.5266E-09 tot_iter=     232 conv_iter=      89 cpu clock= 1.15E+00
- tran: time= 2.8266E-09 tot_iter=     236 conv_iter=      91 cpu clock= 1.15E+00
- tran: time= 3.0000E-09 tot_iter=     240 conv_iter=      93 cpu clock= 1.15E+00
- sweep: tran tran24   end, cpu clock= 1.15E+00 peak memory=     521 mb
- parameter: k               =    2.90E+00
+ tran: time= 1.3491E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.15E+00
+ tran: time= 1.6491E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.15E+00
+ tran: time= 1.9491E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.15E+00
+ tran: time= 2.1081E-09 tot_iter=     220 conv_iter=      84 cpu clock= 1.15E+00
+ tran: time= 2.4863E-09 tot_iter=     226 conv_iter=      87 cpu clock= 1.15E+00
+ tran: time= 2.7863E-09 tot_iter=     230 conv_iter=      89 cpu clock= 1.15E+00
+ tran: time= 3.0000E-09 tot_iter=     234 conv_iter=      91 cpu clock= 1.15E+00
+ sweep: tran tran13   end, cpu clock= 1.15E+00 peak memory=     522 mb
+ parameter: k               =    1.80E+00
  dcop: begin dcop, cpu clock= 1.15E+00
- dcop: end dcop, cpu clock= 1.15E+00 peak memory=     521 mb tot_iter=     111
- output: results.tr0
- sweep: tran tran25   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.15E+00
+ dcop: end dcop, cpu clock= 1.15E+00 peak memory=     522 mb tot_iter=      56
+ output: results_10p/results.tr0
+ sweep: tran tran14   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.15E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.15E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.15E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.15E+00
- tran: time= 1.2839E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.16E+00
- tran: time= 1.5839E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.16E+00
- tran: time= 1.8839E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.16E+00
- tran: time= 2.1039E-09 tot_iter=     225 conv_iter=      86 cpu clock= 1.17E+00
- tran: time= 2.4649E-09 tot_iter=     231 conv_iter=      89 cpu clock= 1.17E+00
- tran: time= 2.7649E-09 tot_iter=     235 conv_iter=      91 cpu clock= 1.17E+00
- tran: time= 3.0000E-09 tot_iter=     239 conv_iter=      93 cpu clock= 1.17E+00
- sweep: tran tran25   end, cpu clock= 1.17E+00 peak memory=     522 mb
- parameter: k               =    3.00E+00
+ tran: time= 1.3441E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.16E+00
+ tran: time= 1.6441E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.16E+00
+ tran: time= 1.9441E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.16E+00
+ tran: time= 2.1176E-09 tot_iter=     219 conv_iter=      84 cpu clock= 1.16E+00
+ tran: time= 2.5081E-09 tot_iter=     225 conv_iter=      87 cpu clock= 1.16E+00
+ tran: time= 2.8081E-09 tot_iter=     229 conv_iter=      89 cpu clock= 1.16E+00
+ tran: time= 3.0000E-09 tot_iter=     233 conv_iter=      91 cpu clock= 1.16E+00
+ sweep: tran tran14   end, cpu clock= 1.16E+00 peak memory=     522 mb
+ parameter: k               =    1.90E+00
+ dcop: begin dcop, cpu clock= 1.16E+00
+ dcop: end dcop, cpu clock= 1.16E+00 peak memory=     522 mb tot_iter=      61
+ output: results_10p/results.tr0
+ sweep: tran tran15   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.16E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.16E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.16E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.16E+00
+ tran: time= 1.3478E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.16E+00
+ tran: time= 1.6478E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.16E+00
+ tran: time= 1.9478E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.16E+00
+ tran: time= 2.1415E-09 tot_iter=     222 conv_iter=      85 cpu clock= 1.17E+00
+ tran: time= 2.4366E-09 tot_iter=     226 conv_iter=      87 cpu clock= 1.17E+00
+ tran: time= 2.7366E-09 tot_iter=     230 conv_iter=      89 cpu clock= 1.17E+00
+ tran: time= 3.0000E-09 tot_iter=     234 conv_iter=      91 cpu clock= 1.17E+00
+ sweep: tran tran15   end, cpu clock= 1.17E+00 peak memory=     522 mb
+ parameter: k               =    2.00E+00
  dcop: begin dcop, cpu clock= 1.17E+00
- dcop: end dcop, cpu clock= 1.17E+00 peak memory=     522 mb tot_iter=     116
- output: results.tr0
- sweep: tran tran26   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.17E+00
+ dcop: end dcop, cpu clock= 1.17E+00 peak memory=     522 mb tot_iter=      66
+ output: results_10p/results.tr0
+ sweep: tran tran16   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.17E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.17E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.17E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.17E+00
- tran: time= 1.2739E-09 tot_iter=     121 conv_iter=      47 cpu clock= 1.18E+00
- tran: time= 1.5739E-09 tot_iter=     125 conv_iter=      49 cpu clock= 1.18E+00
- tran: time= 1.8739E-09 tot_iter=     129 conv_iter=      51 cpu clock= 1.18E+00
- tran: time= 2.1023E-09 tot_iter=     225 conv_iter=      86 cpu clock= 1.18E+00
- tran: time= 2.4667E-09 tot_iter=     231 conv_iter=      89 cpu clock= 1.18E+00
- tran: time= 2.7667E-09 tot_iter=     235 conv_iter=      91 cpu clock= 1.18E+00
- tran: time= 3.0000E-09 tot_iter=     239 conv_iter=      93 cpu clock= 1.18E+00
- sweep: tran tran26   end, cpu clock= 1.18E+00 peak memory=     522 mb
- parameter: k               =    3.10E+00
+ tran: time= 1.3409E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.17E+00
+ tran: time= 1.6409E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.17E+00
+ tran: time= 1.9409E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.17E+00
+ tran: time= 2.1430E-09 tot_iter=     222 conv_iter=      85 cpu clock= 1.17E+00
+ tran: time= 2.4378E-09 tot_iter=     226 conv_iter=      87 cpu clock= 1.17E+00
+ tran: time= 2.7378E-09 tot_iter=     230 conv_iter=      89 cpu clock= 1.17E+00
+ tran: time= 3.0000E-09 tot_iter=     234 conv_iter=      91 cpu clock= 1.17E+00
+ sweep: tran tran16   end, cpu clock= 1.17E+00 peak memory=     522 mb
+ parameter: k               =    2.10E+00
+ dcop: begin dcop, cpu clock= 1.17E+00
+ dcop: end dcop, cpu clock= 1.17E+00 peak memory=     522 mb tot_iter=      71
+ output: results_10p/results.tr0
+ sweep: tran tran17   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.17E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.17E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.17E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.17E+00
+ tran: time= 1.3402E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.18E+00
+ tran: time= 1.6402E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.18E+00
+ tran: time= 1.9402E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.18E+00
+ tran: time= 2.1512E-09 tot_iter=     222 conv_iter=      85 cpu clock= 1.18E+00
+ tran: time= 2.4485E-09 tot_iter=     226 conv_iter=      87 cpu clock= 1.18E+00
+ tran: time= 2.7485E-09 tot_iter=     230 conv_iter=      89 cpu clock= 1.18E+00
+ tran: time= 3.0000E-09 tot_iter=     234 conv_iter=      91 cpu clock= 1.18E+00
+ sweep: tran tran17   end, cpu clock= 1.18E+00 peak memory=     522 mb
+ parameter: k               =    2.20E+00
  dcop: begin dcop, cpu clock= 1.18E+00
- dcop: end dcop, cpu clock= 1.18E+00 peak memory=     522 mb tot_iter=     121
- output: results.tr0
- sweep: tran tran27   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.18E+00
+ dcop: end dcop, cpu clock= 1.18E+00 peak memory=     522 mb tot_iter=      76
+ output: results_10p/results.tr0
+ sweep: tran tran18   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.18E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.18E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.18E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.18E+00
- tran: time= 1.2553E-09 tot_iter=     121 conv_iter=      47 cpu clock= 1.18E+00
- tran: time= 1.5553E-09 tot_iter=     125 conv_iter=      49 cpu clock= 1.18E+00
- tran: time= 1.8553E-09 tot_iter=     129 conv_iter=      51 cpu clock= 1.18E+00
- tran: time= 2.1016E-09 tot_iter=     224 conv_iter=      86 cpu clock= 1.20E+00
- tran: time= 2.5388E-09 tot_iter=     232 conv_iter=      90 cpu clock= 1.20E+00
- tran: time= 2.8388E-09 tot_iter=     236 conv_iter=      92 cpu clock= 1.20E+00
- tran: time= 3.0000E-09 tot_iter=     238 conv_iter=      93 cpu clock= 1.20E+00
- sweep: tran tran27   end, cpu clock= 1.20E+00 peak memory=     522 mb
- parameter: k               =    3.20E+00
+ tran: time= 1.3401E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.18E+00
+ tran: time= 1.6401E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.18E+00
+ tran: time= 1.9401E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.18E+00
+ tran: time= 2.1460E-09 tot_iter=     222 conv_iter=      85 cpu clock= 1.19E+00
+ tran: time= 2.4276E-09 tot_iter=     226 conv_iter=      87 cpu clock= 1.19E+00
+ tran: time= 2.7276E-09 tot_iter=     230 conv_iter=      89 cpu clock= 1.19E+00
+ tran: time= 3.0000E-09 tot_iter=     234 conv_iter=      91 cpu clock= 1.19E+00
+ sweep: tran tran18   end, cpu clock= 1.19E+00 peak memory=     522 mb
+ parameter: k               =    2.30E+00
+ dcop: begin dcop, cpu clock= 1.19E+00
+ dcop: end dcop, cpu clock= 1.19E+00 peak memory=     522 mb tot_iter=      81
+ output: results_10p/results.tr0
+ sweep: tran tran19   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.19E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.19E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.19E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.19E+00
+ tran: time= 1.3314E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.19E+00
+ tran: time= 1.6314E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.19E+00
+ tran: time= 1.9314E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.19E+00
+ tran: time= 2.1213E-09 tot_iter=     222 conv_iter=      85 cpu clock= 1.19E+00
+ tran: time= 2.5112E-09 tot_iter=     228 conv_iter=      88 cpu clock= 1.19E+00
+ tran: time= 2.8112E-09 tot_iter=     232 conv_iter=      90 cpu clock= 1.19E+00
+ tran: time= 3.0000E-09 tot_iter=     236 conv_iter=      92 cpu clock= 1.19E+00
+ sweep: tran tran19   end, cpu clock= 1.19E+00 peak memory=     522 mb
+ parameter: k               =    2.40E+00
+ dcop: begin dcop, cpu clock= 1.19E+00
+ dcop: end dcop, cpu clock= 1.19E+00 peak memory=     522 mb tot_iter=      86
+ output: results_10p/results.tr0
+ sweep: tran tran20   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.19E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.19E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.19E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.19E+00
+ tran: time= 1.3006E-09 tot_iter=     118 conv_iter=      46 cpu clock= 1.20E+00
+ tran: time= 1.6006E-09 tot_iter=     122 conv_iter=      48 cpu clock= 1.20E+00
+ tran: time= 1.9006E-09 tot_iter=     126 conv_iter=      50 cpu clock= 1.20E+00
+ tran: time= 2.1149E-09 tot_iter=     223 conv_iter=      85 cpu clock= 1.20E+00
+ tran: time= 2.4934E-09 tot_iter=     229 conv_iter=      88 cpu clock= 1.20E+00
+ tran: time= 2.7934E-09 tot_iter=     233 conv_iter=      90 cpu clock= 1.20E+00
+ tran: time= 3.0000E-09 tot_iter=     237 conv_iter=      92 cpu clock= 1.20E+00
+ sweep: tran tran20   end, cpu clock= 1.20E+00 peak memory=     522 mb
+ parameter: k               =    2.50E+00
  dcop: begin dcop, cpu clock= 1.20E+00
- dcop: end dcop, cpu clock= 1.20E+00 peak memory=     522 mb tot_iter=     126
- output: results.tr0
- sweep: tran tran28   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.20E+00
+ dcop: end dcop, cpu clock= 1.20E+00 peak memory=     522 mb tot_iter=      91
+ output: results_10p/results.tr0
+ sweep: tran tran21   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.20E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.20E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.20E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.20E+00
- tran: time= 1.2502E-09 tot_iter=     121 conv_iter=      47 cpu clock= 1.20E+00
- tran: time= 1.5502E-09 tot_iter=     125 conv_iter=      49 cpu clock= 1.20E+00
- tran: time= 1.8502E-09 tot_iter=     129 conv_iter=      51 cpu clock= 1.20E+00
- tran: time= 2.1036E-09 tot_iter=     224 conv_iter=      86 cpu clock= 1.21E+00
- tran: time= 2.5439E-09 tot_iter=     232 conv_iter=      90 cpu clock= 1.21E+00
- tran: time= 2.8439E-09 tot_iter=     236 conv_iter=      92 cpu clock= 1.21E+00
- tran: time= 3.0000E-09 tot_iter=     238 conv_iter=      93 cpu clock= 1.21E+00
- sweep: tran tran28   end, cpu clock= 1.21E+00 peak memory=     522 mb
- parameter: k               =    3.30E+00
+ tran: time= 1.3470E-09 tot_iter=     119 conv_iter=      46 cpu clock= 1.20E+00
+ tran: time= 1.6470E-09 tot_iter=     123 conv_iter=      48 cpu clock= 1.20E+00
+ tran: time= 1.9470E-09 tot_iter=     127 conv_iter=      50 cpu clock= 1.20E+00
+ tran: time= 2.1265E-09 tot_iter=     223 conv_iter=      85 cpu clock= 1.21E+00
+ tran: time= 2.5262E-09 tot_iter=     229 conv_iter=      88 cpu clock= 1.21E+00
+ tran: time= 2.8262E-09 tot_iter=     233 conv_iter=      90 cpu clock= 1.21E+00
+ tran: time= 3.0000E-09 tot_iter=     237 conv_iter=      92 cpu clock= 1.21E+00
+ sweep: tran tran21   end, cpu clock= 1.21E+00 peak memory=     522 mb
+ parameter: k               =    2.60E+00
  dcop: begin dcop, cpu clock= 1.21E+00
- dcop: end dcop, cpu clock= 1.21E+00 peak memory=     522 mb tot_iter=     131
- output: results.tr0
- sweep: tran tran29   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.21E+00
+ dcop: end dcop, cpu clock= 1.21E+00 peak memory=     522 mb tot_iter=      96
+ output: results_10p/results.tr0
+ sweep: tran tran22   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.21E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.21E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.21E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.21E+00
- tran: time= 1.2499E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.22E+00
- tran: time= 1.5499E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.22E+00
- tran: time= 1.8499E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.22E+00
- tran: time= 2.1038E-09 tot_iter=     218 conv_iter=      84 cpu clock= 1.23E+00
- tran: time= 2.5427E-09 tot_iter=     226 conv_iter=      88 cpu clock= 1.23E+00
- tran: time= 2.8427E-09 tot_iter=     230 conv_iter=      90 cpu clock= 1.23E+00
- tran: time= 3.0000E-09 tot_iter=     232 conv_iter=      91 cpu clock= 1.23E+00
- sweep: tran tran29   end, cpu clock= 1.23E+00 peak memory=     522 mb
- parameter: k               =    3.40E+00
+ tran: time= 1.3467E-09 tot_iter=     119 conv_iter=      46 cpu clock= 1.21E+00
+ tran: time= 1.6467E-09 tot_iter=     123 conv_iter=      48 cpu clock= 1.21E+00
+ tran: time= 1.9467E-09 tot_iter=     127 conv_iter=      50 cpu clock= 1.21E+00
+ tran: time= 2.1293E-09 tot_iter=     223 conv_iter=      85 cpu clock= 1.21E+00
+ tran: time= 2.5120E-09 tot_iter=     229 conv_iter=      88 cpu clock= 1.21E+00
+ tran: time= 2.8120E-09 tot_iter=     233 conv_iter=      90 cpu clock= 1.21E+00
+ tran: time= 3.0000E-09 tot_iter=     237 conv_iter=      92 cpu clock= 1.21E+00
+ sweep: tran tran22   end, cpu clock= 1.21E+00 peak memory=     522 mb
+ parameter: k               =    2.70E+00
+ dcop: begin dcop, cpu clock= 1.21E+00
+ dcop: end dcop, cpu clock= 1.21E+00 peak memory=     522 mb tot_iter=     101
+ output: results_10p/results.tr0
+ sweep: tran tran23   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.21E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.21E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.21E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.21E+00
+ tran: time= 1.2303E-09 tot_iter=     119 conv_iter=      46 cpu clock= 1.22E+00
+ tran: time= 1.5303E-09 tot_iter=     123 conv_iter=      48 cpu clock= 1.22E+00
+ tran: time= 1.8303E-09 tot_iter=     127 conv_iter=      50 cpu clock= 1.22E+00
+ tran: time= 2.1088E-09 tot_iter=     225 conv_iter=      86 cpu clock= 1.22E+00
+ tran: time= 2.4163E-09 tot_iter=     231 conv_iter=      89 cpu clock= 1.22E+00
+ tran: time= 2.7163E-09 tot_iter=     235 conv_iter=      91 cpu clock= 1.22E+00
+ tran: time= 3.0000E-09 tot_iter=     239 conv_iter=      93 cpu clock= 1.22E+00
+ sweep: tran tran23   end, cpu clock= 1.22E+00 peak memory=     522 mb
+ parameter: k               =    2.80E+00
+ dcop: begin dcop, cpu clock= 1.22E+00
+ dcop: end dcop, cpu clock= 1.22E+00 peak memory=     522 mb tot_iter=     106
+ output: results_10p/results.tr0
+ sweep: tran tran24   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.22E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.22E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.22E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.22E+00
+ tran: time= 1.3101E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.22E+00
+ tran: time= 1.6101E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.22E+00
+ tran: time= 1.9101E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.22E+00
+ tran: time= 2.1262E-09 tot_iter=     226 conv_iter=      86 cpu clock= 1.23E+00
+ tran: time= 2.5266E-09 tot_iter=     232 conv_iter=      89 cpu clock= 1.23E+00
+ tran: time= 2.8266E-09 tot_iter=     236 conv_iter=      91 cpu clock= 1.23E+00
+ tran: time= 3.0000E-09 tot_iter=     240 conv_iter=      93 cpu clock= 1.23E+00
+ sweep: tran tran24   end, cpu clock= 1.23E+00 peak memory=     522 mb
+ parameter: k               =    2.90E+00
  dcop: begin dcop, cpu clock= 1.23E+00
- dcop: end dcop, cpu clock= 1.23E+00 peak memory=     522 mb tot_iter=     136
- output: results.tr0
- sweep: tran tran30   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.23E+00
+ dcop: end dcop, cpu clock= 1.23E+00 peak memory=     522 mb tot_iter=     111
+ output: results_10p/results.tr0
+ sweep: tran tran25   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.23E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.23E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.23E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.23E+00
- tran: time= 1.2367E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.23E+00
- tran: time= 1.5367E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.23E+00
- tran: time= 1.8367E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.23E+00
- tran: time= 2.1175E-09 tot_iter=     231 conv_iter=      88 cpu clock= 1.23E+00
- tran: time= 2.4968E-09 tot_iter=     237 conv_iter=      91 cpu clock= 1.23E+00
- tran: time= 2.7968E-09 tot_iter=     241 conv_iter=      93 cpu clock= 1.23E+00
- tran: time= 3.0000E-09 tot_iter=     245 conv_iter=      95 cpu clock= 1.23E+00
- sweep: tran tran30   end, cpu clock= 1.23E+00 peak memory=     522 mb
- parameter: k               =    3.50E+00
+ tran: time= 1.2839E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.23E+00
+ tran: time= 1.5839E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.23E+00
+ tran: time= 1.8839E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.23E+00
+ tran: time= 2.1039E-09 tot_iter=     225 conv_iter=      86 cpu clock= 1.23E+00
+ tran: time= 2.4649E-09 tot_iter=     231 conv_iter=      89 cpu clock= 1.23E+00
+ tran: time= 2.7649E-09 tot_iter=     235 conv_iter=      91 cpu clock= 1.23E+00
+ tran: time= 3.0000E-09 tot_iter=     239 conv_iter=      93 cpu clock= 1.23E+00
+ sweep: tran tran25   end, cpu clock= 1.23E+00 peak memory=     522 mb
+ parameter: k               =    3.00E+00
  dcop: begin dcop, cpu clock= 1.23E+00
- dcop: end dcop, cpu clock= 1.23E+00 peak memory=     522 mb tot_iter=     141
- output: results.tr0
- sweep: tran tran31   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.23E+00
+ dcop: end dcop, cpu clock= 1.23E+00 peak memory=     522 mb tot_iter=     116
+ output: results_10p/results.tr0
+ sweep: tran tran26   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.23E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.23E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.23E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.23E+00
- tran: time= 1.2298E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.25E+00
- tran: time= 1.5298E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.25E+00
- tran: time= 1.8298E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.25E+00
- tran: time= 2.1026E-09 tot_iter=     230 conv_iter=      88 cpu clock= 1.25E+00
- tran: time= 2.4499E-09 tot_iter=     236 conv_iter=      91 cpu clock= 1.25E+00
- tran: time= 2.7499E-09 tot_iter=     240 conv_iter=      93 cpu clock= 1.25E+00
- tran: time= 3.0000E-09 tot_iter=     244 conv_iter=      95 cpu clock= 1.25E+00
- sweep: tran tran31   end, cpu clock= 1.25E+00 peak memory=     522 mb
- parameter: k               =    3.60E+00
+ tran: time= 1.2739E-09 tot_iter=     121 conv_iter=      47 cpu clock= 1.24E+00
+ tran: time= 1.5739E-09 tot_iter=     125 conv_iter=      49 cpu clock= 1.24E+00
+ tran: time= 1.8739E-09 tot_iter=     129 conv_iter=      51 cpu clock= 1.24E+00
+ tran: time= 2.1023E-09 tot_iter=     225 conv_iter=      86 cpu clock= 1.24E+00
+ tran: time= 2.4667E-09 tot_iter=     231 conv_iter=      89 cpu clock= 1.24E+00
+ tran: time= 2.7667E-09 tot_iter=     235 conv_iter=      91 cpu clock= 1.24E+00
+ tran: time= 3.0000E-09 tot_iter=     239 conv_iter=      93 cpu clock= 1.24E+00
+ sweep: tran tran26   end, cpu clock= 1.24E+00 peak memory=     522 mb
+ parameter: k               =    3.10E+00
+ dcop: begin dcop, cpu clock= 1.24E+00
+ dcop: end dcop, cpu clock= 1.24E+00 peak memory=     522 mb tot_iter=     121
+ output: results_10p/results.tr0
+ sweep: tran tran27   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.24E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.24E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.24E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.24E+00
+ tran: time= 1.2553E-09 tot_iter=     121 conv_iter=      47 cpu clock= 1.24E+00
+ tran: time= 1.5553E-09 tot_iter=     125 conv_iter=      49 cpu clock= 1.24E+00
+ tran: time= 1.8553E-09 tot_iter=     129 conv_iter=      51 cpu clock= 1.24E+00
+ tran: time= 2.1016E-09 tot_iter=     224 conv_iter=      86 cpu clock= 1.25E+00
+ tran: time= 2.5388E-09 tot_iter=     232 conv_iter=      90 cpu clock= 1.25E+00
+ tran: time= 2.8388E-09 tot_iter=     236 conv_iter=      92 cpu clock= 1.25E+00
+ tran: time= 3.0000E-09 tot_iter=     238 conv_iter=      93 cpu clock= 1.25E+00
+ sweep: tran tran27   end, cpu clock= 1.25E+00 peak memory=     522 mb
+ parameter: k               =    3.20E+00
  dcop: begin dcop, cpu clock= 1.25E+00
- dcop: end dcop, cpu clock= 1.25E+00 peak memory=     522 mb tot_iter=     146
- output: results.tr0
- sweep: tran tran32   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.25E+00
+ dcop: end dcop, cpu clock= 1.25E+00 peak memory=     522 mb tot_iter=     126
+ output: results_10p/results.tr0
+ sweep: tran tran28   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.25E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.25E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.25E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.25E+00
- tran: time= 1.2212E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.26E+00
- tran: time= 1.5212E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.26E+00
- tran: time= 1.8212E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.26E+00
- tran: time= 2.1173E-09 tot_iter=     230 conv_iter=      88 cpu clock= 1.26E+00
- tran: time= 2.4946E-09 tot_iter=     236 conv_iter=      91 cpu clock= 1.26E+00
- tran: time= 2.7946E-09 tot_iter=     240 conv_iter=      93 cpu clock= 1.26E+00
- tran: time= 3.0000E-09 tot_iter=     244 conv_iter=      95 cpu clock= 1.26E+00
- sweep: tran tran32   end, cpu clock= 1.26E+00 peak memory=     522 mb
- parameter: k               =    3.70E+00
+ tran: time= 1.2502E-09 tot_iter=     121 conv_iter=      47 cpu clock= 1.25E+00
+ tran: time= 1.5502E-09 tot_iter=     125 conv_iter=      49 cpu clock= 1.25E+00
+ tran: time= 1.8502E-09 tot_iter=     129 conv_iter=      51 cpu clock= 1.25E+00
+ tran: time= 2.1036E-09 tot_iter=     224 conv_iter=      86 cpu clock= 1.25E+00
+ tran: time= 2.5439E-09 tot_iter=     232 conv_iter=      90 cpu clock= 1.25E+00
+ tran: time= 2.8439E-09 tot_iter=     236 conv_iter=      92 cpu clock= 1.25E+00
+ tran: time= 3.0000E-09 tot_iter=     238 conv_iter=      93 cpu clock= 1.25E+00
+ sweep: tran tran28   end, cpu clock= 1.25E+00 peak memory=     522 mb
+ parameter: k               =    3.30E+00
+ dcop: begin dcop, cpu clock= 1.25E+00
+ dcop: end dcop, cpu clock= 1.25E+00 peak memory=     522 mb tot_iter=     131
+ output: results_10p/results.tr0
+ sweep: tran tran29   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.25E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.25E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.25E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.25E+00
+ tran: time= 1.2499E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.26E+00
+ tran: time= 1.5499E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.26E+00
+ tran: time= 1.8499E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.26E+00
+ tran: time= 2.1038E-09 tot_iter=     218 conv_iter=      84 cpu clock= 1.26E+00
+ tran: time= 2.5427E-09 tot_iter=     226 conv_iter=      88 cpu clock= 1.26E+00
+ tran: time= 2.8427E-09 tot_iter=     230 conv_iter=      90 cpu clock= 1.26E+00
+ tran: time= 3.0000E-09 tot_iter=     232 conv_iter=      91 cpu clock= 1.26E+00
+ sweep: tran tran29   end, cpu clock= 1.26E+00 peak memory=     522 mb
+ parameter: k               =    3.40E+00
  dcop: begin dcop, cpu clock= 1.26E+00
- dcop: end dcop, cpu clock= 1.26E+00 peak memory=     522 mb tot_iter=     151
- output: results.tr0
- sweep: tran tran33   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.26E+00
+ dcop: end dcop, cpu clock= 1.26E+00 peak memory=     522 mb tot_iter=     136
+ output: results_10p/results.tr0
+ sweep: tran tran30   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.26E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.26E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.26E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.26E+00
+ tran: time= 1.2367E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.26E+00
+ tran: time= 1.5367E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.26E+00
+ tran: time= 1.8367E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.26E+00
+ tran: time= 2.1175E-09 tot_iter=     231 conv_iter=      88 cpu clock= 1.27E+00
+ tran: time= 2.4968E-09 tot_iter=     237 conv_iter=      91 cpu clock= 1.27E+00
+ tran: time= 2.7968E-09 tot_iter=     241 conv_iter=      93 cpu clock= 1.27E+00
+ tran: time= 3.0000E-09 tot_iter=     245 conv_iter=      95 cpu clock= 1.27E+00
+ sweep: tran tran30   end, cpu clock= 1.27E+00 peak memory=     522 mb
+ parameter: k               =    3.50E+00
+ dcop: begin dcop, cpu clock= 1.27E+00
+ dcop: end dcop, cpu clock= 1.27E+00 peak memory=     522 mb tot_iter=     141
+ output: results_10p/results.tr0
+ sweep: tran tran31   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.27E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.27E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.27E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.27E+00
- tran: time= 1.3434E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.28E+00
- tran: time= 1.6434E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.28E+00
- tran: time= 1.9434E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.28E+00
- tran: time= 2.1002E-09 tot_iter=     227 conv_iter=      87 cpu clock= 1.28E+00
- tran: time= 2.4387E-09 tot_iter=     233 conv_iter=      90 cpu clock= 1.28E+00
- tran: time= 2.7387E-09 tot_iter=     237 conv_iter=      92 cpu clock= 1.28E+00
- tran: time= 3.0000E-09 tot_iter=     241 conv_iter=      94 cpu clock= 1.28E+00
- sweep: tran tran33   end, cpu clock= 1.28E+00 peak memory=     522 mb
- parameter: k               =    3.80E+00
+ tran: time= 1.2298E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.27E+00
+ tran: time= 1.5298E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.27E+00
+ tran: time= 1.8298E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.27E+00
+ tran: time= 2.1026E-09 tot_iter=     230 conv_iter=      88 cpu clock= 1.27E+00
+ tran: time= 2.4499E-09 tot_iter=     236 conv_iter=      91 cpu clock= 1.27E+00
+ tran: time= 2.7499E-09 tot_iter=     240 conv_iter=      93 cpu clock= 1.27E+00
+ tran: time= 3.0000E-09 tot_iter=     244 conv_iter=      95 cpu clock= 1.27E+00
+ sweep: tran tran31   end, cpu clock= 1.27E+00 peak memory=     522 mb
+ parameter: k               =    3.60E+00
+ dcop: begin dcop, cpu clock= 1.27E+00
+ dcop: end dcop, cpu clock= 1.27E+00 peak memory=     522 mb tot_iter=     146
+ output: results_10p/results.tr0
+ sweep: tran tran32   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.27E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.27E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.27E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.27E+00
+ tran: time= 1.2212E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.28E+00
+ tran: time= 1.5212E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.28E+00
+ tran: time= 1.8212E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.28E+00
+ tran: time= 2.1173E-09 tot_iter=     230 conv_iter=      88 cpu clock= 1.28E+00
+ tran: time= 2.4946E-09 tot_iter=     236 conv_iter=      91 cpu clock= 1.28E+00
+ tran: time= 2.7946E-09 tot_iter=     240 conv_iter=      93 cpu clock= 1.28E+00
+ tran: time= 3.0000E-09 tot_iter=     244 conv_iter=      95 cpu clock= 1.28E+00
+ sweep: tran tran32   end, cpu clock= 1.28E+00 peak memory=     522 mb
+ parameter: k               =    3.70E+00
  dcop: begin dcop, cpu clock= 1.28E+00
- dcop: end dcop, cpu clock= 1.28E+00 peak memory=     522 mb tot_iter=     156
- output: results.tr0
- sweep: tran tran34   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.28E+00
+ dcop: end dcop, cpu clock= 1.28E+00 peak memory=     522 mb tot_iter=     151
+ output: results_10p/results.tr0
+ sweep: tran tran33   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.28E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.28E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.28E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.28E+00
- tran: time= 1.2259E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.28E+00
- tran: time= 1.5259E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.28E+00
- tran: time= 1.8259E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.28E+00
+ tran: time= 1.3434E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.28E+00
+ tran: time= 1.6434E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.28E+00
+ tran: time= 1.9434E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.28E+00
+ tran: time= 2.1002E-09 tot_iter=     227 conv_iter=      87 cpu clock= 1.29E+00
+ tran: time= 2.4387E-09 tot_iter=     233 conv_iter=      90 cpu clock= 1.29E+00
+ tran: time= 2.7387E-09 tot_iter=     237 conv_iter=      92 cpu clock= 1.29E+00
+ tran: time= 3.0000E-09 tot_iter=     241 conv_iter=      94 cpu clock= 1.29E+00
+ sweep: tran tran33   end, cpu clock= 1.29E+00 peak memory=     522 mb
+ parameter: k               =    3.80E+00
+ dcop: begin dcop, cpu clock= 1.29E+00
+ dcop: end dcop, cpu clock= 1.29E+00 peak memory=     522 mb tot_iter=     156
+ output: results_10p/results.tr0
+ sweep: tran tran34   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.29E+00
+ tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.29E+00
+ tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.29E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.29E+00
+ tran: time= 1.2259E-09 tot_iter=     122 conv_iter=      47 cpu clock= 1.29E+00
+ tran: time= 1.5259E-09 tot_iter=     126 conv_iter=      49 cpu clock= 1.29E+00
+ tran: time= 1.8259E-09 tot_iter=     130 conv_iter=      51 cpu clock= 1.29E+00
  tran: time= 2.1242E-09 tot_iter=     230 conv_iter=      87 cpu clock= 1.29E+00
  tran: time= 2.5069E-09 tot_iter=     236 conv_iter=      90 cpu clock= 1.29E+00
  tran: time= 2.8069E-09 tot_iter=     240 conv_iter=      92 cpu clock= 1.29E+00
@@ -581,11 +581,11 @@ lic:
  parameter: k               =    3.90E+00
  dcop: begin dcop, cpu clock= 1.29E+00
  dcop: end dcop, cpu clock= 1.29E+00 peak memory=     522 mb tot_iter=     161
- output: results.tr0
+ output: results_10p/results.tr0
  sweep: tran tran35   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.29E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.29E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.29E+00
- tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.29E+00
+ tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.30E+00
  tran: time= 1.3138E-09 tot_iter=     125 conv_iter=      48 cpu clock= 1.30E+00
  tran: time= 1.6138E-09 tot_iter=     129 conv_iter=      50 cpu clock= 1.30E+00
  tran: time= 1.9138E-09 tot_iter=     133 conv_iter=      52 cpu clock= 1.30E+00
@@ -597,14 +597,14 @@ lic:
  parameter: k               =    4.00E+00
  dcop: begin dcop, cpu clock= 1.30E+00
  dcop: end dcop, cpu clock= 1.30E+00 peak memory=     522 mb tot_iter=     166
- output: results.tr0
+ output: results_10p/results.tr0
  sweep: tran tran36   begin, stop_t=  3.00E-09 #sweeps=**** cpu clock= 1.30E+00
  tran: time= 3.0307E-10 tot_iter=      12 conv_iter=       6 cpu clock= 1.30E+00
  tran: time= 6.0307E-10 tot_iter=      16 conv_iter=       8 cpu clock= 1.30E+00
  tran: time= 9.0307E-10 tot_iter=      20 conv_iter=      10 cpu clock= 1.30E+00
- tran: time= 1.2616E-09 tot_iter=     125 conv_iter=      48 cpu clock= 1.30E+00
- tran: time= 1.5616E-09 tot_iter=     129 conv_iter=      50 cpu clock= 1.30E+00
- tran: time= 1.8616E-09 tot_iter=     133 conv_iter=      52 cpu clock= 1.30E+00
+ tran: time= 1.2616E-09 tot_iter=     125 conv_iter=      48 cpu clock= 1.31E+00
+ tran: time= 1.5616E-09 tot_iter=     129 conv_iter=      50 cpu clock= 1.31E+00
+ tran: time= 1.8616E-09 tot_iter=     133 conv_iter=      52 cpu clock= 1.31E+00
  tran: time= 2.1451E-09 tot_iter=     239 conv_iter=      91 cpu clock= 1.31E+00
  tran: time= 2.4194E-09 tot_iter=     243 conv_iter=      93 cpu clock= 1.31E+00
  tran: time= 2.7194E-09 tot_iter=     247 conv_iter=      95 cpu clock= 1.31E+00

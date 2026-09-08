@@ -6,12 +6,12 @@
   Synopsys, Inc. All other use, reproduction, or distribution of
   this software is strictly prohibited.
   Input File: deck_7_inv.sp                                                     
-  Command line options: /opt/coe/synopsys/hspice/W-2024.09/hspice/linux64/hspice -i deck_7_inv.sp -o results
-  Start time: Tue Sep  8 14:49:21 2026
+  Command line options: /opt/coe/synopsys/hspice/W-2024.09/hspice/linux64/hspice -i deck_7_inv.sp -o results_10p/results
+  Start time: Tue Sep  8 16:20:27 2026
  lic:  
  lic: FLEXlm: SDK_14.2 
  lic: USER:   venky.k              HOSTNAME: n02-hera.olympus.ece.tamu.edu 
- lic: HOSTID: ffffffffa8c00c02     PID:      211945 
+ lic: HOSTID: ffffffffa8c00c02     PID:      252571 
  lic: Using FLEXlm license file: 
  lic: 27070@coe-vtls3.engr.tamu.edu 
  lic: Checkout 1 hspice 
@@ -578,7 +578,7 @@
  ******
  runlvl  = 3         bypass  = 2.0000    
   Opening plot unit= 15
- file=results.pa0
+ file=results_10p/results.pa0
 
  **info** dc convergence successful at Newton-Raphson method 
 
@@ -1092,13 +1092,13 @@
  ******  Machine Information  ******
  CPU:
  model name	: AMD EPYC 7F72 24-Core Processor
- cpu MHz	: 3193.742
+ cpu MHz	: 2312.669
  CPU(s)		: 48
   
  OS:
  Linux version 4.18.0-553.153.1.el8_10.x86_64 (mockbuild@x86-64-03.build.eng.rdu2.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)) #1 SMP Tue Aug 4 21:00:26 EDT 2026
 
- System loadavg : 0.10 0.30 0.35 1/1148 212160
+ System loadavg : 2.04 1.63 1.06 3/1520 252578
 
 
   ******  PrimeSim HSPICE Threads Information  ******
@@ -1123,21 +1123,21 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.12           1         166
-  transient          0.44    10800036        8683        3379 rev=        73
-  readin             0.27
+  op point           0.15           1         166
+  transient          0.23    10800036        8683        3379 rev=        73
+  readin             0.33
   errchk             0.00
-  setup              0.07
+  setup              0.12
   output             0.00
 
 
            peak memory used        522.89 megabytes
-           total cpu time            0.89 seconds
-           total elapsed time        1.31 seconds
-           job started at     14:49:21 09/08/2026
-           job ended   at     14:49:22 09/08/2026
-           job total runtime         1.31 seconds
+           total cpu time            0.84 seconds
+           total elapsed time        1.33 seconds
+           job started at     16:20:27 09/08/2026
+           job ended   at     16:20:28 09/08/2026
+           job total runtime         1.33 seconds
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.41(s)
+ lic: total license checkout elapse time:        0.46(s)
