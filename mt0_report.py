@@ -73,13 +73,18 @@ def plot_pairs(columns, rows, pairs, scale, xlabel, ylabel, out_dir):
 
     idx = {c: i for i, c in enumerate(columns)}
     x = [float(r[0]) for r in rows]
-    colors = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100"]
+    markers = ["o", "s", "^", "D"]
+    linestyles = ["-", "--", "-.", ":"]
+    ink = "#2b2b2b"
 
     for pair in pairs:
         fig, ax = plt.subplots(figsize=(7, 4.5), dpi=150)
-        for series, color in zip(pair, colors):
+        for i, series in enumerate(pair):
             y = [float(r[idx[series]]) * scale for r in rows]
-            ax.plot(x, y, color=color, marker="o", ms=3, lw=1.8, label=series)
+            ax.plot(x, y, color=ink, marker=markers[i % len(markers)],
+                     linestyle=linestyles[i % len(linestyles)],
+                     ms=6, mfc="white", mew=1.3, lw=1.4,
+                     markevery=2, label=series)
         ax.set_xlabel(xlabel)
         ax.set_ylabel(ylabel)
         ax.set_title(" / ".join(pair) + f" vs. {columns[0]}")
