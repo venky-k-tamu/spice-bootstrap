@@ -7,7 +7,7 @@
 .include "inv.sub"
 
 .param nom_vdd=0.8
-.param X=10p
+.param X=5.65p
 .param k=0.5
 
 *.step param k 0.5 4.0 0.1

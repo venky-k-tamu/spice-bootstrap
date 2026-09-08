@@ -1,0 +1,1143 @@
+ ****** PrimeSim HSPICE -- W-2024.09 linux64 (Aug 27 2024 9174816) ******
+  Copyright (c) 1986 - 2026 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: 1b_deck_7_inv.sp                                                  
+  Command line options: /opt/coe/synopsys/hspice/W-2024.09/hspice/linux64/hspice -i 1b_deck_7_inv.sp -o result_1b/results
+  Start time: Tue Sep  8 16:29:27 2026
+ lic:  
+ lic: FLEXlm: SDK_14.2 
+ lic: USER:   venky.k              HOSTNAME: n02-hera.olympus.ece.tamu.edu 
+ lic: HOSTID: ffffffffa8c00c02     PID:      258872 
+ lic: Using FLEXlm license file: 
+ lic: 27070@coe-vtls3.engr.tamu.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 12-jan-2027/2025.06 
+ lic: 1(in_use)/100(total) FLOATING license(s) on SERVER 27070@coe-vtls3.engr.tamu.edu 
+ lic:   
+1****** PrimeSim HSPICE -- W-2024.09 linux64 (Aug 27 2024 9174816) ******
+ ******  
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x0.                             inv                1.00 
+        2 x1.                             inv                1.00 
+        3 x2.                             inv                1.00 
+        4 x3.                             inv                1.00 
+        5 x4.                             inv                1.00 
+        6 x5.                             inv                1.00 
+        7 x6.                             inv                1.00 
+ ******  
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** mos   model parameters tnom=  25.000 temp=  25.000 ******
+ Model file: ../22nm_HP.pm
+ Model line:            4
+ Model Name: nmos  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 1
+    PERMOD = 1
+    GEOMOD = 1
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 0
+    VERSION =      4 
+    TOXREF = 1.05e-09 
+    TOXE = 1.05e-09 
+    TOXP =  8e-10 
+    TOXM = 1.05e-09 
+    DTOX = 2.5e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =    2.3 
+    XJ = 7.2e-09 
+    VSAT = 2.5e+05 
+    A0 =      1 
+    AGS =      0 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+04 
+    KETA =   0.04 
+    NSUB =  6e+16 
+    NDEP = 5.5e+18 
+    NSD =  2e+20 
+    NGATE =  1e+23 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 =    0.4 
+    KT1 =  -0.11 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =      0 
+    K3 =      0 
+    K3B =      0 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 =  1e-11 
+    DVTP1 =    0.1 
+    W0 = 2.5e-06 
+    DVT0 =      1 
+    DVT1 =      2 
+    DVT2 =      0 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =    0.5 
+    DSUB =    0.1 
+    VTH0 = 0.5031 
+    EU =   1.67 
+    UA =  6e-10 
+    UA1 = 4.31e-09 
+    UB = 1.2e-18 
+    UB1 = 7.61e-18 
+    UC =      0 
+    UC1 = -5.6e-11 
+    U0 =   0.04 
+    UTE =   -1.5 
+    VOFF =  -0.13 
+    VOFFL =      0 
+    MINV =   0.05 
+    FPROUT =    0.2 
+    PDITS =   0.01 
+    PDITSD =   0.23 
+    PDITSL = 2.3e+06 
+    DELTA =   0.01 
+    RDSW =    145 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =     75 
+    RSW =     75 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 =  0.004 
+    ETAB =      0 
+    PCLM =   0.02 
+    PDIBLC1 =  0.001 
+    PDIBLC2 =  0.001 
+    PDIBLCB = -0.005 
+    PSCBE1 = 8.14e+08 
+    PSCBE2 =  1e-07 
+    PVAG =  1e-20 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL = -9e-09 
+    XLREF = -9e-09 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  0.074 
+    ALPHA1 =  0.005 
+    AGIDL = 0.0002 
+    BGIDL = 2.1e+09 
+    CGIDL = 0.0002 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC = 0.0213 
+    BIGC = 0.002589 
+    CIGC =  0.002 
+    AIGSD = 0.0213 
+    BIGSD = 0.002589 
+    CIGSD =  0.002 
+    AIGBACC =  0.012 
+    BIGBACC = 0.0028 
+    CIGBACC =  0.002 
+    AIGBINV =  0.014 
+    BIGBINV =  0.004 
+    CIGBINV =  0.004 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      5 
+    BETA0 =     30 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =  0.001 
+    IJTHSREV =  0.001 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =  -0.55 
+    GBMIN =  1e-10 
+    RBDB =     15 
+    RBPB =      5 
+    RBSB =     15 
+    RBPS =     15 
+    RBPD =     15 
+    CGSL = 2.653e-10 
+    CGDL = 2.653e-10 
+    CKAPPAS =   0.03 
+    CKAPPAD =   0.03 
+    CF = 1.307e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =  5e-09 
+    DLC =  2e-09 
+    DLCIG =  2e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =    0.9 
+    VOFFCV =   0.02 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.4 
+    NGCON =      1 
+    TCJ =  0.001 
+    TPB =  0.005 
+    TCJSW =  0.001 
+    TPBSW =  0.005 
+    TCJSWG =  0.001 
+    TPBSWG =  0.005 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    TNOM =  300.1 
+    CGSO = 6.5e-11 
+    CGDO = 6.5e-11 
+    CGBO = 2.56e-11 
+    XPART =      0 
+    RSH =      5 
+    JSS = 0.0001 
+    JSWS =  1e-11 
+    JSWGS =  1e-10 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0005 
+    CJSWS =  5e-10 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS =  3e-10 
+    XTIS =      3 
+    JSD = 0.0001 
+    JSWD =  1e-11 
+    JSWGD =  1e-10 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0005 
+    CJSWD =  5e-10 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD =  5e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT =  2e-09 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT =  5e-09 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.25e+41 
+    NOIB = 3.125e+26 
+    NOIC = 8.75e+09 
+    EM = 4.1e+07 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+ Model file: ../22nm_HP.pm
+ Model line:           74
+ Model Name: pmos  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 1
+    PERMOD = 1
+    GEOMOD = 1
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 0
+    VERSION =      4 
+    TOXREF = 1.1e-09 
+    TOXE = 1.1e-09 
+    TOXP =  8e-10 
+    TOXM = 1.1e-09 
+    DTOX =  3e-10 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =    2.1 
+    XJ = 7.2e-09 
+    VSAT = 2.1e+05 
+    A0 =      1 
+    AGS =  1e-20 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+04 
+    KETA = -0.047 
+    NSUB =  6e+16 
+    NDEP = 4.4e+18 
+    NSD =  2e+20 
+    NGATE =  1e+23 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-07 
+    K1 =    0.4 
+    KT1 =  -0.11 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =  -0.01 
+    K3 =      0 
+    K3B =      0 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 =  1e-11 
+    DVTP1 =   0.05 
+    W0 = 2.5e-06 
+    DVT0 =      1 
+    DVT1 =      2 
+    DVT2 = -0.032 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =   0.56 
+    DSUB =    0.1 
+    VTH0 = -0.4606 
+    EU =      1 
+    UA =  2e-09 
+    UA1 = 4.31e-09 
+    UB =  5e-19 
+    UB1 = 7.61e-18 
+    UC =      0 
+    UC1 = -5.6e-11 
+    U0 = 0.0095 
+    UTE =   -1.5 
+    VOFF = -0.126 
+    VOFFL =      0 
+    MINV =   0.05 
+    FPROUT =    0.2 
+    PDITS =   0.08 
+    PDITSD =   0.23 
+    PDITSL = 2.3e+06 
+    DELTA =   0.01 
+    RDSW =    145 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =   72.5 
+    RSW =   72.5 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 = 0.0038 
+    ETAB =      0 
+    PCLM =   0.12 
+    PDIBLC1 =  0.001 
+    PDIBLC2 =  0.001 
+    PDIBLCB = 3.4e-08 
+    PSCBE1 = 8.14e+08 
+    PSCBE2 = 9.58e-07 
+    PVAG =  1e-20 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL = -9e-09 
+    XLREF = -9e-09 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  0.074 
+    ALPHA1 =  0.005 
+    AGIDL = 0.0002 
+    BGIDL = 2.1e+09 
+    CGIDL = 0.0002 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC = 0.0213 
+    BIGC = 0.002589 
+    CIGC =  0.002 
+    AIGSD = 0.0213 
+    BIGSD = 0.002589 
+    CIGSD =  0.002 
+    AIGBACC =  0.012 
+    BIGBACC = 0.0028 
+    CIGBACC =  0.002 
+    AIGBINV =  0.014 
+    BIGBINV =  0.004 
+    CIGBINV =  0.004 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      5 
+    BETA0 =     30 
+    IJTHDFWD =   0.01 
+    IJTHSFWD =   0.01 
+    IJTHDREV =  0.001 
+    IJTHSREV =  0.001 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =   0.55 
+    GBMIN =  1e-10 
+    RBDB =     15 
+    RBPB =      5 
+    RBSB =     15 
+    RBPS =     15 
+    RBPD =     15 
+    CGSL = 2.653e-10 
+    CGDL = 2.653e-10 
+    CKAPPAS =   0.03 
+    CKAPPAD =   0.03 
+    CF = 1.297e-10 
+    CLC =  1e-07 
+    CLE =    0.6 
+    DWC =  5e-09 
+    DLC =  2e-09 
+    DLCIG =  2e-09 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =    0.9 
+    VOFFCV =   0.02 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.4 
+    NGCON =      1 
+    TCJ =  0.001 
+    TPB =  0.005 
+    TCJSW =  0.001 
+    TPBSW =  0.005 
+    TCJSWG =  0.001 
+    TPBSWG =  0.005 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL =  2e-06 
+    SW =  2e-06 
+    K =      0 
+    TNOM =  300.1 
+    CGSO = 6.5e-11 
+    CGDO = 6.5e-11 
+    CGBO = 2.56e-11 
+    XPART =      0 
+    RSH =      5 
+    JSS = 0.0001 
+    JSWS =  1e-11 
+    JSWGS =  1e-10 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0005 
+    CJSWS =  5e-10 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS =  3e-10 
+    XTIS =      3 
+    JSD = 0.0001 
+    JSWD =  1e-11 
+    JSWGD =  1e-10 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0005 
+    CJSWD =  5e-10 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD =  5e-10 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT =  2e-09 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT =  5e-09 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.188e+40 
+    NOIB = 1.5e+25 
+    NOIC = 8.75e+09 
+    EM = 4.1e+07 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+  **warning** (nmos:x0.mn (inv.sub:7)) Warning:  Acde = 0.245565 may be too small in BSIM4 model with w=4.4e-08 l=2.2e-08.
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=result_1b/results.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    5.000E-01 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   4.3245p  targ=   2.0210n   trig=   2.0166n
+ tplh=   2.6020p  targ=   1.0166n   trig=   1.0140n
+ tr=   9.1656p  targ=   2.0275n   trig=   2.0183n
+ tf=   4.4065p  targ=   1.0189n   trig=   1.0145n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    6.000E-01 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   4.2581p  targ=   2.0211n   trig=   2.0168n
+ tplh=   2.7174p  targ=   1.0167n   trig=   1.0139n
+ tr=   8.9973p  targ=   2.0274n   trig=   2.0184n
+ tf=   4.4553p  targ=   1.0190n   trig=   1.0146n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    7.000E-01 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.9827p  targ=   2.0211n   trig=   2.0171n
+ tplh=   2.7131p  targ=   1.0162n   trig=   1.0135n
+ tr=   8.4262p  targ=   2.0269n   trig=   2.0185n
+ tf=   4.5170p  targ=   1.0187n   trig=   1.0142n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    8.000E-01 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.7657p  targ=   2.0207n   trig=   2.0169n
+ tplh=   2.7460p  targ=   1.0157n   trig=   1.0130n
+ tr=   7.7263p  targ=   2.0260n   trig=   2.0183n
+ tf=   4.4374p  targ=   1.0181n   trig=   1.0137n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    9.000E-01 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.5314p  targ=   2.0202n   trig=   2.0166n
+ tplh=   2.7912p  targ=   1.0154n   trig=   1.0126n
+ tr=   7.1741p  targ=   2.0250n   trig=   2.0179n
+ tf=   4.4395p  targ=   1.0179n   trig=   1.0134n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.000E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.3948p  targ=   2.0202n   trig=   2.0168n
+ tplh=   2.8712p  targ=   1.0152n   trig=   1.0124n
+ tr=   6.7797p  targ=   2.0248n   trig=   2.0180n
+ tf=   4.4870p  targ=   1.0178n   trig=   1.0133n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.100E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.2689p  targ=   2.0200n   trig=   2.0168n
+ tplh=   2.9841p  targ=   1.0151n   trig=   1.0122n
+ tr=   6.4967p  targ=   2.0244n   trig=   2.0179n
+ tf=   4.6438p  targ=   1.0178n   trig=   1.0131n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.200E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.2146p  targ=   2.0202n   trig=   2.0170n
+ tplh=   2.9960p  targ=   1.0151n   trig=   1.0121n
+ tr=   6.2134p  targ=   2.0243n   trig=   2.0181n
+ tf=   4.5729p  targ=   1.0177n   trig=   1.0131n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.300E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.1351p  targ=   2.0201n   trig=   2.0170n
+ tplh=   3.1007p  targ=   1.0151n   trig=   1.0120n
+ tr=   6.0859p  targ=   2.0241n   trig=   2.0180n
+ tf=   4.7188p  targ=   1.0178n   trig=   1.0131n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.400E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.1000p  targ=   2.0203n   trig=   2.0172n
+ tplh=   3.2015p  targ=   1.0152n   trig=   1.0120n
+ tr=   5.9920p  targ=   2.0242n   trig=   2.0182n
+ tf=   5.0131p  targ=   1.0181n   trig=   1.0131n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.500E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0618p  targ=   2.0205n   trig=   2.0174n
+ tplh=   3.2713p  targ=   1.0152n   trig=   1.0119n
+ tr=   5.9220p  targ=   2.0243n   trig=   2.0183n
+ tf=   5.1514p  targ=   1.0183n   trig=   1.0131n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.600E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0230p  targ=   2.0205n   trig=   2.0175n
+ tplh=   3.3473p  targ=   1.0153n   trig=   1.0119n
+ tr=   5.8389p  targ=   2.0242n   trig=   2.0184n
+ tf=   5.2951p  targ=   1.0185n   trig=   1.0132n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.700E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0100p  targ=   2.0207n   trig=   2.0177n
+ tplh=   3.4307p  targ=   1.0154n   trig=   1.0120n
+ tr=   5.7931p  targ=   2.0244n   trig=   2.0186n
+ tf=   5.4415p  targ=   1.0187n   trig=   1.0132n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.800E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   2.9903p  targ=   2.0209n   trig=   2.0179n
+ tplh=   3.5178p  targ=   1.0155n   trig=   1.0120n
+ tr=   5.7607p  targ=   2.0245n   trig=   2.0187n
+ tf=   5.5891p  targ=   1.0189n   trig=   1.0133n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    1.900E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   2.9638p  targ=   2.0211n   trig=   2.0181n
+ tplh=   3.6063p  targ=   1.0156n   trig=   1.0120n
+ tr=   5.7411p  targ=   2.0246n   trig=   2.0189n
+ tf=   5.7375p  targ=   1.0191n   trig=   1.0134n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.000E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   2.9802p  targ=   2.0212n   trig=   2.0183n
+ tplh=   3.6956p  targ=   1.0158n   trig=   1.0121n
+ tr=   5.7433p  targ=   2.0247n   trig=   2.0190n
+ tf=   5.8870p  targ=   1.0194n   trig=   1.0135n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.100E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0152p  targ=   2.0214n   trig=   2.0184n
+ tplh=   3.7865p  targ=   1.0159n   trig=   1.0121n
+ tr=   5.7485p  targ=   2.0249n   trig=   2.0191n
+ tf=   6.0341p  targ=   1.0196n   trig=   1.0136n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.200E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0310p  targ=   2.0216n   trig=   2.0186n
+ tplh=   3.8781p  targ=   1.0160n   trig=   1.0122n
+ tr=   5.7238p  targ=   2.0250n   trig=   2.0193n
+ tf=   6.1867p  targ=   1.0198n   trig=   1.0137n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.300E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0180p  targ=   2.0218n   trig=   2.0188n
+ tplh=   3.9689p  targ=   1.0162n   trig=   1.0122n
+ tr=   5.6726p  targ=   2.0252n   trig=   2.0195n
+ tf=   6.3947p  targ=   1.0202n   trig=   1.0138n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.400E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   2.9796p  targ=   2.0219n   trig=   2.0189n
+ tplh=   4.0607p  targ=   1.0163n   trig=   1.0123n
+ tr=   5.7612p  targ=   2.0253n   trig=   2.0196n
+ tf=   6.5988p  targ=   1.0205n   trig=   1.0139n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.500E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0243p  targ=   2.0221n   trig=   2.0191n
+ tplh=   4.1527p  targ=   1.0165n   trig=   1.0123n
+ tr=   5.7495p  targ=   2.0255n   trig=   2.0197n
+ tf=   6.7974p  targ=   1.0208n   trig=   1.0140n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.600E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0171p  targ=   2.0223n   trig=   2.0193n
+ tplh=   4.2452p  targ=   1.0167n   trig=   1.0124n
+ tr=   5.6945p  targ=   2.0256n   trig=   2.0199n
+ tf=   6.9914p  targ=   1.0211n   trig=   1.0141n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.700E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0005p  targ=   2.0224n   trig=   2.0194n
+ tplh=   4.3380p  targ=   1.0168n   trig=   1.0125n
+ tr=   5.6347p  targ=   2.0257n   trig=   2.0201n
+ tf=   7.1814p  targ=   1.0214n   trig=   1.0142n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.800E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0038p  targ=   2.0226n   trig=   2.0196n
+ tplh=   4.4316p  targ=   1.0170n   trig=   1.0126n
+ tr=   5.6722p  targ=   2.0259n   trig=   2.0202n
+ tf=   7.3680p  targ=   1.0217n   trig=   1.0143n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    2.900E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0079p  targ=   2.0228n   trig=   2.0198n
+ tplh=   4.5233p  targ=   1.0172n   trig=   1.0126n
+ tr=   5.7059p  targ=   2.0261n   trig=   2.0204n
+ tf=   7.5517p  targ=   1.0220n   trig=   1.0144n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.000E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0146p  targ=   2.0230n   trig=   2.0200n
+ tplh=   4.6068p  targ=   1.0173n   trig=   1.0127n
+ tr=   5.7357p  targ=   2.0263n   trig=   2.0206n
+ tf=   7.7113p  targ=   1.0223n   trig=   1.0146n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.100E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0203p  targ=   2.0232n   trig=   2.0202n
+ tplh=   4.6913p  targ=   1.0175n   trig=   1.0128n
+ tr=   5.7602p  targ=   2.0265n   trig=   2.0208n
+ tf=   7.8892p  targ=   1.0226n   trig=   1.0147n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.200E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0611p  targ=   2.0236n   trig=   2.0206n
+ tplh=   4.7767p  targ=   1.0176n   trig=   1.0128n
+ tr=   5.8373p  targ=   2.0270n   trig=   2.0212n
+ tf=   8.0735p  targ=   1.0229n   trig=   1.0148n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.300E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0740p  targ=   2.0238n   trig=   2.0208n
+ tplh=   4.8627p  targ=   1.0178n   trig=   1.0129n
+ tr=   5.9488p  targ=   2.0272n   trig=   2.0213n
+ tf=   8.2607p  targ=   1.0232n   trig=   1.0150n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.400E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0885p  targ=   2.0240n   trig=   2.0209n
+ tplh=   4.9493p  targ=   1.0179n   trig=   1.0130n
+ tr=   6.0315p  targ=   2.0275n   trig=   2.0214n
+ tf=   8.4491p  targ=   1.0235n   trig=   1.0151n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.500E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.1024p  targ=   2.0242n   trig=   2.0211n
+ tplh=   5.0437p  targ=   1.0181n   trig=   1.0131n
+ tr=   6.0941p  targ=   2.0277n   trig=   2.0216n
+ tf=   8.6253p  targ=   1.0238n   trig=   1.0152n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.600E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.1147p  targ=   2.0244n   trig=   2.0213n
+ tplh=   5.1621p  targ=   1.0183n   trig=   1.0132n
+ tr=   6.1379p  targ=   2.0279n   trig=   2.0218n
+ tf=   8.7985p  targ=   1.0241n   trig=   1.0153n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.700E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.1298p  targ=   2.0246n   trig=   2.0215n
+ tplh=   5.3084p  targ=   1.0185n   trig=   1.0132n
+ tr=   6.2137p  targ=   2.0281n   trig=   2.0219n
+ tf=   9.0289p  targ=   1.0245n   trig=   1.0155n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.800E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.0888p  targ=   2.0246n   trig=   2.0215n
+ tplh=   5.3996p  targ=   1.0187n   trig=   1.0133n
+ tr=   6.0371p  targ=   2.0280n   trig=   2.0220n
+ tf=   9.1953p  targ=   1.0248n   trig=   1.0156n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    3.900E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.1272p  targ=   2.0250n   trig=   2.0219n
+ tplh=   5.4934p  targ=   1.0189n   trig=   1.0134n
+ tr=   6.1154p  targ=   2.0285n   trig=   2.0224n
+ tf=   9.3525p  targ=   1.0251n   trig=   1.0158n
+
+          ***** job concluded
+ **info** dc convergence successful at Newton-Raphson method 
+
+   *** parameter k =    4.000E+00 ***
+
+ ******
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ tphl=   3.1572p  targ=   2.0252n   trig=   2.0221n
+ tplh=   5.5902p  targ=   1.0191n   trig=   1.0135n
+ tr=   6.3354p  targ=   2.0288n   trig=   2.0225n
+ tf=   9.5049p  targ=   1.0254n   trig=   1.0159n
+
+          ***** job concluded
+ ******  
+ * lab 1 -- sweep pmos/nmos width ratio k, measure tphl/tplh between out2 and out3
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: AMD EPYC 7F72 24-Core Processor
+ cpu MHz	: 3193.742
+ CPU(s)		: 48
+  
+ OS:
+ Linux version 4.18.0-553.153.1.el8_10.x86_64 (mockbuild@x86-64-03.build.eng.rdu2.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)) #1 SMP Tue Aug 4 21:00:26 EDT 2026
+
+ System loadavg : 1.89 1.61 1.27 1/1613 258927
+
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    48
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      67 # elements   =      17
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      14 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.15           1         166
+  transient          0.31    10800036        8910        3497 rev=        87
+  readin             0.32
+  errchk             0.00
+  setup              0.07
+  output             0.00
+
+
+           peak memory used        522.89 megabytes
+           total cpu time            0.84 seconds
+           total elapsed time        1.35 seconds
+           job started at     16:29:27 09/08/2026
+           job ended   at     16:29:28 09/08/2026
+           job total runtime         1.35 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.48(s)
