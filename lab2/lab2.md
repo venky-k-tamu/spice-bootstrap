@@ -7,19 +7,13 @@ HSPICE simulation for 21 inverter ring oscillator, 3 inverter ring oscillator an
 
 ## Lab 2.0 
 ### 
-Ring oscillator with 21 inverters, time period for ring oscillator is 131.53ps. \
-T = 131.53ps \
-f = 7.6GHz \
-tpHL = 3.13ps \
-42\*tpHL = 131.63ps \
-tpLH = 3.18ps \
-42\*tpLH = 133.60ps 
 
-Ring oscillator with 3 inverters, time period for ring oscillator is 131.53ps. \
-T = 131.53ps \
-f = 7.6GHz \
-tpHL = 3.13ps \
-42\*tpHL = 131.63ps \
-tpLH = 3.18ps \
-42\*tpLH = 133.60ps 
+| Metric              | 21 inverters | 3 inverters |
+|---------------------|-------------:|------------:|
+| T (period)          | 131.53ps     | 17.71ps     |
+| f                    | 7.6GHz       | 56.45GHz    |
+| tpHL                | 3.13ps       | 2.851ps     |
+| N\*tpHL             | 42\*tpHL = 131.63ps | 6\*tpHL = 17.11ps |
+| tpLH                | 3.18ps       | 3.04ps      |
+| N\*tpLH             | 42\*tpLH = 133.60ps | 6\*tpLH = 18.24ps |
 
