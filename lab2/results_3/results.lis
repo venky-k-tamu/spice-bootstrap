@@ -7,11 +7,11 @@
   this software is strictly prohibited.
   Input File: ring_3.sp                                                         
   Command line options: /opt/coe/synopsys/hspice/W-2024.09/hspice/linux64/hspice -i ring_3.sp -o results_3/results
-  Start time: Tue Sep  8 18:22:28 2026
+  Start time: Tue Sep  8 18:27:55 2026
  lic:  
  lic: FLEXlm: SDK_14.2 
  lic: USER:   venky.k              HOSTNAME: n02-hera.olympus.ece.tamu.edu 
- lic: HOSTID: ffffffffa8c00c02     PID:      311273 
+ lic: HOSTID: ffffffffa8c00c02     PID:      313568 
  lic: Using FLEXlm license file: 
  lic: 27070@coe-vtls3.engr.tamu.edu 
  lic: Checkout 1 hspice 
@@ -595,8 +595,8 @@
  tphl=   2.8510p  targ= 173.1239p   trig= 170.2730p
  t=  17.7132p  targ= 193.9112p   trig= 176.1979p
  f=  56.4549g
- tphl_42= 119.7419p
- tplh_42= 127.6647p
+ tphl_6=  17.1060p
+ tplh_6=  18.2378p
 
           ***** job concluded
  ******  
@@ -613,7 +613,7 @@
  OS:
  Linux version 4.18.0-553.153.1.el8_10.x86_64 (mockbuild@x86-64-03.build.eng.rdu2.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)) #1 SMP Tue Aug 4 21:00:26 EDT 2026
 
- System loadavg : 0.20 0.13 0.16 2/1471 311276
+ System loadavg : 0.22 0.32 0.26 1/1329 313571
 
 
   ******  PrimeSim HSPICE Threads Information  ******
@@ -638,9 +638,9 @@
   ******  Runtime Statistics (seconds)  ******
 
   analysis           time    # points   tot. iter  conv.iter
-  op point           0.15           1           4
-  transient          0.21      300001        8365        2950 rev=         1
-  readin             0.32
+  op point           0.14           1           4
+  transient          0.22      300001        8365        2950 rev=         1
+  readin             0.31
   errchk             0.00
   setup              0.11
   output             0.00
@@ -648,10 +648,10 @@
 
            peak memory used        522.64 megabytes
            total cpu time            0.76 seconds
-           total elapsed time        1.27 seconds
-           job started at     18:22:28 09/08/2026
-           job ended   at     18:22:29 09/08/2026
-           job total runtime         1.27 seconds
+           total elapsed time        1.25 seconds
+           job started at     18:27:55 09/08/2026
+           job ended   at     18:27:56 09/08/2026
+           job total runtime         1.25 seconds
 
 
  lic: Release hspice token(s) 
