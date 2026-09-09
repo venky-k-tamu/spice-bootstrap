@@ -27,6 +27,5 @@ N = 2\*number fo inverters
 
 ![3-inverter ring: frequency vs VSS](results_3/freq_vs_vss.png)
 
-Frequency drops monotonically as VSS is raised, since tpHL grows much faster than tpLH (e.g. 21-inv: tpHL 3.13ps -> 8.73ps, tpLH roughly flat ~3.2-3.7ps over VSS = 0-0.18V) — raising VSS reduces the NMOS gate-source overdrive (Vgsn = VDD-VSS), slowing the pull-down path while the PMOS pull-up path (source still referenced to VDD) is largely unaffected. \
-Oscillation collapses once VSS eats too far into the supply headroom: the 21-inverter ring stops oscillating beyond VSS ~= 0.18-0.19V, while the 3-inverter ring keeps oscillating out to VSS ~= 0.37V before failing — the shorter ring's larger per-stage overdrive margin (fewer stacked delay stages needed to sustain the loop) lets it tolerate a smaller VDD-VSS swing.
+Frequency drops monotonically as VSS is raised — from 7.60GHz to 0.33GHz (21-inv, VSS = 0-0.39V) and from 56.45GHz to 2.14GHz (3-inv, VSS = 0-0.4V).
 
