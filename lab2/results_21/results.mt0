@@ -60,69 +60,69 @@ $DATA1 SOURCE='PrimeSim HSPICE' VERSION='W-2024.09 linux64' PARAM_COUNT=1
     0.1800         3.739e-12        8.734e-12        2.650e-10      
                    3.774e+09        3.668e-10        1.570e-10      
                     25.0000        1               
-    0.1900         3.840e-12        9.567e-12          failed       
-                     failed         4.018e-10        1.613e-10      
+    0.1900         3.840e-12        9.567e-12        2.818e-10      
+                   3.548e+09        4.018e-10        1.613e-10      
                     25.0000        1               
-    0.2000         3.838e-12        1.042e-11          failed       
-                     failed         4.378e-10        1.612e-10      
+    0.2000         3.838e-12        1.042e-11        3.004e-10      
+                   3.329e+09        4.378e-10        1.612e-10      
                     25.0000        1               
-    0.2100         4.020e-12          failed           failed       
-                     failed           failed         1.688e-10      
+    0.2100         4.020e-12        1.131e-11        3.213e-10      
+                   3.113e+09        4.748e-10        1.688e-10      
                     25.0000        1               
-    0.2200           failed           failed           failed       
-                     failed           failed           failed       
+    0.2200         3.938e-12        1.255e-11        3.459e-10      
+                   2.891e+09        5.270e-10        1.654e-10      
                     25.0000        1               
-    0.2300           failed           failed           failed       
-                     failed           failed           failed       
+    0.2300         4.039e-12        1.382e-11        3.738e-10      
+                   2.675e+09        5.804e-10        1.697e-10      
                     25.0000        1               
-    0.2400           failed           failed           failed       
-                     failed           failed           failed       
+    0.2400         4.104e-12        1.539e-11        4.063e-10      
+                   2.461e+09        6.465e-10        1.724e-10      
                     25.0000        1               
-    0.2500           failed           failed           failed       
-                     failed           failed           failed       
+    0.2500         4.046e-12        1.707e-11        4.438e-10      
+                   2.253e+09        7.171e-10        1.699e-10      
                     25.0000        1               
-    0.2600           failed           failed           failed       
-                     failed           failed           failed       
+    0.2600         3.997e-12        1.922e-11        4.873e-10      
+                   2.052e+09        8.071e-10        1.679e-10      
                     25.0000        1               
-    0.2700           failed           failed           failed       
-                     failed           failed           failed       
+    0.2700         3.828e-12        2.183e-11        5.380e-10      
+                   1.859e+09        9.169e-10        1.608e-10      
                     25.0000        1               
-    0.2800           failed           failed           failed       
-                     failed           failed           failed       
+    0.2800         3.691e-12        2.479e-11        5.974e-10      
+                   1.674e+09        1.041e-09        1.550e-10      
                     25.0000        1               
-    0.2900           failed           failed           failed       
-                     failed           failed           failed       
+    0.2900         3.285e-12        2.823e-11        6.686e-10      
+                   1.496e+09        1.186e-09        1.380e-10      
                     25.0000        1               
-    0.3000           failed           failed           failed       
-                     failed           failed           failed       
+    0.3000         2.951e-12        3.277e-11        7.528e-10      
+                   1.328e+09        1.376e-09        1.239e-10      
                     25.0000        1               
-    0.3100           failed           failed           failed       
-                     failed           failed           failed       
+    0.3100         2.343e-12        3.837e-11        8.533e-10      
+                   1.172e+09        1.612e-09        9.839e-11      
                     25.0000        1               
-    0.3200           failed           failed           failed       
-                     failed           failed           failed       
+    0.3200         1.313e-12        4.509e-11        9.756e-10      
+                   1.025e+09        1.894e-09        5.515e-11      
                     25.0000        1               
-    0.3300           failed           failed           failed       
-                     failed           failed           failed       
+    0.3300        -3.652e-14        5.340e-11        1.123e-09      
+                   8.907e+08        2.243e-09       -1.534e-12      
                     25.0000        1               
-    0.3400           failed           failed           failed       
-                     failed           failed           failed       
+    0.3400        -2.633e-12        6.421e-11        1.300e-09      
+                   7.693e+08        2.697e-09       -1.106e-10      
                     25.0000        1               
-    0.3500           failed           failed           failed       
-                     failed           failed           failed       
+    0.3500        -6.119e-12        7.836e-11        1.514e-09      
+                   6.604e+08        3.291e-09       -2.570e-10      
                     25.0000        1               
-    0.3600           failed           failed           failed       
-                     failed           failed           failed       
+    0.3600        -1.082e-11        9.633e-11        1.781e-09      
+                   5.615e+08        4.046e-09       -4.545e-10      
                     25.0000        1               
-    0.3700           failed           failed           failed       
-                     failed           failed           failed       
+    0.3700        -1.944e-11        1.208e-10        2.103e-09      
+                   4.754e+08        5.073e-09       -8.164e-10      
                     25.0000        1               
-    0.3800           failed           failed           failed       
-                     failed           failed           failed       
+    0.3800        -3.276e-11        1.522e-10        2.504e-09      
+                   3.993e+08        6.392e-09       -1.376e-09      
                     25.0000        1               
-    0.3900           failed           failed           failed       
-                     failed           failed           failed       
+    0.3900        -5.961e-11        2.020e-10        2.990e-09      
+                   3.344e+08        8.485e-09       -2.504e-09      
                     25.0000        1               
-    0.4000           failed           failed           failed       
-                     failed           failed           failed       
+    0.4000         5.554e-09        5.404e-09        2.079e-10      
+                   4.809e+09        2.270e-07        2.333e-07      
                     25.0000        1               

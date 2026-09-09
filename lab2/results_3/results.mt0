@@ -117,12 +117,12 @@ $DATA1 SOURCE='PrimeSim HSPICE' VERSION='W-2024.09 linux64' PARAM_COUNT=1
     0.3700        -1.762e-11        1.099e-10        2.764e-10      
                    3.618e+09        6.594e-10       -1.057e-10      
                     25.0000        1               
-    0.3800        -2.654e-11          failed           failed       
-                     failed           failed        -1.592e-10      
+    0.3800        -2.654e-11        1.350e-10        3.255e-10      
+                   3.072e+09        8.102e-10       -1.592e-10      
                     25.0000        1               
-    0.3900           failed           failed           failed       
-                     failed           failed           failed       
+    0.3900        -4.695e-11        1.767e-10        3.901e-10      
+                   2.563e+09        1.060e-09       -2.817e-10      
                     25.0000        1               
-    0.4000           failed           failed           failed       
-                     failed           failed           failed       
+    0.4000        -9.305e-11       -2.192e-10        4.681e-10      
+                   2.136e+09       -1.315e-09       -5.583e-10      
                     25.0000        1               
