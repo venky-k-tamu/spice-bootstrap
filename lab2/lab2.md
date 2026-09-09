@@ -33,3 +33,7 @@ Frequency drops monotonically as VSS is raised — from 7.60GHz to 0.33GHz (21-i
 ## Lab 2.5
 ### Voltage switchpoint as a function of k
 
+Single inverter with its output tied to its input (`ring_1.sp`); the DC operating voltage at that node is the inverter's switchpoint voltage Vm. k (Wp/Wn) was swept from 0.1 to 10 in 0.1 steps.
+
+![Switchpoint voltage vs k](results_1/vm_vs_k.png)
+
