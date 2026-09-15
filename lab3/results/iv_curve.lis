@@ -7,11 +7,11 @@
   this software is strictly prohibited.
   Input File: iv_curve.sp                                                       
   Command line options: /opt/coe/synopsys/hspice/W-2024.09/hspice/linux64/hspice -i iv_curve.sp -o results/
-  Start time: Tue Sep 15 15:15:05 2026
+  Start time: Tue Sep 15 15:21:43 2026
  lic:  
  lic: FLEXlm: SDK_14.2 
  lic: USER:   venky.k              HOSTNAME: n01-zeus.olympus.ece.tamu.edu 
- lic: HOSTID: ffffffffa8c00b02     PID:      497046 
+ lic: HOSTID: ffffffffa8c00b02     PID:      498091 
  lic: Using FLEXlm license file: 
  lic: 27070@coe-vtls3.engr.tamu.edu 
  lic: Checkout 1 hspice 
@@ -290,7 +290,6 @@
     TRS =      0 
     TRD =      0 
   **warning** (pmos:mp1 (iv_curve.sp:21)) Warning:  Acde = 0.259654 may be too small in BSIM4 model with w=5.72e-08 l=2.2e-08.
-  **warning** (iv_curve.sp:27) Could not find branch element drain ;branch output ignored
   
 
   **warning** the following singular supplies were terminated to 1 meg resistor 
@@ -301,78 +300,6 @@
  ******  option summary
  ******
  runlvl  = 3         bypass  = 2.0000    
- ******
- * lab3
-
- ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
-  *** parameter 0:vgate  =     0.            ***
-  
- vds=-800.0000m
- vgs=-800.0000m
- ******
- * lab3
-
- ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
-  *** parameter 0:vgate  =   100.0000m       ***
-  
- vds=-800.0000m
- vgs=-800.0000m
- ******
- * lab3
-
- ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
-  *** parameter 0:vgate  =   200.0000m       ***
-  
- vds=-800.0000m
- vgs=-800.0000m
- ******
- * lab3
-
- ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
-  *** parameter 0:vgate  =   300.0000m       ***
-  
- vds=-800.0000m
- vgs=-800.0000m
- ******
- * lab3
-
- ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
-  *** parameter 0:vgate  =   400.0000m       ***
-  
- vds=-800.0000m
- vgs=-800.0000m
- ******
- * lab3
-
- ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
-  *** parameter 0:vgate  =   500.0000m       ***
-  
- vds=-800.0000m
- vgs=-800.0000m
- ******
- * lab3
-
- ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
-  *** parameter 0:vgate  =   600.0000m       ***
-  
- vds=-800.0000m
- vgs=-800.0000m
- ******
- * lab3
-
- ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
-  *** parameter 0:vgate  =   700.0000m       ***
-  
- vds=-800.0000m
- vgs=-800.0000m
- ******
- * lab3
-
- ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
-  *** parameter 0:vgate  =   800.0000m       ***
-  
- vds=-800.0000m
- vgs=-800.0000m
 
           ***** job concluded
  ******  
@@ -383,13 +310,13 @@
  ******  Machine Information  ******
  CPU:
  model name	: AMD EPYC 7F72 24-Core Processor
- cpu MHz	: 1795.149
+ cpu MHz	: 3193.859
  CPU(s)		: 48
   
  OS:
  Linux version 4.18.0-553.153.1.el8_10.x86_64 (mockbuild@x86-64-03.build.eng.rdu2.redhat.com) (gcc version 8.5.0 20210514 (Red Hat 8.5.0-28) (GCC)) #1 SMP Tue Aug 4 21:00:26 EDT 2026
 
- System loadavg : 0.54 0.23 0.20 2/1001 497049
+ System loadavg : 0.19 0.18 0.18 2/1035 498094
 
 
   ******  PrimeSim HSPICE Threads Information  ******
@@ -415,20 +342,20 @@
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.00           1           0
-  dc sweep           0.03         729        2916
+  dc sweep           0.04         729        2916
   readin             0.20
   errchk             0.00
   setup              0.00
   output             0.00
 
 
-           peak memory used        521.76 megabytes
-           total cpu time            0.35 seconds
-           total elapsed time        0.85 seconds
-           job started at     15:15:05 09/15/2026
-           job ended   at     15:15:05 09/15/2026
-           job total runtime         0.85 seconds
+           peak memory used        521.74 megabytes
+           total cpu time            0.28 seconds
+           total elapsed time        0.81 seconds
+           job started at     15:21:43 09/15/2026
+           job ended   at     15:21:43 09/15/2026
+           job total runtime         0.81 seconds
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.48(s)
+ lic: total license checkout elapse time:        0.50(s)
