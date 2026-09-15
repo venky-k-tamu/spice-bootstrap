@@ -3,21 +3,20 @@
 Technology: 22nm PTM-HP\
 Nominal VDD = 0.8 V\
 k = 1.3 (Wp/Wn), Wn = 44nm, Wp = k\*Wn (from Lab 1)\
-Single PMOS (`MP1`) and single NMOS (`MN1`) devices, each characterized separately with `VGATE` and `VDRAIN` sweeping the gate and drain nodes. I_D is reported in a consistent drain-to-source reference direction for both devices: for NMOS this matches the physical current path directly (positive I_D); for PMOS, which physically conducts source-to-drain, this reference makes I_D negative, matching how SPICE/BSIM models report PMOS drain current natively.
+Single PMOS (`MP1`) and single NMOS (`MN1`) devices, each characterized separately with `VGATE` and `VDRAIN` sweeping the gate and drain nodes. I_D is reported in a consistent drain-to-source reference direction for both devices.
 
 ## Lab 3.0
-### Drain current vs. VDS, family of curves over VGS
+### PMOS Drain current vs. VDS, family of curves over VGS
 
-`vdrain` was swept 0 to 0.8 V in 10mV steps (VDS = vdrain - 0.8, so VDS ranges -0.8 V to 0 V), nested inside a `vgate` sweep from 0 to 0.8 V in 100mV steps (VGS = vgate - 0.8, so VGS ranges -0.8 V to 0 V).
-
-Drain current I_D is read as `-i(vdrain)` (the negated VDRAIN source branch current, equal and opposite to `i(vdd)` by KCL) so it reflects the drain-to-source reference direction; since PMOS physically conducts source-to-drain, I_D comes out negative here.
-
+RON (from plot) = 9.09 kohm
+RON (calculated) = 3.80 kohm  (1/(u0*Cox*(W/L)*Vov), u0=0.0095 m^2/Vs, Cox=3.14e-2 F/m^2 from toxe=1.1nm, W/L=2.6, Vov=0.8-0.4606=0.339V)
 ![PMOS I_D vs V_DS family of curves](results_pmos/iv_curves.png)
 
 ## Lab 3.1
 ### NMOS drain current vs. VDS, family of curves over VGS
 
-Same nested sweep as Lab 3.0, but on `MN1` (source/body tied to VSS = 0V), so VDS = vdrain and VGS = vgate directly (both range 0 V to 0.8 V). Drain current I_D is read as `-i(vdrain)`, same as the PMOS case; here it comes out positive since NMOS physically conducts drain-to-source, matching the reference direction.
+RON (from plot) = 5.55 kohm 
+RON (calculated) = 1.28 kohm  (1/(u0*Cox*(W/L)*Vov), u0=0.04 m^2/Vs, Cox=3.29e-2 F/m^2 from toxe=1.05nm, W/L=2.0, Vov=0.8-0.50308=0.297V)
 
 ![NMOS I_D vs V_DS family of curves](results_nmos/iv_curves.png)
 
