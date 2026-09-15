@@ -8,15 +8,18 @@ Single PMOS (`MP1`) and single NMOS (`MN1`) devices, each characterized separate
 ## Lab 3.0
 ### PMOS Drain current vs. VDS, family of curves over VGS
 
-RON (from plot) = 9.09 kohm
-RON (calculated) = 3.80 kohm  (1/(u0*Cox*(W/L)*Vov), u0=0.0095 m^2/Vs, Cox=3.14e-2 F/m^2 from toxe=1.1nm, W/L=2.6, Vov=0.8-0.4606=0.339V)
+RON (from plot) = 9.09 kohm \
+RON (calculated) = 3.80 kohm  = (1/(u0*Cox*(W/L)*Vov),\
+u0=0.0095 m^2/Vs, Cox=3.14e-2 F/m^2 from toxe=1.1nm, W/L=2.6, Vov=0.8-0.4606=0.339V)
+
 ![PMOS I_D vs V_DS family of curves](results_pmos/iv_curves.png)
 
 ## Lab 3.1
 ### NMOS drain current vs. VDS, family of curves over VGS
 
-RON (from plot) = 5.55 kohm 
-RON (calculated) = 1.28 kohm  (1/(u0*Cox*(W/L)*Vov), u0=0.04 m^2/Vs, Cox=3.29e-2 F/m^2 from toxe=1.05nm, W/L=2.0, Vov=0.8-0.50308=0.297V)
+RON (from plot) = 5.55 kohm \ 
+RON (calculated) = 1.28 kohm = (1/(u0*Cox*(W/L)*Vov),\
+u0=0.04 m^2/Vs, Cox=3.29e-2 F/m^2 from toxe=1.05nm, W/L=2.0, Vov=0.8-0.50308=0.297V)
 
 ![NMOS I_D vs V_DS family of curves](results_nmos/iv_curves.png)
 
