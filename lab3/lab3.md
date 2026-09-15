@@ -3,7 +3,7 @@
 Technology: 22nm PTM-HP\
 Nominal VDD = 0.8 V\
 k = 1.3 (Wp/Wn), Wn = 44nm, Wp = k\*Wn (from Lab 1)\
-Single PMOS (`MP1`) and single NMOS (`MN1`) devices, each characterized separately with `VGATE` and `VDRAIN` sweeping the gate and drain nodes. Plotted current direction is drain-to-source for both devices.
+Single PMOS (`MP1`) and single NMOS (`MN1`) devices, each characterized separately with `VGATE` and `VDRAIN` sweeping the gate and drain nodes. Plotted current direction follows the physical current path set by the bias conditions: source-to-drain for PMOS (source held at VDD, the higher potential), drain-to-source for NMOS (drain held at the higher potential).
 
 ## Lab 3.0
 ### Drain current vs. VDS, family of curves over VGS
