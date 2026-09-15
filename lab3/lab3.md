@@ -1,9 +1,9 @@
-# LAB 3 PMOS I-V Characteristics
+# LAB 3 MOSFET I-V Characteristics
 
 Technology: 22nm PTM-HP\
 Nominal VDD = 0.8 V\
 k = 1.3 (Wp/Wn), Wn = 44nm, Wp = k\*Wn (from Lab 1)\
-Single PMOS device (`MP1`), source and body tied to VDD, characterized with `VGATE` and `VDRAIN` sweeping the gate and drain nodes referenced to ground.
+Single PMOS (`MP1`) and single NMOS (`MN1`) devices, each characterized separately with `VGATE` and `VDRAIN` sweeping the gate and drain nodes. Plotted current direction follows the standard MOSFET reference convention: source-to-drain for PMOS, drain-to-source for NMOS.
 
 ## Lab 3.0
 ### Drain current vs. VDS, family of curves over VGS
@@ -13,6 +13,13 @@ Single PMOS device (`MP1`), source and body tied to VDD, characterized with `VGA
 Drain current I_D is read from `i(vdrain)` (the VDRAIN source branch current, equal and opposite to `i(vdd)` by KCL).
 
 ![PMOS I_D vs V_DS family of curves](results_pmos/iv_curves.png)
+
+## Lab 3.1
+### NMOS drain current vs. VDS, family of curves over VGS
+
+Same nested sweep as Lab 3.0, but on `MN1` (source/body tied to VSS = 0V), so VDS = vdrain and VGS = vgate directly (both range 0 V to 0.8 V). Drain current I_D is read as `-i(vdrain)` (sign flipped relative to the PMOS case, since the source reference sits at the low rail here instead of VDD, to report a positive I_D that grows with VGS/VDS).
+
+![NMOS I_D vs V_DS family of curves](results_nmos/iv_curves.png)
 
 ## Appendix: PMOS I-V sweep data (`iv_curve_pmos.sp`)
 
@@ -789,13 +796,6 @@ Drain current I_D is read from `i(vdrain)` (the VDRAIN source branch current, eq
 | -0.020 | 6.006131e-12 |
 | -0.010 | 3.187962e-12 |
 | 0.000 | -3.089810e-26 |
-
-## Lab 3.1
-### NMOS drain current vs. VDS, family of curves over VGS
-
-Same nested sweep as Lab 3.0, but on `MN1` (source/body tied to VSS = 0V), so VDS = vdrain and VGS = vgate directly (both range 0 V to 0.8 V). Drain current I_D is read as `-i(vdrain)` (sign flipped relative to the PMOS case, since the source reference sits at the low rail here instead of VDD, to report a positive I_D that grows with VGS/VDS).
-
-![NMOS I_D vs V_DS family of curves](results_nmos/iv_curves.png)
 
 ## Appendix: NMOS I-V sweep data (`iv_curve_nmos.sp`)
 
