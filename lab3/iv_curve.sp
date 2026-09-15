@@ -23,10 +23,11 @@ MP1 drain gate vdd vdd pmos L=LPCH W=WP
 
 
 .option post=2
-.probe DC ID(MP1) IS(MP1)
+.option probe
+.probe DC I(drain) I(vdd)
 .measure DC VDS PARAM='vdrain - nom_vdd'
 .measure DC VGS PARAM='vgate - nom_vdd'
 
-.dc PARAM vdrain 0 0.8 0.01 SWEEP PARAM vgate 0 0.8 0.1
+.dc vdrain start=0 stop=0.8 step=0.01 vgate start=0 stop=0.8 step=0.1
 
 .end
