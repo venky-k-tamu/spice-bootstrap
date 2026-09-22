@@ -1,0 +1,109 @@
+****** PrimeSim HSPICE -- W-2024.09 linux64 (Aug 27 2024 9174816) ******
+Input File: ac_nmos_gnd.sp
+lic:
+lic: FLEXlm: SDK_14.2
+lic: USER:   venky.k              HOSTNAME: n01-zeus.olympus.ece.tamu.edu
+lic: HOSTID: ffffffffa8c00b02     PID:      793028
+lic: Using FLEXlm license file:
+lic: 27070@coe-vtls3.engr.tamu.edu
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 12-jan-2027/2025.06
+lic: 1(in_use)/100(total) FLOATING license(s) on SERVER 27070@coe-vtls3.engr.tamu.edu
+lic:
+
+ init: begin read circuit files, cpu clock= 6.25E-01
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/ad
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/behave
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/bjt
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/burr_brn
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/comlinear
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/dio
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/fet
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/lin_tech
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/pci
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/signet
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/ti
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/tline
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/xilinx
+       option post =     2.00
+       option probe
+ init: end read circuit files, cpu clock= 6.26E-01 peak memory=     521 mb
+ init: begin check errors, cpu clock= 6.26E-01
+ init: end check errors, cpu clock= 6.28E-01 peak memory=     521 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 6.28E-01
+       establish matrix -- done, cpu clock= 6.28E-01 peak memory=     521 mb
+       re-order matrix -- done, cpu clock= 6.28E-01 peak memory=     521 mb
+ init: end setup matrix, cpu clock= 6.28E-01 peak memory=     521 mb
+ dcop: begin dcop, cpu clock= 6.28E-01
+ dcop: end dcop, cpu clock= 6.92E-01 peak memory=     521 mb tot_iter=       4
+ sweep: voltage         voltage1         begin, #sweeps =   4
+ voltage: vgate           =    2.00E-01
+ dcop: begin dcop, cpu clock= 6.92E-01
+ dcop: end dcop, cpu clock= 6.93E-01 peak memory=     521 mb tot_iter=       7
+ output: results_nmos_gnd/ac_nmos_gnd.ac
+ sweep: ac ac1    begin, #sweeps= 181 cpu clock= 7.14E-01
+ ac: frequency=1.00e+01
+ ac: frequency=7.94e+01
+ ac: frequency=6.31e+02
+ ac: frequency=5.01e+03
+ ac: frequency=3.98e+04
+ ac: frequency=3.16e+05
+ ac: frequency=2.51e+06
+ ac: frequency=2.00e+07
+ ac: frequency=1.58e+08
+ ac: frequency=1.26e+09
+ ac: frequency=1.00e+10
+ sweep: ac ac1    end, cpu clock= 7.15E-01 peak memory=     521 mb
+ voltage: vgate           =    4.00E-01
+ dcop: begin dcop, cpu clock= 7.16E-01
+ dcop: end dcop, cpu clock= 7.16E-01 peak memory=     521 mb tot_iter=      11
+ output: results_nmos_gnd/ac_nmos_gnd.ac0
+ sweep: ac ac2    begin, #sweeps= 181 cpu clock= 7.16E-01
+ ac: frequency=1.00e+01
+ ac: frequency=7.94e+01
+ ac: frequency=6.31e+02
+ ac: frequency=5.01e+03
+ ac: frequency=3.98e+04
+ ac: frequency=3.16e+05
+ ac: frequency=2.51e+06
+ ac: frequency=2.00e+07
+ ac: frequency=1.58e+08
+ ac: frequency=1.26e+09
+ ac: frequency=1.00e+10
+ sweep: ac ac2    end, cpu clock= 7.17E-01 peak memory=     521 mb
+ voltage: vgate           =    6.00E-01
+ dcop: begin dcop, cpu clock= 7.18E-01
+ dcop: end dcop, cpu clock= 7.18E-01 peak memory=     521 mb tot_iter=      15
+ output: results_nmos_gnd/ac_nmos_gnd.ac0
+ sweep: ac ac3    begin, #sweeps= 181 cpu clock= 7.18E-01
+ ac: frequency=1.00e+01
+ ac: frequency=7.94e+01
+ ac: frequency=6.31e+02
+ ac: frequency=5.01e+03
+ ac: frequency=3.98e+04
+ ac: frequency=3.16e+05
+ ac: frequency=2.51e+06
+ ac: frequency=2.00e+07
+ ac: frequency=1.58e+08
+ ac: frequency=1.26e+09
+ ac: frequency=1.00e+10
+ sweep: ac ac3    end, cpu clock= 7.19E-01 peak memory=     521 mb
+ voltage: vgate           =    8.00E-01
+ dcop: begin dcop, cpu clock= 7.20E-01
+ dcop: end dcop, cpu clock= 7.20E-01 peak memory=     521 mb tot_iter=      19
+ output: results_nmos_gnd/ac_nmos_gnd.ac0
+ sweep: ac ac4    begin, #sweeps= 181 cpu clock= 7.20E-01
+ ac: frequency=1.00e+01
+ ac: frequency=7.94e+01
+ ac: frequency=6.31e+02
+ ac: frequency=5.01e+03
+ ac: frequency=3.98e+04
+ ac: frequency=3.16e+05
+ ac: frequency=2.51e+06
+ ac: frequency=2.00e+07
+ ac: frequency=1.58e+08
+ ac: frequency=1.26e+09
+ ac: frequency=1.00e+10
+ sweep: ac ac4    end, cpu clock= 7.20E-01 peak memory=     521 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

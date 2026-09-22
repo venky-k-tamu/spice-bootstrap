@@ -1,0 +1,16 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "W-2024.09 linux64"
+* "format" "HSP"
+* "rundate" "17:30:10 09/22/2026 "
+* "netlist" "ac_nmos_gnd.sp "
+* "runtitle" "* lab3"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ gate = 200.0000m       
++ vdd = 800.0000m       
++ vss =   0.            
+***   END: Saved Operating Point ***                     
