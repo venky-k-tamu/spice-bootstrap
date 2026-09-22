@@ -24,8 +24,9 @@ MP1 vdd gate vdd vdd pmos L=LPCH W=WP
 
 .option post=2
 .option probe
-.probe Ii(gate) Ir(gate) Vi(gate) vr(gate)
 
 .ac DEC 20 10 10g SWEEP vgate 0.2 0.8 0.2
+.probe ac Ii(vgate) Ir(vgate) Vi(gate) Vr(gate)
+.print ac ir(vgate) ii(vgate) vr(gate) vi(gate)
 
 .end
