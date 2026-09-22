@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "W-2024.09 linux64"
 * "format" "HSP"
-* "rundate" "16:45:01 09/15/2026 "
+* "rundate" "16:58:00 09/22/2026 "
 * "netlist" "ac_pmos_vdd.sp "
 * "runtitle" "* lab3"
 * time =    0.            
