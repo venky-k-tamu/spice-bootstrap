@@ -11,7 +11,7 @@ Single PMOS or single NMOS device wired as a MOS capacitor: drain, and source ti
 ```
 C_gg = -Ii / (2·π·f·Vac)
 ```
-| VGATE (V) | PMOS, S/D/B @ VDD (aF) | PMOS, S/D/B @ GND (aF) | NMOS, S/D/B @ GND (aF) | NMOS, S/D/B @ VDD (aF) |
+| VGATE (V) | PMOS, S,D @ VDD (aF) | PMOS, S,D @ GND (aF) | NMOS, S,D @ GND (aF) | NMOS, S,D @ VDD (aF) |
 |:---------:|:-----------------------:|:-----------------------:|:-----------------------:|:-----------------------:|
 | 0.2       | 55.105                  | 30.096                  | 31.376                  | 18.524                  |
 | 0.4       | 45.690                  | 26.705                  | 32.854                  | 19.445                  |
