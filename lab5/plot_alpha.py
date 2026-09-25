@@ -41,23 +41,17 @@ def plot(scale, rows, out_path):
     import matplotlib.pyplot as plt
 
     name, color, marker = STYLE[scale]
+    # alpha <= 10 only: alpha = F (a min inverter driving the load directly) is
+    # off the scale and stays in the table
+    rows = [r for r in rows if r[1] <= 10]
     best = min(rows, key=lambda r: r[2])
-    # left: every alpha on log-log; right: linear zoom around the optimum
-    fig, (ax_all, ax_zoom) = plt.subplots(1, 2, figsize=(11, 4.5), dpi=150)
-    zoom = [r for r in rows if r[1] <= 10]
-    for ax, sel in ((ax_all, rows), (ax_zoom, zoom)):
-        ax.plot([r[1] for r in sel], [r[2] for r in sel], color=color,
-                marker=marker, ms=5, mfc="white", mew=1.3, lw=1.4)
-        ax.plot(best[1], best[2], marker=marker, ms=7, color=color, zorder=3)
-        ax.set_xlabel("per-stage fanout alpha")
-        ax.set_ylabel("tpd, input fall -> load input (ps)")
-        ax.grid(alpha=0.3, linewidth=0.6, which="both")
-    ax_all.set_xscale("log")
-    ax_all.set_yscale("log")
-    ax_all.set_title("all alpha (log-log)")
-    ax_zoom.set_title("zoom: alpha <= 10")
-    fig.suptitle(f"Inverter chain into 1 pF, {name}: "
-                 f"min {best[2]:.1f} ps at alpha={best[1]:g} (N={best[0]})", fontsize=10)
+    fig, ax = plt.subplots(figsize=(6, 4.5), dpi=150)
+    ax.plot([r[1] for r in rows], [r[2] for r in rows], color=color,
+            marker=marker, ms=5, mfc="white", mew=1.3, lw=1.4)
+    ax.plot(best[1], best[2], marker=marker, ms=7, color=color, zorder=3)
+    ax.set_xlabel("α")
+    ax.set_ylabel("delay (ps)")
+    ax.grid(alpha=0.3, linewidth=0.6)
     fig.tight_layout()
     fig.savefig(out_path)
     print(f"wrote {out_path}")
