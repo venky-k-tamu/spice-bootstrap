@@ -1,5 +1,5 @@
 #!/bin/sh
-# Run every chain_NN.sp through HSPICE; outputs land in results/chain_NN.*
+# Run every chain_a*.sp through HSPICE; outputs land in results/chain_a*.*
 # Usage (from lab5/, on the HSPICE machine):  sh run_all.sh
 set -e
 mkdir -p results

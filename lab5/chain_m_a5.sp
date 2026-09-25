@@ -1,19 +1,20 @@
-* Lab 5 -- tapered inverter chain driving a 1pF load (modelled as INV with M=F)
-* N = 6 stages, alpha = F^(1/N) = 4.9093
+* Lab 5 -- tapered inverter chain driving a 1pF load (modelled as INV of size F)
+* sizing by M (parallel copies of the min inverter, WN = 44n)
+* alpha = 5, N = round(ln F / ln alpha) = 6 stages
+* last stage fanout into the load = F / alpha^(N-1) = 4.48
 * Technology: PTM 22nm HP, BSIM4 (level=54), nominal VDD = 0.8V
 .include "inv.sub"
 
 .param nom_vdd=0.8
 .param k=1.3
 .param F=14000
-.param alpha=4.909320
+.param alpha=5
 
 VDD vdd 0 DC nom_vdd
 VSS vss 0 DC 0
 
-* ideal pulse -> min-size shaping inverter, so stage 1 sees a realistic edge
-V1 in0 vss PULSE(0 nom_vdd 100p 20p 20p 2n 4n)
-XDRV in0 in vdd vss INV K=k
+* input of the first inverter: starts at VDD, single falling edge with 5ps slew
+V1 in vss PULSE(nom_vdd 0 100p 5p 5p 3n 6n)
 
 * chain: stage i is alpha^i times the minimum inverter
 
@@ -27,12 +28,10 @@ X6 out5 out6 vdd vss INV K=k M='pow(alpha,5)'
 * 1pF load: one inverter 14000x the minimum
 XLOAD out6 outload vdd vss INV K=k M='F'
 
-.tran 1p 4.1n
+.tran 0.1p 3n
 
-* tp1/tp2: chain input edge -> chain output (input of the load), 50% points
-.measure tran tp1 trig v(in) val='nom_vdd/2' cross=1 targ v(out6) val='nom_vdd/2' cross=1
-.measure tran tp2 trig v(in) val='nom_vdd/2' cross=2 targ v(out6) val='nom_vdd/2' cross=2
-.measure tran tpd param='(tp1+tp2)/2'
+* tpd: VDD/2 fall at the first inverter's input -> VDD/2 at the load's input
+.measure tran tpd trig v(in) val='nom_vdd/2' fall=1 targ v(out6) val='nom_vdd/2' cross=1
 .option post=2
 .probe tran v(in) v(out6)
 .end
