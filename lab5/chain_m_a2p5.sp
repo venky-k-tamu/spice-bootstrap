@@ -1,7 +1,7 @@
 * Lab 5 -- tapered inverter chain driving a 1pF load (modelled as INV of size F)
 * sizing by M (parallel copies of the min inverter, WN = 44n)
-* alpha = 2.5, N = round(ln F / ln alpha) = 10 stages
-* last stage fanout into the load = F / alpha^(N-1) = 3.67
+* alpha = 2.5, N = ceil(ln F / ln alpha) = 11 inverters before the load
+* last stage fanout into the load = F / alpha^(N-1) = 1.468
 * Technology: PTM 22nm HP, BSIM4 (level=54), nominal VDD = 0.8V
 .include "inv.sub"
 
@@ -28,14 +28,15 @@ X7 out6 out7 vdd vss INV K=k M='pow(alpha,6)'
 X8 out7 out8 vdd vss INV K=k M='pow(alpha,7)'
 X9 out8 out9 vdd vss INV K=k M='pow(alpha,8)'
 X10 out9 out10 vdd vss INV K=k M='pow(alpha,9)'
+X11 out10 out11 vdd vss INV K=k M='pow(alpha,10)'
 
 * 1pF load: one inverter 14000x the minimum
-XLOAD out10 outload vdd vss INV K=k M='F'
+XLOAD out11 outload vdd vss INV K=k M='F'
 
 .tran 0.1p 3n
 
 * tpd: VDD/2 fall at the first inverter's input -> VDD/2 at the load's input
-.measure tran tpd trig v(in) val='nom_vdd/2' fall=1 targ v(out10) val='nom_vdd/2' cross=1
+.measure tran tpd trig v(in) val='nom_vdd/2' fall=1 targ v(out11) val='nom_vdd/2' cross=1
 .option post=2
-.probe tran v(in) v(out10)
+.probe tran v(in) v(out11)
 .end

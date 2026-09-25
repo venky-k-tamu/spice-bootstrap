@@ -1,6 +1,6 @@
 * Lab 5 -- tapered inverter chain driving a 1pF load (modelled as INV of size F)
 * sizing by M (parallel copies of the min inverter, WN = 44n)
-* alpha = 2, N = round(ln F / ln alpha) = 14 stages
+* alpha = 2, N = ceil(ln F / ln alpha) = 14 inverters before the load
 * last stage fanout into the load = F / alpha^(N-1) = 1.709
 * Technology: PTM 22nm HP, BSIM4 (level=54), nominal VDD = 0.8V
 .include "inv.sub"

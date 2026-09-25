@@ -58,7 +58,7 @@ def plot(series, out_path):
             ax_zoom.annotate(f"N={n}", (a, 0), xycoords=("data", "axes fraction"), xytext=(0, 4),
                              textcoords="offset points", ha="center", fontsize=6, color="#555")
     for ax in (ax_all, ax_zoom):
-        ax.set_xlabel("per-stage fanout alpha   (N = round(ln 14000 / ln alpha))")
+        ax.set_xlabel("per-stage fanout alpha   (N = ceil(ln 14000 / ln alpha))")
         ax.set_ylabel("tpd, input fall -> load input (ps)")
         ax.grid(alpha=0.3, linewidth=0.6, which="both")
         ax.legend(fontsize=8)

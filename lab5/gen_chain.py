@@ -3,9 +3,9 @@
 
 The load is a single inverter M=F times the minimum (F=14000, ~14000 * 71.3 aF
 = 1.0 pF from Lab 4 Part C) and stays fixed for every alpha. The chain has
-N = round(ln F / ln alpha) stages, stage i (i = 0..N-1) has M = alpha^i, so the
-last stage drives the load with fanout F / alpha^(N-1), which absorbs the
-rounding of N. Chain length is a netlist topology change, which .SWEEP/.ALTER
+N = ceil(ln F / ln alpha) stages, stage i (i = 0..N-1) has M = alpha^i, so the
+last stage drives the load with fanout F / alpha^(N-1) <= alpha, which absorbs
+the rounding up of N. Chain length is a netlist topology change, which .SWEEP/.ALTER
 can't express cleanly, so each alpha gets its own deck.
 
 Every size (chain stages and the load) is applied one of two ways:
@@ -29,14 +29,14 @@ import math
 from pathlib import Path
 
 F = 14000
-ALPHAS = [1.5, 2, 2.5, 3, 3.25, 3.5, 3.75, 4, 4.5, 5, 6, 7, 8, 9, 10, 14000]
+ALPHAS = [1.5, 2, 2.5, 3, 3.25, 3.5, 3.6, 3.75, 3.8, 3.9, 4, 4.5, 5, 6, 7, 8, 9, 10, 14000]
 SLEW = 5e-12  # PULSE rise/fall time (0-100%)
 WN_MIN = 44e-9  # must match the WN default in inv.sub
 
 HEADER = """\
 * Lab 5 -- tapered inverter chain driving a 1pF load (modelled as INV of size F)
 * sizing by {how}
-* alpha = {alpha:g}, N = round(ln F / ln alpha) = {n} stages
+* alpha = {alpha:g}, N = ceil(ln F / ln alpha) = {n} inverters before the load
 * last stage fanout into the load = F / alpha^(N-1) = {last_fo:.4g}
 * Technology: PTM 22nm HP, BSIM4 (level=54), nominal VDD = 0.8V
 .include "{sub}"
@@ -63,7 +63,8 @@ def label(alpha):
 
 
 def n_stages(alpha):
-    return max(1, round(math.log(F) / math.log(alpha)))
+    # the small tolerance keeps exact powers (e.g. alpha = F -> N = 1) from rounding up on float error
+    return max(1, math.ceil(math.log(F) / math.log(alpha) - 1e-9))
 
 
 def sim_time(n, scale):
