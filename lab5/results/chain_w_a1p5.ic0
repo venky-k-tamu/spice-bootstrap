@@ -1,0 +1,41 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "W-2024.09 linux64"
+* "format" "HSP"
+* "rundate" "18:40:43 09/25/2026 "
+* "netlist" "chain_w_a1p5.sp "
+* "runtitle" "* lab 5 -- tapered inverter chain driving a 1pf load (modelled as inv of size f)"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in = 800.0000m       
++ out1 =  32.4615u       
++ out10 = 799.9587m       
++ out11 =  36.0661u       
++ out12 = 799.9586m       
++ out13 =  36.1029u       
++ out14 = 799.9586m       
++ out15 =  36.1193u       
++ out16 = 799.9586m       
++ out17 =  36.1267u       
++ out18 = 799.9586m       
++ out19 =  36.1304u       
++ out2 = 799.9618m       
++ out20 = 799.9585m       
++ out21 =  36.1341u       
++ out22 = 799.9584m       
++ out23 =  36.1461u       
++ out24 = 799.9579m       
++ out3 =  34.4630u       
++ out4 = 799.9600m       
++ out5 =  35.3822u       
++ out6 = 799.9592m       
++ out7 =  35.7975u       
++ out8 = 799.9588m       
++ out9 =  35.9833u       
++ outload =  36.0885u       
++ vdd = 800.0000m       
++ vss =   0.            
+***   END: Saved Operating Point ***                     
