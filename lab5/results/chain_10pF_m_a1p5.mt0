@@ -1,0 +1,4 @@
+$DATA1 SOURCE='PrimeSim HSPICE' VERSION='W-2024.09 linux64' PARAM_COUNT=0
+.TITLE '* lab 5 -- tapered inverter chain driving a 10pf load (modelled as inv of size f)'
+ tpd              temper           alter#          
+  1.159e-10         25.0000        1               

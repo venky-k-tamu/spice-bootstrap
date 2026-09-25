@@ -1,0 +1,52 @@
+****** PrimeSim HSPICE -- W-2024.09 linux64 (Aug 27 2024 9174816) ******
+Input File: chain_10pF_w_a5.sp
+lic:
+lic: FLEXlm: SDK_14.2
+lic: USER:   venky.k              HOSTNAME: n01-zeus.olympus.ece.tamu.edu
+lic: HOSTID: ffffffffa8c00b02     PID:      1139640
+lic: Using FLEXlm license file:
+lic: 27070@coe-vtls3.engr.tamu.edu
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 12-jan-2027/2025.06
+lic: 1(in_use)/100(total) FLOATING license(s) on SERVER 27070@coe-vtls3.engr.tamu.edu
+lic:
+
+ init: begin read circuit files, cpu clock= 6.99E-01
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/ad
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/behave
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/bjt
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/burr_brn
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/comlinear
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/dio
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/fet
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/lin_tech
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/pci
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/signet
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/ti
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/tline
+       option search = /opt/coe/synopsys/hspice/W-2024.09/hspice/parts/xilinx
+       option post =     2.00
+ init: end read circuit files, cpu clock= 7.00E-01 peak memory=     521 mb
+ init: begin check errors, cpu clock= 7.00E-01
+ init: end check errors, cpu clock= 7.03E-01 peak memory=     521 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 7.03E-01
+       establish matrix -- done, cpu clock= 7.03E-01 peak memory=     521 mb
+       re-order matrix -- done, cpu clock= 7.03E-01 peak memory=     521 mb
+ init: end setup matrix, cpu clock= 7.76E-01 peak memory=     521 mb
+ dcop: begin dcop, cpu clock= 7.76E-01
+ dcop: end dcop, cpu clock= 8.44E-01 peak memory=     521 mb tot_iter=       5
+ output: results/chain_10pF_w_a5.mt0
+ sweep: tran tran0    begin, stop_t=  2.00E-06 #sweeps=**** cpu clock= 8.66E-01
+ tran: time= 2.1977E-07 tot_iter=     274 conv_iter=     100 cpu clock= 8.73E-01
+ tran: time= 4.3632E-07 tot_iter=     295 conv_iter=     106 cpu clock= 8.73E-01
+ tran: time= 6.1521E-07 tot_iter=     309 conv_iter=     111 cpu clock= 8.74E-01
+ tran: time= 8.8836E-07 tot_iter=     318 conv_iter=     114 cpu clock= 8.74E-01
+ tran: time= 1.0639E-06 tot_iter=     329 conv_iter=     116 cpu clock= 8.74E-01
+ tran: time= 1.2622E-06 tot_iter=     340 conv_iter=     120 cpu clock= 8.74E-01
+ tran: time= 1.4622E-06 tot_iter=     346 conv_iter=     122 cpu clock= 8.74E-01
+ tran: time= 1.6622E-06 tot_iter=     352 conv_iter=     124 cpu clock= 8.75E-01
+ tran: time= 1.8622E-06 tot_iter=     357 conv_iter=     126 cpu clock= 8.75E-01
+ tran: time= 2.0000E-06 tot_iter=     361 conv_iter=     128 cpu clock= 8.75E-01
+ sweep: tran tran0    end, cpu clock= 8.75E-01 peak memory=     521 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
