@@ -29,7 +29,7 @@ import math
 from pathlib import Path
 
 F = 14000
-ALPHAS = [1.5, 2, 2.5, 3, 3.25, 3.5, 3.6, 3.75, 3.8, 3.9, 4, 4.5, 5, 6, 7, 8, 9, 10, 14000]
+ALPHAS = [1.5, 2, 2.5, 3, 3.25, 3.5, 3.6, 3.7, 3.75, 3.8, 3.9, 4, 4.5, 5, 6, 7, 8, 9, 10, 14000]
 SLEW = 5e-12  # PULSE rise/fall time (0-100%)
 WN_MIN = 44e-9  # must match the WN default in inv.sub
 
