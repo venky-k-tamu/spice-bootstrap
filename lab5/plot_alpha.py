@@ -4,10 +4,10 @@
 The sizing mode (m = parallel copies via M, w = wider devices via WN) and alpha
 come from the filename ('p' for '.'); N is recomputed from alpha the same way
 gen_chain.py does, so the decks don't need to emit either as a measure. The M-
-and W-sized sweeps are drawn on the same axes.
+and W-sized sweeps each get their own plot.
 
 Usage (from lab5/, after run_all.sh):
-    python3 plot_alpha.py                      # -> results/alpha_delay.csv, results/delay_vs_alpha.png
+    python3 plot_alpha.py                      # -> results/alpha_delay.csv, results/delay_vs_alpha_{m,w}.png
 """
 import argparse
 import csv
@@ -35,38 +35,29 @@ def collect(results_dir):
     return {s: sorted(rows, key=lambda r: r[1]) for s, rows in series.items()}
 
 
-def plot(series, out_path):
+def plot(scale, rows, out_path):
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
+    name, color, marker = STYLE[scale]
+    best = min(rows, key=lambda r: r[2])
     # left: every alpha on log-log; right: linear zoom around the optimum
     fig, (ax_all, ax_zoom) = plt.subplots(1, 2, figsize=(11, 4.5), dpi=150)
-    titles = []
-    for scale, rows in sorted(series.items()):
-        name, color, marker = STYLE[scale]
-        best = min(rows, key=lambda r: r[2])
-        titles.append(f"{name}: min {best[2]:.1f} ps at alpha={best[1]:g} (N={best[0]})")
-        zoom = [r for r in rows if r[1] <= 10]
-        for ax, sel in ((ax_all, rows), (ax_zoom, zoom)):
-            ax.plot([r[1] for r in sel], [r[2] for r in sel], color=color, label=name,
-                    marker=marker, ms=5, mfc="white", mew=1.3, lw=1.4)
-            ax.plot(best[1], best[2], marker=marker, ms=7, color=color, zorder=3)
-    # N depends only on alpha, so label it once, from whichever sweep ran
-    for n, a, t in next(iter(series.values())):
-        if a <= 10:
-            ax_zoom.annotate(f"N={n}", (a, 0), xycoords=("data", "axes fraction"), xytext=(0, 4),
-                             textcoords="offset points", ha="center", fontsize=6, color="#555")
-    for ax in (ax_all, ax_zoom):
-        ax.set_xlabel("per-stage fanout alpha   (N = ceil(ln 14000 / ln alpha))")
+    zoom = [r for r in rows if r[1] <= 10]
+    for ax, sel in ((ax_all, rows), (ax_zoom, zoom)):
+        ax.plot([r[1] for r in sel], [r[2] for r in sel], color=color,
+                marker=marker, ms=5, mfc="white", mew=1.3, lw=1.4)
+        ax.plot(best[1], best[2], marker=marker, ms=7, color=color, zorder=3)
+        ax.set_xlabel("per-stage fanout alpha")
         ax.set_ylabel("tpd, input fall -> load input (ps)")
         ax.grid(alpha=0.3, linewidth=0.6, which="both")
-        ax.legend(fontsize=8)
     ax_all.set_xscale("log")
     ax_all.set_yscale("log")
     ax_all.set_title("all alpha (log-log)")
     ax_zoom.set_title("zoom: alpha <= 10")
-    fig.suptitle("Inverter chain into 1 pF\n" + "   |   ".join(titles), fontsize=10)
+    fig.suptitle(f"Inverter chain into 1 pF, {name}: "
+                 f"min {best[2]:.1f} ps at alpha={best[1]:g} (N={best[0]})", fontsize=10)
     fig.tight_layout()
     fig.savefig(out_path)
     print(f"wrote {out_path}")
@@ -86,4 +77,5 @@ if __name__ == "__main__":
             for n, a, t in rows:
                 w.writerow([scale, f"{a:g}", n, f"{t:.3f}"])
     print(f"wrote {csv_path}")
-    plot(series, Path(args.results) / "delay_vs_alpha.png")
+    for scale, rows in sorted(series.items()):
+        plot(scale, rows, Path(args.results) / f"delay_vs_alpha_{scale}.png")
