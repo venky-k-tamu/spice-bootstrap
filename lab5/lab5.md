@@ -24,9 +24,13 @@ A load of 1pF is equivalent to an inverter of size ~14000 the min sized inverter
 
 Delay is propagation delay from input of first inverter to input of last inverter (Vdd/2 fall on first inverter to Vdd/2 rise/fall on input of last inverter)
 
-![Delay vs alpha, sized by M](results/delay_vs_alpha_m.png)
+**Modifying M**
 
-![Delay vs alpha, sized by W](results/delay_vs_alpha_w.png)
+![Modifying M](results/delay_vs_alpha_m.png)
+
+**Modifying W**
+
+![Modifying W](results/delay_vs_alpha_w.png)
 
 | $\alpha$ | N | tpd, sized by M (ps) | tpd, sized by W (ps) |
 |:--------:|:-:|:--------------------:|:--------------------:|
